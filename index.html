@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- BANNER HEADER -->
+  <div class="bg-color">
+    <div class="bg-color py-2 container">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <img src="./call.svg" alt="" width="38px">
+          <a href="tel:1234567890" class="text-dark" style="text-decoration: none; font-weight: 300;">Call Us <span
+              class="fw-bold">+1 234 56 78910</span></a>
+        </div>
+        <div class="d-flex align-items-center">
+          <a href="mailto:info@example.com" class="text-dark"
+            style="text-decoration: none; font-weight: 300;">infraterio@gmail.com</a>
+          <div class="col-md-6 d-flex justify-content-end gap-3 align-items-center">
+            <a href="#"><img src="./facebook.png" alt="" width="20px"></a>
+            <a href="#"><img src="./twitter.png" alt="" width="20px"></a>
+            <a href="#"><img src="./instagram.png" alt="" width="20px"></a>
+            <a href="#"><img src="./linkedin.png" alt="" width="20px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR MAIN -->
+  <nav class="navbar-light bg-white navbar-main container py-4">
+    <div class="d-flex justify-content-between align-items-center ga">
+      <!-- Logo -->
+      <div class="" style="flex: 1;">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.svg" width="220" class="d-inline-block align-top" alt="Logo">
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div style="flex:1.3">
+        <div
+          class="mx-auto px-3 col-12 rounded-pill bg-gray-700 search-box d-flex align-items-center justify-content-between"
+          style="padding: 7.8px 0;">
+          <input class="outline-none border-0 col-11 search-box" type="text" style="color: white;" placeholder="Search">
+          <img src="./search.svg" alt="" width="25px">
+        </div>
+      </div>
+
+
+      <!-- Signin, Location, Bell, Heart, Cart, and User Avatar Icons -->
+      <div class="col-4 d-flex align-items-center justify-content-end gap-4" style="flex:1">
+        <div class="">
+          <a class="text-dark" href="#" style="font-weight: bold; text-decoration: none; font-size: 20px;">
+            sign in
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-end align-items-center gap-3">
+          <div class="nav-item">
+            <a class="" href="#">
+              <img src="./pin.png" width="25px" alt="">
+            </a>
+          </div>
+          <div class="nav-item">
+            <a class="" href="#">
+              <img src="./bell.png" width="25px" alt="">
+            </a>
+          </div>
+          <div class="nav-item">
+            <a class="" href="#">
+              <img src="./heart.png" width="25px" alt="">
+            </a>
+          </div>
+          <div class="nav-item">
+            <a class="" href="#">
+              <img src="./cart.png" width="25px" alt="">
+            </a>
+          </div>
+          <div class="nav-item">
+            <a class="" href="#">
+              <img src="./profile.png" width="25px" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- NAVBAR SUB -->
+  <div class="container">
+    <div class="navbar-sub rounded-pill py-2">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center gap-4">
+          <!-- <div class="px-3"></div> -->
+          <div></div>
+          <div class="">
+            <a class="" aria-current="page" href="#">Home</a>
+          </div>
+          <div class="">
+            <a class="" href="#">Sanitarywear</a>
+          </div>
+          <div class="">
+            <a class="" href="#">Tiles</a>
+          </div>
+          <div class="">
+            <a class="" href="#">Paints</a>
+          </div>
+          <div class="">
+            <a class="" href="#">Kitchen</a>
+          </div>
+          <div class="">
+            <a class="" href="#">Plywood/WPC</a>
+          </div>
+          <div class="">
+            <a class="" href="#">Hardware</a>
+          </div>
+          <div class="">
+            <a class="" href="#">Track Order</a>
+          </div>
+          <div class="">
+            <a class="" href="#">About</a>
+          </div>
+
+          <div class="mx-5">
+            <a class="" style="color: #B17429; font-weight: 800;" href="#">Help Us</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="d-flex align-items-start justify-content-between gap-5" style="margin-top: 70px;">
+
+    <!-- FILTER SECTION -->
+    <div class="filter_class" style="flex:3">
+      <ul class="list-unstyled">
+        <li style="background-color: #F0CA89;
+        ; padding: 12px;">Filters</li>
+        <li class="">
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            data-bs-target="#brandFilter" aria-expanded="false" aria-controls="brandFilter">
+            <span>Brand</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+          <div class="collapse" id="brandFilter">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="ceraBrand">
+              <label class="form-check-label" for="ceraBrand">
+                Cera
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="kajariaBrand">
+              <label class="form-check-label" for="kajariaBrand">
+                Kajaria
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="gloxyBrand">
+              <label class="form-check-label" for="gloxyBrand">
+                Gloxy
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="gloceraBrand">
+              <label class="form-check-label" for="gloceraBrand">
+                Glocera
+              </label>
+            </div>
+          </div>
+        </li>
+
+
+
+        <li class="">
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            data-bs-target="#subcategoryFilter" aria-expanded="false" aria-controls="subcategoryFilter">
+            <span>Subcategory</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+          <div class="collapse" id="subcategoryFilter">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="subcat1">
+              <label class="form-check-label" for="subcat1">
+                Subcategory 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="subcat2">
+              <label class="form-check-label" for="subcat2">
+                Subcategory 2
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="subcat3">
+              <label class="form-check-label" for="subcat3">
+                Subcategory 3
+              </label>
+            </div>
+          </div>
+        </li>
+
+        <!-- <li>Subcategory</li> -->
+        <li>
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            aria-expanded="false" aria-controls="brandFilter">
+            <span>Third Category</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            aria-expanded="false" aria-controls="brandFilter">
+            <span>Product Shape</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            aria-expanded="false" aria-controls="brandFilter">
+            <span>Product Distance</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            aria-expanded="false" aria-controls="brandFilter">
+            <span>Product Color</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            aria-expanded="false" aria-controls="brandFilter">
+            <span>Architects</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex align-items-center text-decoration-none py-1 px-2" data-bs-toggle="collapse"
+            aria-expanded="false" aria-controls="brandFilter">
+            <span>Builders Choice</span>
+            <i class="bi bi-plus ms-auto"></i>
+          </a>
+        </li>
+
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Price Range:</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group">
+                <!-- <span class="input-group-text">Min</span> -->
+                <input type="number" class="form-control" id="minPrice" placeholder="min">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <!-- <span class="input-group-text">Max</span> -->
+                <input type="number" class="form-control" id="maxPrice" placeholder="max">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- PRODUCTS SECTION -->
+    <div class="" id="products" style="flex:13">
+
+
+      <!-- EVC CATEGORY HEADIGN -->
+      <div class="d-flex align-items-center">
+        <div class="" style="margin-right: 20px;">
+          <h1 style="font-family: 'DM Serif Display', serif;">EVC Category</h1>
+        </div>
+        <div style="flex: 1;">
+          <!-- hr tag -->
+          <hr class="border-0 my-3" style="  opacity: 1;
+                  border-color: black;
+                  margin: 0;
+                  height: 1px;">
+        </div>
+      </div>
+      <!-- EVC CATEGORY PRODUCTS -->
+      <div class="d-flex align-items-center justify-content-start gap-3 py-4">
+        <div>
+          <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="" width="150px"
+            height="150px">
+          <p>One Piece EWCs</p>
+        </div>
+        <div>
+          <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="" width="150px"
+            height="150px">
+          <p>One Piece EWCs</p>
+        </div>
+        <div>
+          <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="" width="150px"
+            height="150px">
+          <p>One Piece EWCs</p>
+        </div>
+        <div>
+          <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="" width="150px"
+            height="150px">
+          <p>One Piece EWCs</p>
+        </div>
+        <div>
+          <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="" width="150px"
+            height="150px">
+          <p>One Piece EWCs</p>
+        </div>
+      </div>
+
+
+      <!-- PRODUCTS CATEGORY FILER -->
+      <div class="d-flex align-items-center" style="margin-bottom: 30px;">
+        <div class="" style="margin-right: 20px;">
+          <!-- <h1 style="font-family: 'DM Serif Display', serif;">EVC Category</h1> -->
+          <span class="mx-2" style="color:rgb(0, 0, 0)">Sort By : </span>
+          <span class="mx-2" style="color:rgb(0, 0, 0)">Price low to high</span>
+          <span class="mx-2" style="color:gray">Price hight to low</span>
+          <span class="mx-2" style="color:gray">Name</span>
+          <span class="mx-2" style="color:gray">Newest First</span>
+        </div>
+        <div style="flex: 1;">
+          <!-- hr tag -->
+          <hr class="border-0 my-3" style="  opacity: 1;
+              border-color: black;
+              margin: 0;
+              height: 1px;">
+        </div>
+      </div>
+
+
+      <!-- PRODUCTS SECTION -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 productcards">
+
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carddddd -->
+        <div class="col">
+          <div class="card mb-3 border-0" style="max-width: 220px;">
+            <div class="row g-0">
+              <div class="my-1 ">
+                <span class="text-light px-2 py-1 rounded-pill" style="background-color: rgb(221, 0, 0);">20 %
+                  off</span>
+              </div>
+              <div class="mt-2">
+                <img src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg" alt="Product Image"
+                  class="" width="100%" height="200px">
+              </div>
+              <div class="col-md-12 ">
+                <div class="card-body text-center">
+                  <h5 class="card-title">MARLIN</h5>
+                  <p class="card-title">1986 sbl</p>
+                  <div class="rating">
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                    <span class="bi bi-star-fill active"></span>
+                  </div>
+                  <div class="flex align-items-center justify-content-center">
+                    <p class="card-text text-center fw-bold">
+                      <s class="text-decoration-line-through fw-normal mx-2 small">₹ 17000.00</s>
+                      ₹ 12000.00
+                    </p>
+                  </div>
+
+                  <div class="mt-2">
+                    <a href="#" class="text-decoration-none text-dark rounded-pill"
+                      style="border: 1px solid black; padding: 4px 40px;;">buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER SECTION -->
+  <footer class="bg-FF9803 text-dark mt-5" style="padding-top: 80px; padding-bottom: 20px;">
+    <div class="container mt-5 px-5">
+
+
+      <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 40px;">
+        <div class="d-flex align-items-center">
+          <img src="./logo_dark.svg" width="300px" alt="Logo">
+        </div>
+        <div class="col-md-6 d-flex justify-content-end gap-4 align-items-center">
+          <a href="#"><img src="./facebook.png" alt="" width="30px"></a>
+          <a href="#"><img src="./twitter.png" alt="" width="30px"></a>
+          <a href="#"><img src="./instagram.png" alt="" width="30px"></a>
+          <a href="#"><img src="./linkedin.png" alt="" width="30px"></a>
+        </div>
+      </div>
+
+
+
+
+      <div class="d-flex justify-content-evenly align-items-center gap-5">
+        <div class=" d-flex flex-column" style="flex: 5;">
+          <!-- <div class="mb-3"><img src="https://infraterio.com/assets/website/images/infraterio.png" width="250px" alt="Logo"></div> -->
+
+          <div class="d-flex gap-4">
+            <!-- <i class="bi bi-geo-alt-fill me-2"></i> -->
+            <img src="./location.svg" alt="" width="35px" height="35px">
+            <p style="font-size: 19px; font-weight : 300;">Shakti Nagar Dhal, Near Lekhraj Metro Station, Indra Nagar -
+              Lucknow</p>
+          </div>
+
+          <div class="d-flex gap-4">
+            <!-- <i class="bi bi-telephone-fill me-2"></i> -->
+            <img src="./mobile.svg" alt="" width="35px" height="35px">
+            <div class="">
+              <h3 class="fw-bold">+91-9700812822</h3>
+              <p>Call Us Now 24/7 Customer Support</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-4 align-items-center">
+            <img src="./mail.svg" alt="" width="35px" height="35px">
+            <div style="font-size: 19px; font-weight : 300;">infraterio@gmail.com</div>
+          </div>
+        </div>
+        <div class="mb-3 mb-md-0" style="flex : 3">
+          <h3 class="fw-bold mb-3">Customer Service</h3>
+          <div><a href="#">My Account</a></div>
+          <div><a href="#">Order History</a></div>
+          <div><a href="#">FAQ</a></div>
+          <div><a href="#">Specials</a></div>
+          <div><a href="#">Help Center</a></div>
+        </div>
+        <div class="mb-3 mb-md-0" style="flex : 3">
+          <h3 class="fw-bold mb-3">Policy</h3>
+          <div><a href="#">Return Policy</a></div>
+          <div><a href="#">Terms of Use</a></div>
+          <div><a href="#">Company</a></div>
+          <div><a href="#">Privacy</a></div>
+          <div><a href="#">Security</a></div>
+        </div>
+        <div class="" style="flex : 3 ">
+          <h3 class="fw-bold mb-3">Why Choose Us</h3>
+          <!-- <div><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div> -->
+          <div><a href="#">Shopping Guide</a></div>
+          <div><a href="#">Blog</a></div>
+          <div><a href="#">Company</a></div>
+          <div><a href="#">Investor Relations</a></div>
+          <div><a href="#">Contact Us</a></div>
+        </div>
+      </div>
+      <!-- <hr class="my-4"> -->
+      <hr class="border-0" style="margin-top: 30px; margin-bottom: 35px; opacity: 1;
+      border-color: black;
+      
+      height: 1px;">
+      <div class="text-center fw-light">@2023InfraTerio. All rights reserved AIRPROG PVT.LTD</div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
