@@ -11,6 +11,15 @@
 }
 
 
+/* setting all 'a' tags text decoration to none */
+* a{
+  text-decoration: none;
+}
+
+
+
+
+
 /* Change width of vertical scrollbar */
 ::-webkit-scrollbar {
   width: 1.5px;
@@ -42,11 +51,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-footer a{
-  font-weight: 300;
-  /* font-size: 35px; */
-  text-decoration: none;
-}
+
+
+
 
 body {
   scrollbar-width: none; /* Firefox */
@@ -100,25 +107,389 @@ input:focus{
 
 
 
+  /* -----HEADER----- */
 
-  /* FOOTER CSS SECTION */
-
-
-  footer a {
-    text-decoration: none;
-    color: black;
-
+  .header_x{
+    background-color: #FF9803;
   }
+
+  @media screen and (max-width: 3600px) {
+      .header_x{
+        padding : 0 210px;
+        font-size: 29px;
+        height: 100px;
+      }
+      .header_social_icons img{
+        width: 38px;
+      }
+  }
+
+  @media screen and (max-width: 2500px) {
+      .header_x{
+        padding : 0 161px;
+        font-size: 22px;
+        height: 76px;
+      }
+      .header_social_icons img{
+        width: 30px;
+      }
+  }
+
+  @media screen and (max-width: 1900px) {
+      .header_x{
+        padding : 0 113px;
+        font-size: 18px;
+        height: 58px;
+      }
+      .header_social_icons img{
+        width: 18px;
+      }
+  }
+
+
+
+
+  /* -----SECTIONS (similar products, similar products from other brands, ratings and reviews, q and q)----- */
+
+  .sections_wrapper{
+    @media screen and (max-width: 3600px) {
+      padding: 0 210px;
+    }
+    @media screen and (max-width: 2500px) {
+      padding: 0 161px;
+    }
+    @media screen and (max-width: 1900px) {
+      padding: 0 113px;
+    }
+  }
+
+
+  .section_heading h1{
+    font-family: 'DM', sans-serif;
+
+
+    @media screen and (max-width: 3600px) {
+      font-size: 100px;
+    }
+    @media screen and (max-width: 2500px) {
+      font-size: 70px;
+    }
+    @media screen and (max-width: 1900px) {
+      font-size: 42px;
+    }
+    
+  }
+
+
+
+
+  /* -----PRODUCT MAIN CARD----- */
+  .card_x .offer span{
+    background-color: rgb(221, 0, 0);
+  }
+
+  @media screen and (max-width: 3600px) {
+    .card_x{
+      width: 430px;
+      font-size: 30px;
+    }
+
+    .card_x .offer{
+      font-size: 18px;
+    }
+
+    .card_x img{
+      width: 430px;
+      height: 430px;
+    }
+
+    .card_x .product_name{
+      font-size: 30px;
+    } 
+  }
+
+  @media screen and (max-width: 2500px) {
+    .card_x{
+      width: 322px;
+      font-size: 20px;
+    }
+
+    .card_x .offer{
+      font-size: 16px;
+    }
+
+    .card_x img{
+      width: 322px;
+      height: 322px;
+    }
+
+    .card_x .product_name{
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1900px) {
+      .card_x{
+        width: 230px;
+        font-size: 18px;
+      }
+
+      .card_x .offer{
+        font-size: 14px;
+      }
+
+      .card_x img{
+        width: 230px;
+        height: 230px;
+      }
+
+      .card_x .product_name{
+        font-size: 22px;
+      }
+  }
+
+
+
+  /* -----REVIEWS AND RATINGS----- */
+
+  .review_description{
+    font-weight: 300;
+  }
+  .review_user{
+    color: gray;
+  }
+  .review_heading{
+    font-family: 'DM', sans-serif;
+  }
+  .review_rating span{
+    background-color: #f18d00;
+    color: white;
+  }
+
+  @media screen and (max-width: 3600px) {
+    .review_images img{
+      width: 140px;
+      height: 140px;
+    } 
+    .review_rating{
+      font-size : 35px;
+    } 
+    .review_heading{
+      font-size : 52px;
+    } 
+    .review_user{
+      font-size : 24px;
+    }
+    .review_description p{
+      font-size : 25px;
+    }
+  }
+
+  @media screen and (max-width: 2500px) {
+      .review_images img{
+        width: 104px;
+        height: 104px;
+      }
+      .review_rating{
+        font-size : 28px;
+      }
+      .review_heading{
+        font-size : 39px;
+      }
+      .review_user{
+        font-size : 20px;
+      }
+      .review_description p{
+        font-size : 22px;
+      }
+  }
+
+  @media screen and (max-width: 1900px) {
+    .review_images img{
+      width: 74px;
+      height: 74px;
+    }
+    .review_rating{
+      font-size : 15px;
+    } 
+    .review_heading{
+      font-size : 28px;
+    } 
+    .review_user{
+      font-size : 14px;
+    } 
+    .review_description p{
+      font-size : 18px;
+    }
+  }
+
+
+
+  /* -----QUESTION AND ANSWERS----- */
+
+  @media screen and (max-width: 3600px) {
+    .q_a{
+      font-size: 30px;
+    }
+    .question_user{
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: 2500px) {
+    .q_a{
+      font-size: 24px;
+    }
+    .question_user{
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: 1900px) {
+    .q_a{
+      font-size: 18px;
+    }
+    .question_user{
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+
+
+  /* -----FOOTER CSS SECTION----- */
   
   footer {
     background-color: #FF9803;
     color: black;
+
+
+
+    @media screen and (max-width: 3600px) {
+      padding : 0 210px;
+    }
+    @media screen and (max-width: 2500px) {
+      padding : 0 161px;
+    }
+    @media screen and (max-width: 1900px) {
+      padding : 0 113px;
+    }
+  }
+
+  .footer_logo_image img{
+
+    @media screen and (max-width: 3600px) {
+      width: 400px
+    }
+    @media screen and (max-width: 2500px) {
+      width: 350px;
+    }
+    @media screen and (max-width: 1900px) {
+      width: 250px;
+    }
+  }
+
+  .footer_social_icons img{
+    @media screen and (max-width: 3600px) {
+      width: 40px
+    }
+    @media screen and (max-width: 2500px) {
+      width: 35px;
+    }
+    @media screen and (max-width: 1900px) {
+      width: 28px;
+    }
+  }
+
+  footer a{
+    font-weight: 300;
+    color: black;
+  
+
+    @media screen and (max-width: 3600px) {
+      font-size: 35px;
+    }
+    @media screen and (max-width: 2500px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 1900px) {
+      font-size: 18px;
+    }
+    
+  }
+  
+  .footer_phone_number h3{
+    font-weight: bold;
+    font-size: 30px;
+
+    @media screen and (max-width: 3600px) {
+      font-size: 60px;
+    }
+    @media screen and (max-width: 2500px) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: 1900px) {
+      font-size: 30px;
+    }
+  }
+
+  .footer_sub img{
+    @media screen and (max-width: 3600px) {
+      width: 50px;
+      height: 50px;
+    }
+    @media screen and (max-width: 2500px) {
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and (max-width: 1900px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .footer_sub p{
+    font-weight: 300;
+    @media screen and (max-width: 3600px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 2500px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 1900px) {
+      font-size: 18px;
+    }
+  }
+
+  .footer_sub h3{
+    @media screen and (max-width: 3600px) {
+      font-size: 52px;
+    }
+    @media screen and (max-width: 2500px) {
+      font-size: 38px;
+    }
+    @media screen and (max-width: 1900px) {
+      font-size: 24px;
+    }
+    
+  }
+
+  .footer_bottom{
+    @media screen and (max-width: 3600px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 2500px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 1900px) {
+      font-size: 18px;
+    }
   }
   
 
-  hr {
-    border-top: 2px solid black;
-  }
+
 
 
 
@@ -183,15 +554,10 @@ input:focus{
 
 
 .recommended_product_card:hover{
-  /* border: 1px solid black; */
-  /* box-shadow: #6e6e6e 0px 0px 10px 0px; */
   box-shadow: 3px 2px 15px -6px rgba(156,156,156,1);
-
-  /* background-color: aqua; */
 }
 
 .recommended_product_card{
-  /* border: transparent 1px solid; */
   cursor: pointer;
 }
 
