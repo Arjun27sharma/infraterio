@@ -146,7 +146,7 @@ $(document).ready(function() {
     // Move cards left
     $('#left-arrow-1').click(function() {
       if (currentPosition1 < 0) {
-        currentPosition1 += cardWidth1;
+        currentPosition1 += 2*cardWidth1;
         cards1.css('transform', `translateX(${currentPosition1}px)`);
         $('#right-arrow-1').prop('disabled', false);
       }
@@ -158,7 +158,7 @@ $(document).ready(function() {
     // Move cards right
     $('#right-arrow-1').click(function() {
       if (currentPosition1 > maxPosition1) {
-        currentPosition1 -= cardWidth1;
+        currentPosition1 -= 2*cardWidth1;
         cards1.css('transform', `translateX(${currentPosition1}px)`);
         $('#left-arrow-1').prop('disabled', false);
       }
@@ -180,7 +180,7 @@ $(document).ready(function() {
     // Move cards left
     $('#left-arrow-2').click(function() {
       if (currentPosition2 < 0) {
-        currentPosition2 += cardWidth2;
+        currentPosition2 += 2*cardWidth2;
         cards2.css('transform', `translateX(${currentPosition2}px)`);
         $('#right-arrow-2').prop('disabled', false);
       }
@@ -192,7 +192,7 @@ $(document).ready(function() {
     // Move cards right
     $('#right-arrow-2').click(function() {
       if (currentPosition2 > maxPosition2) {
-        currentPosition2 -= cardWidth2;
+        currentPosition2 -= 2*cardWidth2;
         cards2.css('transform', `translateX(${currentPosition2}px)`);
         $('#left-arrow-2').prop('disabled', false);
       }
