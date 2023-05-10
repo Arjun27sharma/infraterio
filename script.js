@@ -1,10 +1,27 @@
+// const circles = document.querySelectorAll('.color_circle');
+
+// circles.forEach(circle => {
+//   circle.addEventListener('click', () => {
+//     circle.classList.toggle('selected');
+//   });
+// });
+
+
+
 const circles = document.querySelectorAll('.color_circle');
 
 circles.forEach(circle => {
   circle.addEventListener('click', () => {
-    circle.classList.toggle('selected');
+    // remove "selected" class from all circles
+    circles.forEach(c => {
+      c.classList.remove('selected');
+    });
+    // add "selected" class to clicked circle
+    circle.classList.add('selected');
   });
 });
+
+
 
 
 const tags = document.querySelectorAll('.product_details_tag');

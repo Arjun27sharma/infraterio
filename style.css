@@ -285,7 +285,7 @@ input:focus{
       font-size : 36px;
     }
     .about_product .address img{
-      width: 55px;
+      width: 48px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -326,7 +326,7 @@ input:focus{
       font-size : 27px;
     }
     .about_product .address img{
-      width: 48px;
+      width: 40px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -367,7 +367,7 @@ input:focus{
       font-size : 19px;
     }
     .about_product .address img{
-      width: 35px;
+      width: 28px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -429,7 +429,10 @@ input:focus{
       .product_action i{
         font-size: 35px;
       }
-      .offer img{
+      .product_action_buy{
+        font-size : 34px;
+      }
+      .offers img{
         width: 200px;
       }
       .product_more_info{
@@ -497,7 +500,10 @@ input:focus{
       .product_action i{
         font-size: 28px;
       }
-      .offer img{
+      .product_action_buy{
+        font-size : 27px;
+      }
+      .offers img{
         width: 150px;
       }
       .product_more_info{
@@ -565,7 +571,10 @@ input:focus{
       .product_action i{
         font-size: 14px;
       }
-      .offer img{
+      .product_action_buy{
+        font-size: 17px;
+      }
+      .offers img{
         width: 100px;
       }
       .product_more_info{
@@ -634,6 +643,11 @@ input:focus{
     background-color: rgb(221, 0, 0);
   }
 
+  .card_x .product_like{
+   cursor: pointer;
+}
+
+
   @media screen and (max-width: 3600px) {
     .card_x{
       width: 430px;
@@ -644,7 +658,7 @@ input:focus{
       font-size: 18px;
     }
 
-    .card_x img{
+    .card_x .product_image{
       width: 430px;
       height: 430px;
     }
@@ -664,7 +678,7 @@ input:focus{
       font-size: 16px;
     }
 
-    .card_x img{
+    .card_x .product_image{
       width: 322px;
       height: 322px;
     }
@@ -684,7 +698,7 @@ input:focus{
         font-size: 14px;
       }
 
-      .card_x img{
+      .card_x .product_image{
         width: 230px;
         height: 230px;
       }
