@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: "DM";
+  src: url("../fonts/DMSerifDisplay-Regular.ttf")format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* .filter_category {
     background-color: gray;
   } */
