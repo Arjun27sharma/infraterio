@@ -21,6 +21,8 @@
 
 
 
+
+
 /* Change width of vertical scrollbar */
 ::-webkit-scrollbar {
   width: 1.5px;
@@ -285,7 +287,7 @@ input:focus{
       font-size : 36px;
     }
     .about_product .address img{
-      width: 48px;
+      width: 42px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -326,7 +328,7 @@ input:focus{
       font-size : 27px;
     }
     .about_product .address img{
-      width: 40px;
+      width: 32px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -367,7 +369,7 @@ input:focus{
       font-size : 19px;
     }
     .about_product .address img{
-      width: 28px;
+      width: 22px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -444,6 +446,9 @@ input:focus{
       .recommended_product_card{
         font-size: 25px;
       }
+      .recommended_products{
+        height: 900px;
+      }
       .recommended_products h3{
         font-size: 48px;
       }
@@ -515,6 +520,9 @@ input:focus{
       .recommended_product_card{
         font-size: 18px;
       }
+      .recommended_products{
+        height: 800px;
+      }
       .recommended_products h3{
         font-size: 30px;
       }
@@ -585,6 +593,9 @@ input:focus{
       }
       .recommended_product_card{
         font-size: 15px;
+      }
+      .recommended_products{
+        height: 680px;
       }
       .recommended_products h3{
         font-size: 26px;
