@@ -2,6 +2,22 @@
 /* .filter_category {
     background-color: gray;
   } */
+
+
+
+  .form-check-input:checked {
+    background-color: orange;
+    border-color: orange;
+  }
+
+  .form-check-input:focus{
+    box-shadow: none;
+    outline: none;
+  }
+
+
+
+
   
   .filter_category .x {
     /* background-color: white; */
