@@ -5,14 +5,22 @@
   
   .filter_category .x {
     /* background-color: white; */
-    padding: 0 35px;
+    padding: 0 50px;
     /* font-size: 13px; */
   }
 
   .filter_category span{
-    padding: 4px 30px;
+    padding: 4px 50px;
     /* font-size: 14px; */
   }
+
+  .filter_category .collaspe_icon{
+    font-size: 35px;
+  }
+
+  /* .filter_category .collaspe_icon{
+    font-size: 35px;
+  } */
 
 .category_p_card{
     display: flex;
@@ -24,7 +32,10 @@
 
 @media screen and (max-width: 3600px) {
     .filter_head{
-        font-size: 30px;
+        font-size: 32px;
+    }
+    .filter_category .collaspe_icon{
+      font-size: 35px;
     }
     .filter_category span{
         font-size: 26px;
@@ -44,11 +55,22 @@
         font-size: 26px;
         font-weight: 300;
     }
+
+    .bottom_pagination{
+      padding: 10px;
+      margin-top: 70px;
+      font-size: 40px;
+      gap: 20px;
+      font-weight: 300;
+    }
     
 }
 @media screen and (max-width: 2500px) {
     .filter_head{
         font-size: 23px;
+    }
+    .filter_category .collaspe_icon{
+      font-size: 30px;
     }
     .filter_category span{
         font-size: 20px;
@@ -68,10 +90,20 @@
         font-size: 20px;
         font-weight: 300;
     }
+    .bottom_pagination{
+      padding: 10px;
+      margin-top: 40px;
+      font-size: 28px;
+      gap: 20px;
+      font-weight: 300;
+    }
 }
 @media screen and (max-width: 1900px) {
     .filter_head{
         font-size: 16px;
+    }
+    .filter_category .collaspe_icon{
+      font-size: 24px;
     }
     .filter_category span{
         font-size: 14px;
@@ -90,6 +122,13 @@
     .p_category_filter_line{
         font-size: 14px;
         font-weight: 300;
+    }
+    .bottom_pagination{
+      padding: 10px;
+      margin-top: 30px;
+      font-size: 22px;
+      gap: 20px;
+      font-weight: 300;
     }
 }
 
