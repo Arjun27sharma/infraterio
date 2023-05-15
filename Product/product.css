@@ -194,7 +194,16 @@
 }
 
 .card_y{
+  cursor: pointer;
     padding: 0;
+}
+
+.card_y img{
+  transition: all ease 0.2s;
+}
+
+.card_y img:hover{
+  scale: 1.04;
 }
 
 
