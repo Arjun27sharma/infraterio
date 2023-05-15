@@ -303,8 +303,8 @@ input:focus{
       color : gray;
     }
     .about_product .product_image img{
-      width: 531px;
-      height: 531px;
+      width: 323px;
+      height: 3239px;
     }
     .about_product .small_img img{
         width: 94px;
@@ -670,7 +670,7 @@ input:focus{
 
   @media screen and (max-width: 2500px) {
     .card_x{
-      width: 322px;
+      width: 323px;
       font-size: 20px;
     }
 
@@ -679,8 +679,8 @@ input:focus{
     }
 
     .card_x .product_image{
-      width: 322px;
-      height: 322px;
+      width: 323px;
+      height: 323px;
     }
 
     .card_x .product_name{

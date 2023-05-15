@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -170,22 +171,456 @@ position: relative;
     </div>
 
 
-    <div style="height : 488px; padding: 0 161px;     background-color: #FF9803;">
+    <div style="position: relative; height : 488px; padding: 0 161px;     background-color: #FF9803;">
 
-        <div class="d-flex flex-column align-items-start justify-content-end">
+        <div class="d-flex flex-column align-items-start justify-content-end" style="position: absolute; bottom: 10px;">
             <h1 style="color: white; font-size: 109px; font-family: 'DM';">Trending Products</h1>
 
-            <p>
+            <p style="font-size: 28px; font-weight: 200; width: 60%;">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus aperiam recusandae.
             </p>
+        </div>
+
+        <div style="position: absolute; z-index: 2; bottom: -40px; right: 161px;">
+            <img src="./Images/tranding-product.png" alt="" width="500px">
         </div>
     </div>
 
 
+            <!-- SIMILAR PRODUCTS  -->
+            <div class=" d-flex flex-column justify-content-center" style="margin-top: 150px; padding: 0 161px;">
+    
+                <!-- slider section  -->
+                <div class="d-flex justify-content-center gap-3 align-items-center">
+    
+                    <!-- note: disabled the buttons for demo purposes uncomment this and make overflow-hidden instead of overflow-auto -->
+                    <div>
+                        <img src="../Images/left_arrow.svg" id="right-arrow-1" alt="" height="20px"
+                            style="margin-bottom: 160px; cursor:pointer;">
+                    </div>
+    
+    
+                    <!-- note: should remove the overflow-x if not needed and put overflow : hidden -->
+                    <div id="" class="slider mx-3" style="overflow: hidden;">
+    
+                        <!-- <div id="card-container" class=" d-flex justify-content-center align-items-center px-1" style="gap: 40px"> -->
+                        <div id="card-container-1" class="card-container d-flex gap-5 align-items-center">
+    
+    
+                            <!-- cardd -->
+                            <div class="card_x">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="d-flex justify-content-between align-items-center offer">
+                                            <span class="text-light px-2 py-1 rounded-pill">20 %
+                                                off
+                                            </span>
+                                            <div class="product_like">
+                                                <img class="product_like_icon" src="../Images/heart.svg" alt="" width="25px">
+                                                <!-- <i class="fa fa-flag fa-3x"></i> -->
+                                                <!-- <i class="fa-light fa-heart"></i> -->
+    
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <img class="product_image" src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg"
+                                                alt="Product Image">
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card-body text-center">
+                                                <h5 class="product_name">MARLIN 1</h5>
+                                                <p class="card-title">1986 sbl</p>
+                                                <div class="rating">
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                </div>
+                                                <div class="flex align-items-center justify-content-center">
+                                                    <p class="card-text text-center fw-bold">
+                                                        <s class="text-decoration-line-through fw-normal mx-2 small">₹
+                                                            17000.00</s>
+                                                        ₹ 12000.00
+                                                    </p>
+                                                </div>
+    
+                                                <div class="mt-2">
+                                                    <button href="" class="rounded-pill">buy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cardd -->
+                            <div class="card_x">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="d-flex justify-content-between align-items-center offer">
+                                            <span class="text-light px-2 py-1 rounded-pill">20 %
+                                                off
+                                            </span>
+                                            <div class="product_like">
+                                                <img class="product_like_icon" src="../Images/heart.svg" alt="" width="25px">
+                                                <!-- <i class="fa fa-flag fa-3x"></i> -->
+                                                <!-- <i class="fa-light fa-heart"></i> -->
+    
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <img class="product_image" src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg"
+                                                alt="Product Image">
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card-body text-center">
+                                                <h5 class="product_name">MARLIN 2</h5>
+                                                <p class="card-title">1986 sbl</p>
+                                                <div class="rating">
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                </div>
+                                                <div class="flex align-items-center justify-content-center">
+                                                    <p class="card-text text-center fw-bold">
+                                                        <s class="text-decoration-line-through fw-normal mx-2 small">₹
+                                                            17000.00</s>
+                                                        ₹ 12000.00
+                                                    </p>
+                                                </div>
+    
+                                                <div class="mt-2">
+                                                    <button href="" class="rounded-pill">buy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cardd -->
+                            <div class="card_x">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="d-flex justify-content-between align-items-center offer">
+                                            <span class="text-light px-2 py-1 rounded-pill">20 %
+                                                off
+                                            </span>
+                                            <div class="product_like">
+                                                <img class="product_like_icon" src="../Images/heart.svg" alt="" width="25px">
+                                                <!-- <i class="fa fa-flag fa-3x"></i> -->
+                                                <!-- <i class="fa-light fa-heart"></i> -->
+    
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <img class="product_image" src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg"
+                                                alt="Product Image">
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card-body text-center">
+                                                <h5 class="product_name">MARLIN 3</h5>
+                                                <p class="card-title">1986 sbl</p>
+                                                <div class="rating">
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                </div>
+                                                <div class="flex align-items-center justify-content-center">
+                                                    <p class="card-text text-center fw-bold">
+                                                        <s class="text-decoration-line-through fw-normal mx-2 small">₹
+                                                            17000.00</s>
+                                                        ₹ 12000.00
+                                                    </p>
+                                                </div>
+    
+                                                <div class="mt-2">
+                                                    <button href="" class="rounded-pill">buy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cardd -->
+                            <div class="card_x">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="d-flex justify-content-between align-items-center offer">
+                                            <span class="text-light px-2 py-1 rounded-pill">20 %
+                                                off
+                                            </span>
+                                            <div class="product_like">
+                                                <img class="product_like_icon" src="../Images/heart.svg" alt="" width="25px">
+                                                <!-- <i class="fa fa-flag fa-3x"></i> -->
+                                                <!-- <i class="fa-light fa-heart"></i> -->
+    
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <img class="product_image" src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg"
+                                                alt="Product Image">
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card-body text-center">
+                                                <h5 class="product_name">MARLIN 4</h5>
+                                                <p class="card-title">1986 sbl</p>
+                                                <div class="rating">
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                </div>
+                                                <div class="flex align-items-center justify-content-center">
+                                                    <p class="card-text text-center fw-bold">
+                                                        <s class="text-decoration-line-through fw-normal mx-2 small">₹
+                                                            17000.00</s>
+                                                        ₹ 12000.00
+                                                    </p>
+                                                </div>
+    
+                                                <div class="mt-2">
+                                                    <button href="" class="rounded-pill">buy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cardd -->
+                            <div class="card_x">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="d-flex justify-content-between align-items-center offer">
+                                            <span class="text-light px-2 py-1 rounded-pill">20 %
+                                                off
+                                            </span>
+                                            <div class="product_like">
+                                                <img class="product_like_icon" src="../Images/heart.svg" alt="" width="25px">
+                                                <!-- <i class="fa fa-flag fa-3x"></i> -->
+                                                <!-- <i class="fa-light fa-heart"></i> -->
+    
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <img class="product_image" src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg"
+                                                alt="Product Image">
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card-body text-center">
+                                                <h5 class="product_name">MARLIN 5</h5>
+                                                <p class="card-title">1986 sbl</p>
+                                                <div class="rating">
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                </div>
+                                                <div class="flex align-items-center justify-content-center">
+                                                    <p class="card-text text-center fw-bold">
+                                                        <s class="text-decoration-line-through fw-normal mx-2 small">₹
+                                                            17000.00</s>
+                                                        ₹ 12000.00
+                                                    </p>
+                                                </div>
+    
+                                                <div class="mt-2">
+                                                    <button href="" class="rounded-pill">buy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cardd -->
+                            <div class="card_x">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="d-flex justify-content-between align-items-center offer">
+                                            <span class="text-light px-2 py-1 rounded-pill">20 %
+                                                off
+                                            </span>
+                                            <div class="product_like">
+                                                <img class="product_like_icon" src="../Images/heart.svg" alt="" width="25px">
+                                                <!-- <i class="fa fa-flag fa-3x"></i> -->
+                                                <!-- <i class="fa-light fa-heart"></i> -->
+    
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <img class="product_image" src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg"
+                                                alt="Product Image">
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card-body text-center">
+                                                <h5 class="product_name">MARLIN 6</h5>
+                                                <p class="card-title">1986 sbl</p>
+                                                <div class="rating">
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                </div>
+                                                <div class="flex align-items-center justify-content-center">
+                                                    <p class="card-text text-center fw-bold">
+                                                        <s class="text-decoration-line-through fw-normal mx-2 small">₹
+                                                            17000.00</s>
+                                                        ₹ 12000.00
+                                                    </p>
+                                                </div>
+    
+                                                <div class="mt-2">
+                                                    <button href="" class="rounded-pill">buy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cardd -->
+                            <div class="card_x">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="d-flex justify-content-between align-items-center offer">
+                                            <span class="text-light px-2 py-1 rounded-pill">20 %
+                                                off
+                                            </span>
+                                            <div class="product_like">
+                                                <img class="product_like_icon" src="../Images/heart.svg" alt="" width="25px">
+                                                <!-- <i class="fa fa-flag fa-3x"></i> -->
+                                                <!-- <i class="fa-light fa-heart"></i> -->
+    
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <img class="product_image" src="https://www.aquantindia.com/wp-content/uploads/2020/05/1754-3.jpg"
+                                                alt="Product Image">
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="card-body text-center">
+                                                <h5 class="product_name">MARLIN 7</h5>
+                                                <p class="card-title">1986 sbl</p>
+                                                <div class="rating">
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                    <span class="bi bi-star-fill active"></span>
+                                                </div>
+                                                <div class="flex align-items-center justify-content-center">
+                                                    <p class="card-text text-center fw-bold">
+                                                        <s class="text-decoration-line-through fw-normal mx-2 small">₹
+                                                            17000.00</s>
+                                                        ₹ 12000.00
+                                                    </p>
+                                                </div>
+    
+                                                <div class="mt-2">
+                                                    <button href="" class="rounded-pill">buy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+    
+    
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="../Images/right_arrow.svg" id="left-arrow-1" alt="" height="20px"
+                            style="margin-bottom: 160px; cursor:pointer;">
+                    </div>
+    
+    
+    
+    
+                    <style>
+                        .card_x {
+      transition: transform 0.5s ease-out;
+    }
+    
+    .card-container {
+      overflow: hidden;
+    }
+    
+                    </style>
+                </div>
+            </div>
 
-        <!-- <div class="banner_image">
-            <img src="https://www.jaquar.com/images/uploaded/Oil%20Bath%20Benefits/Kitchen%20lighting%20pillar/Type%20of%20Wash%20Basin/Pillar%20Banner%20Jan_H2.jpg" alt="" height="981px">
-        </div> -->
+
+
+    
+    <div class="categories d-flex flex-wrap gap-5 justify-content-center" style="padding: 150px 161px; height: 830px; background-color: #FF9803; margin-top: 100px;">
+
+
+
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-05.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Wash Basin</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-06.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>putty</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-07.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Sink</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-08.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>EWC</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-09.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Door</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-10.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Urinal</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-05.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Shower</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-11.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Floor Tiles</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-12.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Interior Paint</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-13.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Wired Basket</span>
+        </div>
+        <div class="flex-column d-flex align-items-center justify-content-center">
+            <img src="./Images/1-14.png" width="188px" height="188px" style="border-radius: 50%;" alt="">
+            <span>Primer</span>
+        </div>
+
+    </div>
+
+    <style>
+        .categories span{
+            font-size: 25px;
+            font-weight: 300;
+        }
+    </style>
+
+
+
+    
     
 
 
@@ -193,6 +628,7 @@ position: relative;
 
 
 
+            <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
