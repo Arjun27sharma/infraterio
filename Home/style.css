@@ -926,6 +926,79 @@ input:focus{
 
 
 
+    /* -----PRODUCT MAIN CARD----- */
+    .card_x .offer span{
+      background-color: rgb(221, 0, 0);
+    }
+  
+    .card_x .product_like{
+     cursor: pointer;
+  }
+  
+  
+    @media screen and (max-width: 3600px) {
+      .card_x{
+        width: 430px;
+        font-size: 30px;
+      }
+  
+      .card_x .offer{
+        font-size: 18px;
+      }
+  
+      .card_x .product_image{
+        width: 430px;
+        height: 430px;
+      }
+  
+      .card_x .product_name{
+        font-size: 30px;
+      } 
+    }
+  
+    @media screen and (max-width: 2500px) {
+      .card_x{
+        width: 322px;
+        font-size: 20px;
+      }
+  
+      .card_x .offer{
+        font-size: 16px;
+      }
+  
+      .card_x .product_image{
+        width: 322px;
+        height: 322px;
+      }
+  
+      .card_x .product_name{
+        font-size: 30px;
+      }
+    }
+  
+    @media screen and (max-width: 1900px) {
+        .card_x{
+          width: 230px;
+          font-size: 18px;
+        }
+  
+        .card_x .offer{
+          font-size: 14px;
+        }
+  
+        .card_x .product_image{
+          width: 230px;
+          height: 230px;
+        }
+  
+        .card_x .product_name{
+          font-size: 22px;
+        }
+    }
+
+
+
+
 
 
   .filter_class li>a{

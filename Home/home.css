@@ -476,3 +476,79 @@ position: relative;
 
 
 
+
+
+
+
+/* popular brands  */
+
+@media screen  and (max-width : 3600px) {
+.popular_brands{
+    padding: 0 210px;
+ }   
+ .popular_brands_heading h1{
+    font-size: 145px;
+    font-family: 'DM',  sans-serif;
+ }
+}
+@media screen and (max-width : 2500px) {
+.popular_brands{
+    padding: 0 161px;
+ } 
+ .popular_brands_heading h1{
+    font-size: 109px;
+    font-family: 'DM',  sans-serif;
+ }
+ .popular_brands_heading span{
+    font-size: 22px;
+    font-weight: 300;
+    flex: 6;
+ }  
+}
+@media screen and (max-width : 1900px) {
+.popular_brands{
+    padding: 0 114px;
+ }   
+ .popular_brands_heading h1{
+    font-size: 70px;
+    font-family: 'DM',  sans-serif;
+    flex:5;
+ }
+ .popular_brands_heading span{
+    font-size: 16px;
+    font-weight: 300;
+    flex: 6;
+ }
+ .popular_brands_image_left img{
+     width: 500px;
+     /* height: 670px; */
+ }
+ .popular_brands_images{
+    margin-top: 40px;
+ }
+ .popular_brands_image_right img{
+    width: 598px;
+    
+
+    /* height: 300px; */
+    /* aspect-ratio: 1/1; */
+ }
+ 
+}
+
+
+.brand_partners{
+    background-color: rgb(240, 240, 240);
+    @media screen and (max-width : 3600px) {
+        padding: 180px 210px;
+        
+    }
+    @media screen and (max-width : 2500px) {
+        padding: 150px 161px;
+    }
+    @media screen and (max-width : 1900px) {
+        padding: 100px 114px;
+    }
+}
+
+
