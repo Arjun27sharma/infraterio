@@ -538,7 +538,7 @@ position: relative;
 
 
 .brand_partners{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(233, 233, 233);
     @media screen and (max-width : 3600px) {
         padding: 180px 210px;
         
@@ -550,5 +550,73 @@ position: relative;
         padding: 100px 114px;
     }
 }
+.claims{
+    @media screen and (max-width : 3600px) {
+        padding: 180px 210px;
+        
+    }
+    @media screen and (max-width : 2500px) {
+        padding: 150px 161px;
+    }
+    @media screen and (max-width : 1900px) {
+        padding: 100px 114px;
+    }
+}
+
+
+@media screen and (max-width : 3600px) {
+    
+    .claim_card{
+        background-color: #FCECD6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 22%;
+        padding: 30px 0;
+    }
+    .claim_card span{
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width : 2500px) {
+    .claim_card{
+        background-color: #FCECD6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 22%;
+        padding: 30px 0;
+    }
+    .claim_card span{
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width : 1900px) {
+    .claim_card{
+        background-color: #FCECD6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 22%;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    .claim_card span{
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
 
 
