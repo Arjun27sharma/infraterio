@@ -45,6 +45,7 @@ $(document).ready(function() {
       }
       if (currentPosition1 === 0) {
         $('#left-arrow-1').prop('disabled', true);
+        // $('#left-arrow-1').prop('display', 'none');
       }
     });
   
@@ -97,3 +98,6 @@ $(document).ready(function() {
   });
   
   
+
+
+
