@@ -638,77 +638,6 @@ input:focus{
 
 
 
-  /* -----PRODUCT MAIN CARD----- */
-  .card_x .offer span{
-    background-color: rgb(221, 0, 0);
-  }
-
-  .card_x .product_like{
-   cursor: pointer;
-}
-
-
-  @media screen and (max-width: 3600px) {
-    .card_x{
-      width: 430px;
-      font-size: 30px;
-    }
-
-    .card_x .offer{
-      font-size: 18px;
-    }
-
-    .card_x .product_image{
-      width: 430px;
-      height: 430px;
-    }
-
-    .card_x .product_name{
-      font-size: 30px;
-    } 
-  }
-
-  @media screen and (max-width: 2500px) {
-    .card_x{
-      width: 323px;
-      font-size: 20px;
-    }
-
-    .card_x .offer{
-      font-size: 16px;
-    }
-
-    .card_x .product_image{
-      width: 323px;
-      height: 323px;
-    }
-
-    .card_x .product_name{
-      font-size: 30px;
-    }
-  }
-
-  @media screen and (max-width: 1900px) {
-      .card_x{
-        width: 230px;
-        font-size: 18px;
-      }
-
-      .card_x .offer{
-        font-size: 14px;
-      }
-
-      .card_x .product_image{
-        width: 230px;
-        height: 230px;
-      }
-
-      .card_x .product_name{
-        font-size: 22px;
-      }
-  }
-
-
 
   /* -----REVIEWS AND RATINGS----- */
 
@@ -1065,3 +994,99 @@ input:focus{
 
 
 
+
+
+
+
+
+
+    /* -----PRODUCT MAIN CARD----- */
+  
+  .card_y{
+    cursor: pointer;
+      padding: 0;
+  }
+  
+  
+  
+    @media screen and (max-width: 3600px) {
+      .card_y{
+        width: 404px;
+        font-size: 30px;
+        background-color: peachpuff;
+        overflow: hidden;
+        height: 100%;
+        padding-bottom: 50px;
+      }
+  
+  
+      .card_y .product_image{
+        width: 404px;
+        height: 404px;
+      }
+  
+      .card_y .product_name{
+        font-size: 30px;
+      } 
+    }
+  
+    @media screen and (max-width: 2500px) {
+      .card_y{
+        width: 303px;
+        font-size: 18px;
+        background-color: peachpuff;
+        overflow: hidden;
+        height: 100%;
+        padding-bottom: 40px;
+      }
+  
+      .card_y .offer{
+        font-size: 16px;
+      }
+  
+      .card_y .product_image{
+        width: 303px;
+        height: 303px;
+      }
+  
+      .card_y .product_name{
+        font-size: 24px;
+      }
+    }
+  
+    @media screen and (max-width: 1900px) {
+        .card_y{
+          width: 215px;
+          font-size: 16px;
+          background-color: peachpuff;
+          overflow: hidden;
+          height: 100%;
+          padding-bottom: 20px;
+        }
+  
+
+        .card_y .product_image{
+          width: 215px;
+          height: 215px;
+        }
+  
+        .card_y .product_name{
+          font-size: 18px;
+        }
+    }
+  
+  
+  
+    .card_y button:hover{
+      background-color: #f18d00;
+      color: white;
+      border: 1px white solid;
+  }
+  
+  .card_y button{
+    border: 1px solid black; 
+    padding: 3px 40px;
+    /* background-color: white; */
+    background-color: transparent;
+    transition: 0.2s;
+  }

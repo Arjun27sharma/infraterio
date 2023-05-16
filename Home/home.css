@@ -363,4 +363,116 @@ position: relative;
         width: 498px;
         height: 213px;
     }
+    
   }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width : 3600px) {
+    .new_arrival{
+        margin: 120px 0;
+
+    }
+    .new_arrival_image{
+        position: relative;
+    }
+    .new_arrival_cards{
+        position: absolute;
+        top: 0;
+        right: 250px;
+        top: 50%;
+        transform: translate(0, -50%);
+        /* gap: 100px; */
+    }
+    .new_arrival_image img{
+        width: 1227px;
+        height: 1067px;
+    }
+    .view_all_button button{
+        border-radius : 20px;
+        background-color : orange;
+        padding: 8px 80px;
+        font-size: 35px;
+        border: none;
+        color: white;
+        bottom: 50px;
+        position: absolute;
+        right: 250px;
+    }
+  }
+  @media screen and (max-width : 2500px) {
+    .new_arrival{
+        margin: 120px 0;
+
+    }
+    .new_arrival_image{
+        position: relative;
+    }
+    .new_arrival_cards{
+        position: absolute;
+        top: 0;
+        right: 180px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .new_arrival_image img{
+        width: 920px;
+        height: 800px;
+    }
+    .view_all_button button{
+        border-radius : 20px;
+        background-color : orange;
+        padding: 8px 40px;
+        font-size: 24px;
+        border: none;
+        color: white;
+        bottom: 40px;
+        position: absolute;
+        right: 180px;
+    }
+  }
+  @media screen and (max-width : 1900px) {
+    .new_arrival{
+        margin: 80px 0;
+
+    }
+    .new_arrival_image{
+        position: relative;
+    }
+    .new_arrival_cards{
+        position: absolute;
+        top: 0;
+        right: 150px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .new_arrival_image img{
+        width: 654px;
+        height: 570px;
+    }
+    .view_all_button button{
+        border-radius : 20px;
+        background-color : orange;
+        font-size: 18px;
+        padding: 8px 40px;
+        border: none;
+        color: white;
+        bottom: 20px;
+        position: absolute;
+        right: 150px;
+    }
+  }
+
+
+
+
+
+
+
+
