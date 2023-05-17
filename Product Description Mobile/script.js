@@ -1,3 +1,26 @@
+$(document).ready(function() {
+  $('.menu-trigger').click(function() {
+    $('.menu-trigger').removeClass('active');
+    $(this).addClass('active');
+    $('.mega-menu').removeClass('menu-open');
+    var target = $(this).data('target');
+    $(target).addClass('menu-open');
+
+    console.log(target)
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.nav-container').length) {
+      $('.menu-trigger').removeClass('active');
+      $('.mega-menu').removeClass('menu-open');
+    }
+  });
+});
+
+
+
+
+
 
 const circles = document.querySelectorAll('.color_circle');
 

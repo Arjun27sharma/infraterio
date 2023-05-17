@@ -99,26 +99,136 @@
         </nav>
 
         <!-- NAVBAR SUB note: done-->
-        <div class="subnav_x">
+        <div class="subnav_x position-relative">
             <div class="row d-flex align-items-center justify-content-between sub rounded-pill ">
 
 
-                <div class="subnav_container d-flex align-items-center justify-content-center">
+                <div class="subnav_container d-flex align-items-center justify-content-center nav-container">
                     <div class="links_container d-flex justify-content-center align-items-center">
-                        <a href="#">Home</a>
-                        <a href="#">Sanitarywear</a>
-                        <a href="#">Tiles</a>
-                        <a href="#">Paints</a>
-                        <a href="#">Kitchen</a>
-                        <a href="#">Plywood/WPC</a>
-                        <a href="#">Hardware</a>
-                        <a href="#">Track Order</a>
-                        <a href="#">About</a>
+                        <span class="menu-trigger" data-target="#home">Home</span>
+                        <span class="menu-trigger" data-target="#sanitarywear">Sanitarywear</span>
+                        <span class="menu-trigger" data-target="#tiles">Tiles</span>
+                        <span class="menu-trigger" data-target="#paints">Paints</span>
+                        <span class="menu-trigger" data-target="#kitchen">Kitchen</span>
+                        <span class="menu-trigger" data-target="#wpc">Plywood/WPC</span>
+                        <span class="menu-trigger" data-target="#hardware">Hardware</span>
+                        <span class="menu-trigger" data-target="#track_order">Track Order</span>
+                        <span class="menu-trigger" data-target="#about">About</span>
                     </div>
                     <div class="help-us-container">
                         <a href="#">Help Us</a>
                     </div>
                 </div>
+
+
+
+                <div class="mega-menu" id="sanitarywear">
+                    <div class="row" style="background-color: white; padding: 0 40px;">
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="#">EWC</a></li>
+                                <li><a href="#">Wash Basin</a></li>
+                                <li><a href="#">Urinals</a></li>
+                                <li><a href="#">Cisterns</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="#">Showers</a></li>
+                                <li><a href="#">Health Faucets</a></li>
+                                <li><a href="#">Bath Accessories</a></li>
+                                <li><a  href="#">Faucets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <style>
+                    .nav-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: gray;
+                /* cursor: pointer; */
+                }
+                
+                .links-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+                gap: 24px;
+                }
+                
+                .links-container span {
+                    color: rgb(42, 42, 42);
+                font-size: 12px;
+                cursor: pointer;
+                }
+                
+                .links-container span:hover {
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                }
+                
+                .mega-menu {
+                position: absolute;
+
+                top: 42px;
+                left: 0;
+                right: 0;
+                /* width: 500px; */
+                /* width: 500px; */
+                padding: 0 124px;
+                /* width: 100%; */
+                margin: auto;
+                background-color: transparent;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                /* padding: 20px; */
+                border-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                /* display: none; */
+                }
+                
+                
+                .mega-menu .row {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                }
+                
+                
+                .mega-menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                }
+                
+                .mega-menu ul li {
+                margin-bottom: 8px;
+                font-size: 20px;
+                font-weight: 100;
+                }
+
+                .mega-menu a{
+                    font-weight: 200px;
+                }
+
+                .mega-menu a:hover{
+                    font-weight: normal;
+                    color: black;
+                }
+
+                
+                
+                .menu-open {
+                display: block;
+                }
+                
+                </style>
 
                 <style>
                     .links_container {
