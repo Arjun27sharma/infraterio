@@ -111,17 +111,27 @@ input:focus{
     .header_x, .nav_x, .subnav_x, .sections_wrapper, footer{
       padding: 0 210px;
     }
+    .nav_x{
+      height: 39px;
+    }
   }
 
   @media screen and (max-width: 2500px) {
     .header_x, .nav_x, .subnav_x, .sections_wrapper, footer{
       padding: 0 161px;
     }
+    .nav_x{
+      height: 39px;
+    }
   }
 
   @media screen and (max-width: 1900px) {
     .header_x, .nav_x, .subnav_x, .sections_wrapper, footer{
       padding: 0 113px;
+    }
+    .nav_x{
+      height: 39px;
+      margin-top: 29px;
     }
   }
 
@@ -159,7 +169,7 @@ input:focus{
   @media screen and (max-width: 1900px) {
       .header_x{
         font-size: 18px;
-        height: 58px;
+        height: 54px;
       }
       .header_social_icons img{
         width: 18px;

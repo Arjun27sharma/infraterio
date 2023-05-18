@@ -129,7 +129,7 @@ position: relative;
 
     }
     .trending_product_text h1{
-        font-size: 145px;
+        font-size: 120px;
         font-family: 'DM', sans-serif;
         color: white;
     }
@@ -163,7 +163,7 @@ position: relative;
 
     }
     .trending_product_text h1{
-        font-size: 109px;
+        font-size: 80px;
         font-family: 'DM', sans-serif;
         color: white;
     }
@@ -197,7 +197,7 @@ position: relative;
 
     }
     .trending_product_text h1{
-        font-size: 77px;
+        font-size: 56px;
         font-family: 'DM', sans-serif;
         color: white;
     }
@@ -224,7 +224,7 @@ position: relative;
 
   @media screen and (max-width: 3600px) {
     .categories{
-        padding: 100px 210px;
+        padding: 180px 210px;
         background-color: #FF9803;
         margin-top: 100px;
         height: 1108px;
@@ -237,14 +237,14 @@ position: relative;
     }
     .categories span{
         font-size: 33px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
   }
 
   @media screen and (max-width: 2500px) {
     .categories{
-        padding: 90px 161px;
+        padding: 140px 161px;
         background-color: #FF9803;
         margin-top: 100px;
         height: 830px;
@@ -257,13 +257,13 @@ position: relative;
     }
     .categories span{
         font-size: 25px;
-        font-weight: 300;
+        font-weight: 400;
     }
   }
 
   @media screen and (max-width: 1900px) {
     .categories{
-        padding: 65px 114px;
+        padding: 100px 114px;
         background-color: #FF9803;
         margin-top: 100px;
         height: 590px;
@@ -276,7 +276,7 @@ position: relative;
     }
     .categories span{
         font-size: 17px;
-        font-weight: 300;
+        font-weight: 400;
     }
   }
 
@@ -300,8 +300,8 @@ position: relative;
         transform: translate(-50%, -50%);
         font-family: 'DM', sans-serif;
         padding: 10px;
-        font-size: 74px;
-
+        font-size: 69px;
+        letter-spacing: 2px;
         color: white;
         font-weight: bold;
     }
@@ -327,8 +327,8 @@ position: relative;
         transform: translate(-50%, -50%);
         font-family: 'DM', sans-serif;
         padding: 10px;
-        font-size: 56px;
-
+        font-size: 50px;
+        letter-spacing: 2px;
         color: white;
         font-weight: bold;
     }
@@ -354,8 +354,8 @@ position: relative;
         transform: translate(-50%, -50%);
         font-family: 'DM', sans-serif;
         padding: 10px;
-        font-size: 39px;
-
+        font-size: 34px;
+        letter-spacing: 2px;
         color: white;
         font-weight: bold;
     }
@@ -448,7 +448,7 @@ position: relative;
     .new_arrival_cards{
         position: absolute;
         top: 0;
-        right: 150px;
+        right: 114px;
         top: 50%;
         transform: translate(0, -50%);
     }
@@ -465,7 +465,7 @@ position: relative;
         color: white;
         bottom: 20px;
         position: absolute;
-        right: 150px;
+        right: 114px;
     }
   }
 
