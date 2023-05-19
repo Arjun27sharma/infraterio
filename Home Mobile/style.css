@@ -21,8 +21,6 @@
 
 
 
-
-
 /* Change width of vertical scrollbar */
 ::-webkit-scrollbar {
   width: 1.5px;
@@ -111,36 +109,17 @@ input:focus{
     .header_x, .nav_x, .subnav_x, .sections_wrapper, footer{
       padding: 0 210px;
     }
-    .nav_x{
-      height: 39px;
-    }
-    .nav_x .nav_right img{
-      width: 28px;
-    }
   }
 
   @media screen and (max-width: 2500px) {
     .header_x, .nav_x, .subnav_x, .sections_wrapper, footer{
       padding: 0 161px;
     }
-    .nav_x{
-      height: 39px;
-    }
-    .nav_x .nav_right img{
-      width: 28px;
-    }
   }
 
   @media screen and (max-width: 1900px) {
     .header_x, .nav_x, .subnav_x, .sections_wrapper, footer{
       padding: 0 113px;
-    }
-    .nav_x_right{
-      height: 39px;
-      margin-top: 29px;
-    }
-    .nav_x .nav_right img{
-      width: 28px;
     }
   }
 
@@ -178,7 +157,7 @@ input:focus{
   @media screen and (max-width: 1900px) {
       .header_x{
         font-size: 18px;
-        height: 54px;
+        height: 58px;
       }
       .header_social_icons img{
         width: 18px;
@@ -306,7 +285,7 @@ input:focus{
       font-size : 36px;
     }
     .about_product .address img{
-      width: 42px;
+      width: 48px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -347,7 +326,7 @@ input:focus{
       font-size : 27px;
     }
     .about_product .address img{
-      width: 32px;
+      width: 40px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -388,7 +367,7 @@ input:focus{
       font-size : 19px;
     }
     .about_product .address img{
-      width: 22px;
+      width: 28px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -405,10 +384,6 @@ input:focus{
 
     .product_info{
       flex: 1;
-    }
-
-    .color_circle{
-      cursor: pointer;
     }
 
     @media screen and (max-width: 3600px) {
@@ -468,9 +443,6 @@ input:focus{
       }
       .recommended_product_card{
         font-size: 25px;
-      }
-      .recommended_products{
-        height: 900px;
       }
       .recommended_products h3{
         font-size: 48px;
@@ -543,9 +515,6 @@ input:focus{
       .recommended_product_card{
         font-size: 18px;
       }
-      .recommended_products{
-        height: 800px;
-      }
       .recommended_products h3{
         font-size: 30px;
       }
@@ -617,9 +586,6 @@ input:focus{
       .recommended_product_card{
         font-size: 15px;
       }
-      .recommended_products{
-        height: 680px;
-      }
       .recommended_products h3{
         font-size: 26px;
       }
@@ -671,9 +637,6 @@ input:focus{
 
 
 
-  .card_x{
-    cursor: pointer;
-  }
 
   /* -----PRODUCT MAIN CARD----- */
   .card_x .offer span{
@@ -1089,7 +1052,6 @@ input:focus{
   position: relative;
   display: inline-block;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .small_img:hover{
