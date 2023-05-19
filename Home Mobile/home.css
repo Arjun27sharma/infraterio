@@ -381,7 +381,7 @@ input:focus{
   border-radius : 20px;
   background-color : orange;
   font-size: 18px;
-  padding: 6px 30px;
+  padding: 5px 30px;
   border: none;
   color: white;
 
@@ -429,6 +429,56 @@ padding: 3px 40px;
 background-color: transparent;
 transition: 0.2s;
 }
+
+
+
+
+.popular_brands{
+  padding: 0 16px;
+  margin: 50px 0;
+  text-align: center;
+}   
+.popular_brands_heading h1{
+  font-size: 30px;
+  font-family: 'DM',  sans-serif;
+  
+}
+.popular_brands_heading span{
+  /* padding: 0 20px; */
+  width: 80%;
+  font-size: 14px;
+  font-weight: 300;
+  flex: 6;
+}
+.popular_brands_image_left img{
+   /* width: 500px; */
+   /* width: 50%; */
+   width: 300px;
+   /* height: 670px; */
+}
+.popular_brands_images{
+  margin-top: 40px;
+}
+.popular_brands_image_right img{
+  /* width: 598px;/ */
+  width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* FOOTER CSS SECTION */
 
