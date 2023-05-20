@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    // HTML
+<video id="localVideo" autoplay></video>
+
+// JavaScript
+<script>
+const videoElement = document.getElementById('localVideo');
+const mediaRecorder = new MediaRecorder(localStream); // localStream is the webcam stream obtained using getUserMedia API
+
+const flvPlayer = flvjs.createPlayer({
+  type: 'flv',
+  url: 'rtmp://34.131.220.155/live/stream', // Replace with the RTMP URL of your Google Cloud instance
+});
+
+flvPlayer.attachMediaElement(videoElement);
+flvPlayer.load();
+
+mediaRecorder.ondataavailable = (event) => {
+  // Convert Blob to ArrayBuffer
+  const reader = new FileReader();
+  reader.onload = () => {
+    const buffer = reader.result;
+    // Send the buffer to the RTMP server
+    // You can use WebSocket or any suitable method to send the buffer
+  };
+  reader.readAsArrayBuffer(event.data);
+};
+
+mediaRecorder.start(1000); // Start capturing and encoding video frames every 1 second
+
+</script>
+    
+</body>
+</html>

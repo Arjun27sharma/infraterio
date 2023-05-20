@@ -303,7 +303,6 @@ position: relative;
         font-size: 69px;
         letter-spacing: 2px;
         color: white;
-        font-weight: bold;
     }
     .category-item img{
         width: 933px;
@@ -330,7 +329,6 @@ position: relative;
         font-size: 50px;
         letter-spacing: 2px;
         color: white;
-        font-weight: bold;
     }
     .category-item img{
         width: 700px;
@@ -357,7 +355,6 @@ position: relative;
         font-size: 34px;
         letter-spacing: 2px;
         color: white;
-        font-weight: bold;
     }
     .category-item img{
         width: 498px;
@@ -382,9 +379,25 @@ position: relative;
     }
     .offer_banner_text{
         position: absolute;
-        right: 10px;
-        bottom: 50px;
+        right: 100px;
+        bottom: 70px;
+        color: white;
     }
+
+    .offer_banner_text .yellow_bold{
+        font-weight: bold;
+        color: yellow;
+    }
+
+    .offer_banner_text h1{
+        font-size: 50px;
+    }
+
+    .offer_banner_text .small_text{
+        font-weight: 300;
+        font-size: 32px;
+    }
+
     .offer_banner .offer_banner_text button{
         position: absolute;
         right: 0;
@@ -393,7 +406,7 @@ position: relative;
         border: none;
         color: white;
         font-size: 18px;
-        padding: 6px 25px;
+        padding: 8px 35px;
         
     }
 }
