@@ -1,19 +1,19 @@
   /* SETTING PADDINGS */
 
   @media screen and (max-width: 3600px) {
-    .who_we_are, .our_story, .team, .customer_reviews{
+    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners{
       padding: 0 210px;
     }
   }
 
   @media screen and (max-width: 2500px) {
-    .who_we_are, .our_story, .team, .customer_reviews{
+    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners{
         padding: 0 161px;
       }
   }
 
   @media screen and (max-width: 1900px) {
-    .who_we_are, .our_story, .team, .customer_reviews{
+    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners{
         padding: 0 113px;
       }
   }
@@ -191,6 +191,43 @@
       }
       
 
+
+
+      .brand_partners{
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      .brand_partners h1{
+        font-family: 'DM', sans-serif;
+        font-size: 45px;
+      }
+
+
+
+
+
+      .more_details{
+        position: relative;
+      }
+
+      .more_details button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-size: 24px;
+        font-family: 'DM',sans-serif;
+        padding: 8px 30px;
+      }
 
 
 
