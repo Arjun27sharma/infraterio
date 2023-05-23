@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="product.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        footer a {
+            font-size: 14px;
+            font-weight: 300;
+            color: rgb(46, 46, 46);
+
+        }
+    </style>
+
+    <!-- HEADER -->
+    <div class="bg-color d-flex justify-content-between " style="padding: 0 16px; font-size: 14px; height: 50px;">
+        <div class="d-flex align-items-center justify-content-end">
+            <img src="../Images/call.svg" alt="" width="20px">
+            <a href="tel:1234567890" class="text-dark" style="text-decoration: none; font-weight: 300;">Call Us
+                <span class="fw-bold">+1 234 56 78910</span></a>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <a href="mailto:info@example.com" class="text-dark"
+                style="text-decoration: none; font-weight: 300;">infraterio@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- NAVBAR MAIN -->
+    <nav class="d-flex flex-column bg-white" style="margin-top: 18px; margin-bottom: 10px; padding: 0 16px;">
+        <div class="d-flex justify-content-between align-items-center ">
+
+            <div class="" style="margin-right: 12px;">
+                <img src="../Images/Menu.svg" width="20px" alt="">
+            </div>
+
+
+            <div class="" style="flex: 1;">
+                <a class="navbar-brand" href="#">
+                    <img src="../Images/logo.svg" width="120px" class="d-inline-block align-top" alt="Logo">
+                </a>
+            </div>
+
+
+
+
+            <div class="d-flex align-items-center justify-content-end gap-3">
+                <div class="">
+                    <a class="text-dark" href="#" style="font-weight: bold; text-decoration: none; font-size: 14px;">
+                        sign in
+                    </a>
+                </div>
+
+                <div class="d-flex justify-content-end align-items-center gap-3">
+
+                    <div class="nav-item">
+                        <a class="" href="#">
+                            <img src="../Images/bell.png" width="22px" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="" href="#">
+                            <img src="../Images/heart.png" width="22px" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="" href="#">
+                            <img src="../Images/cart.png" width="22px" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="" href="#">
+                            <img src="../Images/profile.png" width="22px" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div style="flex:1; margin-top: 15px; height: 30px;">
+            <div class=" px-4 col-12 rounded-pill bg-gray-700 search-box d-flex align-items-center justify-content-between"
+                style="height:30px">
+                <input class="outline-none border-0 col-11 search-box" type="text" style="color: white; height: 20px;"
+                    placeholder="Search" onfocus="this.placeholder=''">
+                <img src="../Images/search.svg" alt="" width="24px" style="margin-right: 10px;">
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR SUB -->
+
+
+    <div class="" style="margin-top: 15px; margin-bottom: 20px; height: 30px; padding: 0 18px;">
+        <div class="row d-flex align-items-center justify-content-between navbar-sub rounded-pill " style="height: 100%;">
+            <div class="nav-container">
+                <div class="links-container">
+                    <span class="menu-trigger" data-target="#sanitarywear">Sanitarywear</span>
+                    <span class="menu-trigger" data-target="#tiles">Tiles</span>
+                    <span class="menu-trigger" data-target="#paints">Paints</span>
+                    <span class="menu-trigger" data-target="#kitchen">Kitchen</span>
+                    <span class="menu-trigger" data-target="#plywood">Plywood/WPC</span>
+                    <span class="menu-trigger" data-target="#hardware">Hardware</span>
+                </div>
+                <div class="mega-menu" id="sanitarywear">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="#">EWC</a></li>
+                                <li><a href="#">Wash Basin</a></li>
+                                <li><a href="#">Urinals</a></li>
+                                <li><a href="#">Cisterns</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="#">Showers</a></li>
+                                <li><a href="#">Health Faucets</a></li>
+                                <li><a href="#">Bath Accessories</a></li>
+                                <li><a  href="#">Faucets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <style>
+                    .nav-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: gray;
+                }
+                
+                .links-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+                gap: 24px;
+                }
+                
+                .links-container span {
+                    color: rgb(42, 42, 42);
+                font-size: 12px;
+                }
+                
+                .links-container span:hover {
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                }
+                
+                .mega-menu {
+                position: absolute;
+                top: 200px;
+                left: 0;
+                right: 0;
+                width: 93%;
+                margin: auto;
+                background-color: rgb(252, 252, 252);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                /* border-radius: 20px; */
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                display: none;
+                }
+                
+                
+                .mega-menu .row {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                }
+                
+                
+                .mega-menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                }
+                
+                .mega-menu ul li {
+                margin-bottom: 8px;
+                font-size: 20px;
+                font-weight: 100;
+                }
+
+                .mega-menu a{
+                    font-weight: 200px;
+                }
+
+                .mega-menu a:hover{
+                    font-weight: normal;
+                    color: black;
+                }
+
+                
+                
+                .menu-open {
+                display: block;
+                }
+                
+                </style>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="top_banner overflow-hidden">
+        <img src="./Images/banner.png" alt="" height="400px" style="object-fit: cover; margin-right: 0;"/>
+      </div>
+
+
+      <div class="who_we_are">
+        <h1>Who We Are</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit doloribus iure error fugit neque sequi itaque dolore harum ea porro obcaecati sed, debitis ad iusto sint minima nulla consequuntur atque aspernatur perspiciatis! Similique dolore in accusantium velit architecto vero, ratione neque dolorem enim rerum nam ex illo quasi repellat dicta voluptate voluptatum, sint reprehenderit perferendis cumque odio. Atque vitae, ducimusuga tenetur aliquam quasi, culpa expeditapraesentium soluta earum  quia illum voluptates. Ea ullam, asperiores id in iste, voluptatibus unde excepturi eligendi nisi soluta tempora dolorem sed? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio inventore nulla facere nam placeat vitae debitis ex ratione totam eaque, laborum accusantium soluta ducimus praesentium vero magnam accusamus illo numquam.</p>
+
+        <style>
+            .who_we_are{
+                padding: 0 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 50px;
+            }
+            .who_we_are h1{
+                font-family: 'DM' ,sans-serif;
+                
+            }
+            .who_we_are p{
+                font-weight: 300;
+                font-size: 14px;
+                text-align: justify;
+            }
+        </style>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="brand_partners">
+        <h1>Brand Partners</h1>
+    
+        <div class="brand_images">
+          <img src="./Images/brand1.png" alt="">
+          <img src="./Images/brand2.png" alt="">
+          <img src="./Images/brand3.png" alt="">
+          <img src="./Images/brand4.png" alt="">
+          <img src="./Images/brand5.png" alt="">
+          <img src="./Images/brand7.png" alt="">
+          <img src="./Images/brand8.png" alt="">
+          <img src="./Images/brand9.png" alt="">
+          <img src="./Images/brand10.png" alt="">
+          <img src="./Images/brand6.png" alt="">
+        </div>
+      </div>
+
+      <style>
+              .brand_partners{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .brand_partners h1{
+        font-family: 'DM', sans-serif;
+      }
+
+      .brand_images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+      }
+      .brand_images img{
+        width: 80px;
+      }
+      </style>
+    
+    
+    
+      <div class="our_social_platforms">
+    
+        <h1>Our Social Platforms</h1>
+    
+    
+        <div class="social_cards_slider">
+        <div class="social_card">
+          <div class="social_card_image">
+            <img src="../images/instagram_white.svg" alt="" width="40px">
+          </div>
+          <div class="social_card_name">
+            <span>infraterio@facebook.com</span>
+          </div>
+        </div>
+        <div class="social_card">
+          <div class="social_card_image">
+            <img src="../images/instagram_white.svg" alt="" width="40px">
+          </div>
+          <div class="social_card_name">
+            <span>infraterio@facebook.com</span>
+          </div>
+        </div>
+        <div class="social_card">
+          <div class="social_card_image">
+            <img src="../images/linkedin_white.svg" alt="" width="40px">
+          </div>
+          <div class="social_card_name">
+            <span>infraterio@facebook.com</span>
+          </div>
+        </div>
+        <div class="social_card">
+          <div class="social_card_image">
+            <img src="../images/twitter_white.svg" alt="" width="40px">
+          </div>
+          <div class="social_card_name">
+            <span>infraterio@facebook.com</span>
+          </div>
+        </div>
+        <div class="social_card">
+          <div class="social_card_image">
+            <img src="../images/twitter_white.svg" alt="" width="40px">
+          </div>
+          <div class="social_card_name">
+            <span>infraterio@facebook.com</span>
+          </div>
+        </div>
+    
+    
+      </div>
+    
+      </div>
+
+      
+
+
+      <div class="more_details overflow-hidden">
+        <img src="./Images/about page-05.png" alt="" height="350px">
+    
+        <button>
+          More Details
+        </button>
+      </div>
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-FF9803 text-dark mt-5" style="padding-top: 50px; padding-bottom: 20px;">
+
+
+        <div style=" margin: 0 16px;">
+
+
+            <div class="d-flex flex-column justify-content-evenly align-items-center gap-3">
+
+                <div class="w-100">
+
+                    <div class="d-flex justify-content-around align-items-start">
+                        <div class="mb-3 d-flex flex-column gap-2">
+                            <h3 style="font-size: 16px;" class="mb-3">Customer Service</h3>
+                            <div><a href="#">My Account</a></div>
+                            <div><a href="#">Order History</a></div>
+                            <div><a href="#">FAQ</a></div>
+                            <div><a href="#">Specials</a></div>
+                            <div><a href="#">Help Center</a></div>
+                        </div>
+                        <div class="mb-3 d-flex flex-column gap-2">
+                            <h3 style="font-size: 16px;" class="mb-3">Policy</h3>
+                            <div><a href="#">Return Policy</a></div>
+                            <div><a href="#">Terms of Use</a></div>
+                            <div><a href="#">Company</a></div>
+                            <div><a href="#">Privacy</a></div>
+                            <div><a href="#">Security</a></div>
+                        </div>
+                        <div class="mb-3 d-flex flex-column gap-2">
+                            <h3 style="font-size: 16px;" class="mb-3">Why Choose Us</h3>
+                            <div><a href="#">Shopping Guide</a></div>
+                            <div><a href="#">Blog</a></div>
+                            <div><a href="#">Company</a></div>
+                            <div><a href="#">Investor Relations</a></div>
+                            <div><a href="#">Contact Us</a></div>
+                        </div>
+
+
+                    </div>
+
+                    <div>
+                        <hr class="border-0"
+                            style="margin-top: px; margin-bottom: 10px; opacity: 1; border-color: black; height: 0.5px;">
+                    </div>
+                </div>
+
+
+
+
+                <div class=" d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 20px;">
+                        <img src="../Images/logo_dark.svg" width="160px" alt="Logo">
+                    </div>
+
+
+
+
+
+
+
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="d-flex flex-column" style="flex: 1;">
+                            <div class="d-flex gap-1">
+                                <img src="../Images/mobile.svg" alt="" width="20px" height="20px">
+                                <div class="">
+                                    <h3 class="fw-bold" style="font-size: 18px;">+91-9700812822</h3>
+                                    <p style="font-size: 12px; font-weight: 300;">Call Us Now 24/7 Customer Support</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-1">
+                                <img src="../Images/mail.svg" alt="" width="20px" height="20px">
+                                <div style="font-size: 14px; font-weight : 300;">infraterio@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-columnm" style="flex: 1;">
+                            <div class="d-flex gap-1">
+                                <img src="../Images/location.svg" alt="" width="20px" height="20px">
+                                <p style="font-size: 14px; font-weight : 300;">Shakti Nagar Dhal, Near Lekhraj Metro
+                                    Station,
+                                    Indra Nagar -
+                                    Lucknow</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <hr class="border-0"
+                style="margin-top: 30px; margin-bottom: 10px; opacity: 1; border-color: black; height: 0.5px;">
+            <div class="text-center fw-light" style="font-size: 12px;">@2023InfraTerio. All rights reserved AIRPROG
+                PVT.LTD</div>
+
+
+
+
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
