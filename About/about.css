@@ -212,6 +212,7 @@
 
       .more_details{
         position: relative;
+        margin-bottom: 0px;
       }
 
       .more_details button{
@@ -227,10 +228,16 @@
         font-size: 24px;
         font-family: 'DM',sans-serif;
         padding: 8px 30px;
+
       }
 
 
 
+  }
+
+
+  footer{
+    margin-top: 0px;
   }
 
 
