@@ -1,19 +1,19 @@
   /* SETTING PADDINGS */
 
   @media screen and (max-width: 3600px) {
-    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners{
+    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners, .our_social_platforms{
       padding: 0 210px;
     }
   }
 
   @media screen and (max-width: 2500px) {
-    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners{
+    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners, .our_social_platforms{
         padding: 0 161px;
       }
   }
 
   @media screen and (max-width: 1900px) {
-    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners{
+    .who_we_are, .our_story, .team, .customer_reviews, .brand_partners, .our_social_platforms{
         padding: 0 113px;
       }
   }
@@ -211,6 +211,7 @@
 
 
       .more_details{
+        margin-top: 100px;
         position: relative;
         margin-bottom: 0px;
       }
@@ -229,6 +230,46 @@
         font-family: 'DM',sans-serif;
         padding: 8px 30px;
 
+      }
+
+      .our_social_platforms h1{
+        font-family: 'DM', sans-serif;
+        font-size: 45px;
+
+
+        margin-top: 150px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* gap: 50px; */
+      }
+
+
+      .social_cards_slider .social_card_image{
+        background-color: #ff9603;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 125px;
+        width: 205px;
+        margin-top: 50px;
+      }
+
+      .social_card{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+      }
+
+
+      .social_cards_slider{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
 
