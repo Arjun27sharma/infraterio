@@ -206,6 +206,17 @@
         font-size: 45px;
       }
 
+      .brand_images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+      }
+      .brand_images img{
+        width: 180px;
+      }
+
 
 
 
