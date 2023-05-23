@@ -434,7 +434,7 @@ transition: 0.2s;
 
 
 .popular_brands{
-  padding: 0 16px;
+  /* padding: 0 16px; */
   margin: 50px 0;
   text-align: center;
 }   
@@ -452,16 +452,20 @@ transition: 0.2s;
 }
 .popular_brands_image_left img{
    /* width: 500px; */
-   /* width: 50%; */
-   width: 300px;
+   width: 100%;
+   /* width: 300px; */
    /* height: 670px; */
+}
+.popular_brands_image_left, .popular_brands_image_right{
+  width: 50%;
 }
 .popular_brands_images{
   margin-top: 40px;
+  /* padding: 0; */
 }
 .popular_brands_image_right img{
-  /* width: 598px;/ */
-  width: 300px;
+  width: 100%;
+  /* width: 300px; */
 }
 
 

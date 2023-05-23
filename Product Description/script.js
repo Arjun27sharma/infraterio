@@ -13,6 +13,13 @@ circles.forEach(circle => {
 });
 
 
+const like = document.getElementsByClassName('product_like_icon')
+
+like.forEach(like => {
+  like.addEventListener('click', () => {
+    like.src = 'images/like.png'
+  })
+})
 
 
 const tags = document.querySelectorAll('.product_details_tag');
