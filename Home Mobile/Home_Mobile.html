@@ -245,7 +245,7 @@
 
 
 
-<div class="trending_product">
+<div class="trending_product mb-3">
 
     <div class="trending_product_text d-flex flex-column align-items-center justify-content-center">
         <h1>Trending Products</h1>
@@ -264,11 +264,12 @@
 
 
 
-    <div class="row m-0 p-0 align-items-center mb-5 mt-5">
+    <div style="margin: 80px 0;" class="row
+    align-items-center">
 
 
         <div class="card_p_page col-6 p-0" style="font-size: 16px; border: 0.2px solid gray;">
-            <span style="font-weight: 300; font-size: 12px; background-color: #d57c00; color: white; padding: 3px 8px; position: absolute;z-index: 2;">Bestseller</span>
+
             <div class="p-0 mb-3 border-0">
                 <div class="row g-0">
 
@@ -339,7 +340,6 @@
             </div>
         </div>
         <div class="card_p_page col-6 p-0" style="font-size: 16px; border: 0.2px solid gray;">
-            <span style="font-weight: 300; font-size: 12px; background-color: #159d00; color: white; padding: 5px 10px; position: absolute;z-index: 2;">Trending</span>
             <div class="p-0 mb-3 border-0">
                 <div class="row g-0">
 
@@ -504,8 +504,72 @@
 
 
 
-    <div>
-        <img src="./Images/offer-banner.jpg" width="100%" alt="">
+
+    <div class="offer_banner">
+        <div class="offer_banner_image">
+            <img src="./Images/offer-banner.jpg" width="100%" alt="" height="130px" style="object-fit: cover;">
+
+
+
+            <div class="offer_banner_text">
+                <h1><span class="yellow_bold">Huge offers</span> & <span class="yellow_bold">Big Deals</span>  <br> <span class="small_text">in all</span> Sanitary Products</h1>
+            </div>
+        </div>
+
+
+
+
+        <div class="offer_banner_button ">
+            <button>Get The Deal Now</button>
+        </div>
+
+
+            <style>
+                .offer_banner{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+    .offer_banner_image{
+        position: relative;
+    }
+    .offer_banner_text{
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        color: white;
+    }
+
+    .offer_banner_text .yellow_bold{
+        font-weight: bold;
+        color: yellow;
+    }
+
+    .offer_banner_text h1{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .offer_banner_text .small_text{
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .offer_banner_button button{
+        /* position: absolute; */
+        right: 0;
+        background-color: red;
+        border-radius: 18px;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding: 6px 15px;
+        
+    }
+            </style>
+       
     </div>
 
 
@@ -633,6 +697,19 @@
 
         </div>
     </div>
+
+
+
+
+
+    <div class="banner_wood position-relative" style="margin-top: 100px;">
+        <img src="./Images/banners-27.jpg" alt="" width="100%">
+
+        <div class="position-absolute text-white" style="left: 20px; width: 60%; bottom: 0px;">
+            <p>Search the <br> Large Varieties & Designs <br><span>of your </span>Plywood/WPC</p>
+        </div>
+    </div>
+
 
 
 

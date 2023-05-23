@@ -444,28 +444,24 @@ transition: 0.2s;
   
 }
 .popular_brands_heading span{
-  /* padding: 0 20px; */
   width: 80%;
   font-size: 14px;
   font-weight: 300;
   flex: 6;
 }
 .popular_brands_image_left img{
-   /* width: 500px; */
+   height: 256px;
    width: 100%;
-   /* width: 300px; */
-   /* height: 670px; */
 }
+
 .popular_brands_image_left, .popular_brands_image_right{
   width: 50%;
 }
 .popular_brands_images{
   margin-top: 40px;
-  /* padding: 0; */
 }
 .popular_brands_image_right img{
   width: 100%;
-  /* width: 300px; */
 }
 
 
