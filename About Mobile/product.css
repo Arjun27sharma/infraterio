@@ -224,6 +224,19 @@ input:focus{
 
 
 
+.customer_reviews{
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.customer_reviews h1{
+  font-family: 'DM', sans-serif;
+  font-size: 45px;
+}
+
 
 
 .more_details{

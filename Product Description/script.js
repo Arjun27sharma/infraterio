@@ -11,7 +11,7 @@ circles.forEach(circle => {
     circle.classList.add('selected');
   });
 });
-
+ 
 
 
 
@@ -36,9 +36,11 @@ $(document).ready(function() {
   
     // Disable left arrow initially
     $('#left-arrow-1').prop('disabled', true);
+    $('#left-arrow-1').hide();
   
     // Move cards left
     $('#left-arrow-1').click(function() {
+      $('#right-arrow-1').show();
       if (currentPosition1 < 0) {
         currentPosition1 += 2*cardWidth1;
         cards1.css('transform', `translateX(${currentPosition1}px)`);
@@ -46,18 +48,22 @@ $(document).ready(function() {
       }
       if (currentPosition1 === 0) {
         $('#left-arrow-1').prop('disabled', true);
+        $('#left-arrow-1').hide();
       }
     });
   
     // Move cards right
     $('#right-arrow-1').click(function() {
+      $('#left-arrow-1').show();
       if (currentPosition1 > maxPosition1) {
         currentPosition1 -= 2*cardWidth1;
         cards1.css('transform', `translateX(${currentPosition1}px)`);
         $('#left-arrow-1').prop('disabled', false);
+        
       }
       if (currentPosition1 === maxPosition1) {
         $('#right-arrow-1').prop('disabled', true);
+        $('#right-arrow-1').hide();
       }
     });
   
@@ -70,9 +76,11 @@ $(document).ready(function() {
   
     // Disable left arrow initially
     $('#left-arrow-2').prop('disabled', true);
+    $('#left-arrow-2').hide();
   
     // Move cards left
     $('#left-arrow-2').click(function() {
+      $('#right-arrow-2').show();
       if (currentPosition2 < 0) {
         currentPosition2 += 2*cardWidth2;
         cards2.css('transform', `translateX(${currentPosition2}px)`);
@@ -80,11 +88,13 @@ $(document).ready(function() {
       }
       if (currentPosition2 === 0) {
         $('#left-arrow-2').prop('disabled', true);
+        $('#left-arrow-2').hide();
       }
     });
   
     // Move cards right
     $('#right-arrow-2').click(function() {
+      $('#left-arrow-2').show();
       if (currentPosition2 > maxPosition2) {
         currentPosition2 -= 2*cardWidth2;
         cards2.css('transform', `translateX(${currentPosition2}px)`);
@@ -92,6 +102,7 @@ $(document).ready(function() {
       }
       if (currentPosition2 === maxPosition2) {
         $('#right-arrow-2').prop('disabled', true);
+        $('#right-arrow-2').hide();
       }
     });
 
