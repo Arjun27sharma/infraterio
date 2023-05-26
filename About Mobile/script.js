@@ -66,7 +66,7 @@ tags.forEach(tag => {
 
 $(document).ready(function() {
     // First Slider
-    const cards1 = $('#card-container-1 .card_x');
+    const cards1 = $('.review_card');
     const cardWidth1 = cards1.outerWidth(true);
     const maxPosition1 = -(cardWidth1 * (cards1.length - 3));
     let currentPosition1 = 0;
@@ -135,3 +135,34 @@ $(document).ready(function() {
   });
   
   
+
+
+
+
+
+
+  // customer reviews sectino
+
+
+  $(document).ready(function() {
+    // Get all review cards
+    const reviewCards = $('.review_card');
+
+    // Set the initial active card index
+    let activeCardIndex = 0;
+    reviewCards.eq(activeCardIndex).addClass('active');
+
+    // Handle previous arrow click
+    $('.prev').click(function() {
+      reviewCards.eq(activeCardIndex).removeClass('active');
+      activeCardIndex = (activeCardIndex - 1 + reviewCards.length) % reviewCards.length;
+      reviewCards.eq(activeCardIndex).addClass('active');
+    });
+
+    // Handle next arrow click
+    $('.next').click(function() {
+      reviewCards.eq(activeCardIndex).removeClass('active');
+      activeCardIndex = (activeCardIndex + 1) % reviewCards.length;
+      reviewCards.eq(activeCardIndex).addClass('active');
+    });
+  });
