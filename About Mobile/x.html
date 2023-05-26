@@ -3,65 +3,118 @@
   
     <div class="our_place_slider">
       <div class="place_images">
-        <!-- <img src="./Images/place1.png" alt=""> -->
-        <!-- <img src="./Images/place2.png" alt=""> -->
-        <img src="./Images/place3.png" alt="">
+        <img src="./Images/place3.png" alt="" height="600px">
       </div>
   
       <div class="our_place_slider_points d-flex justify-content-between align-items-center" style="gap: 15px; font-weight: 200;">
         <span class="slider-point">1</span>
         <span class="slider-point">2</span>
         <span class="slider-point">3</span>
-        <!-- <span class="slider-point">4</span>
-        <span class="slider-point">5</span>
-        <span class="slider-point">6</span>
-        <span class="slider-point">7</span>
-        <span class="slider-point">8</span>
-        <span class="slider-point">9</span>
-        <span class="slider-point">10</span> -->
-  
-        <div>
-          <img src="../Images/right_arrow.svg" alt="" class="slider_arrows" width="8px">
-        </div>
       </div>
     </div>
   </div>
   
 
 
-  <script>
-    // Get all the slider points
-const sliderPoints = document.querySelectorAll('.slider-point');
+  <style>
+    .our_place {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
 
-// Get the place images container
+.our_place_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.our_place h1 {
+  font-family: 'DM', sans-serif;
+  font-size: 28px;
+}
+
+.our_place .place_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.our_place .place_images img {
+  width: 100%;
+  height: 600px;
+
+  transition: ease all 1s;
+}
+
+/* Add styling for active slider point */
+.our_place_slider_points .slider-point.active {
+  color: #ff9603;
+}
+
+  </style>
+
+
+
+
+<script>
+
+const sliderPoints = document.querySelectorAll('.slider-point');
 const placeImages = document.querySelector('.place_images');
 
-// Attach click event listener to each slider point
-sliderPoints.forEach((point, index) => {
-  point.addEventListener('click', () => {
-    // Update the active class on the clicked slider point
-    sliderPoints.forEach((point) => {
-      point.classList.remove('active');
-    });
-    point.classList.add('active');
+// Set initial index and add active class to the first slider point
+let currentIndex = 0;
+sliderPoints[currentIndex].classList.add('active');
 
-    // Update the image based on the clicked point index
-    placeImages.innerHTML = `<img src="./Images/place${index + 1}.png" alt="">`;
-  });
-});
+// Function to update the image based on the current index
+const updateImage = () => {
+  placeImages.innerHTML = `<img src="./Images/place${currentIndex + 1}.png" alt="" height="600px">`;
+};
 
-  </script>
+// Function to handle swipe gestures
+const handleSwipe = (direction) => {
+  // Remove active class from the current slider point
+  sliderPoints[currentIndex].classList.remove('active');
 
+  // Update the current index based on the swipe direction
+  if (direction === 'left') {
+    currentIndex = (currentIndex + 1) % sliderPoints.length;
+  } else if (direction === 'right') {
+    currentIndex = (currentIndex - 1 + sliderPoints.length) % sliderPoints.length;
+  }
 
+  // Add active class to the new slider point
+  sliderPoints[currentIndex].classList.add('active');
 
-<style>
-    /* Add styling for active slider point */
-.our_place_slider_points .slider-point.active {
-  font-weight: bold;
-}
+  // Update the image
+  updateImage();
+};
 
-img{
-    height: 600px;
-}
+// Function to handle touch start event
+const handleTouchStart = (event) => {
+  startX = event.touches[0].clientX;
+};
 
-</style>
+// Function to handle touch move event
+const handleTouchMove = (event) => {
+  const currentX = event.touches[0].clientX;
+  const deltaX = currentX - startX;
+
+  // Determine swipe direction based on the change in X coordinate
+  const direction = deltaX < 0 ? 'left' : 'right';
+
+  // Call handleSwipe function with the detected direction
+  handleSwipe(direction);
+};
+
+// Attach touch events to the place images container
+placeImages.addEventListener('touchstart', handleTouchStart);
+placeImages.addEventListener('touchmove', handleTouchMove);
+
+</script>

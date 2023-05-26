@@ -170,23 +170,79 @@ $(document).ready(function() {
 
 
 
-  // Get all the slider points
-const sliderPoints = document.querySelectorAll('.slider-point');
+//   // Get all the slider points
+// const sliderPoints = document.querySelectorAll('.slider-point');
 
-// Get the place images container
+// // Get the place images container
+// const placeImages = document.querySelector('.place_images');
+
+// // Attach click event listener to each slider point
+// sliderPoints.forEach((point, index) => {
+// point.addEventListener('click', () => {
+//   // Update the active class on the clicked slider point
+//   sliderPoints.forEach((point) => {
+//     point.classList.remove('active');
+//   });
+//   point.classList.add('active');
+
+//   // Update the image based on the clicked point index
+//   placeImages.innerHTML = `<img src="./Images/place${index + 1}.png" alt="">`;
+// });
+// });
+
+
+
+
+const sliderPoints = document.querySelectorAll('.slider-point');
 const placeImages = document.querySelector('.place_images');
 
-// Attach click event listener to each slider point
-sliderPoints.forEach((point, index) => {
-point.addEventListener('click', () => {
-  // Update the active class on the clicked slider point
-  sliderPoints.forEach((point) => {
-    point.classList.remove('active');
-  });
-  point.classList.add('active');
+// Set initial index and add active class to the first slider point
+let currentIndex = 0;
+sliderPoints[currentIndex].classList.add('active');
 
-  // Update the image based on the clicked point index
-  placeImages.innerHTML = `<img src="./Images/place${index + 1}.png" alt="">`;
-});
-});
+// Function to update the image based on the current index
+const updateImage = () => {
+  placeImages.innerHTML = `<img src="./Images/place${currentIndex + 1}.png" alt="" height="600px">`;
+};
+
+// Function to handle swipe gestures
+const handleSwipe = (direction) => {
+  // Remove active class from the current slider point
+  sliderPoints[currentIndex].classList.remove('active');
+
+  // Update the current index based on the swipe direction
+  if (direction === 'left') {
+    currentIndex = (currentIndex + 1) % sliderPoints.length;
+  } else if (direction === 'right') {
+    currentIndex = (currentIndex - 1 + sliderPoints.length) % sliderPoints.length;
+  }
+
+  // Add active class to the new slider point
+  sliderPoints[currentIndex].classList.add('active');
+
+  // Update the image
+  updateImage();
+};
+
+// Function to handle touch start event
+const handleTouchStart = (event) => {
+  startX = event.touches[0].clientX;
+};
+
+// Function to handle touch move event
+const handleTouchMove = (event) => {
+  const currentX = event.touches[0].clientX;
+  const deltaX = currentX - startX;
+
+  // Determine swipe direction based on the change in X coordinate
+  const direction = deltaX < 0 ? 'left' : 'right';
+
+  // Call handleSwipe function with the detected direction
+  handleSwipe(direction);
+};
+
+// Attach touch events to the place images container
+placeImages.addEventListener('touchstart', handleTouchStart);
+placeImages.addEventListener('touchmove', handleTouchMove);
+
 
