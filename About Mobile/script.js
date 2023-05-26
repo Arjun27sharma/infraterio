@@ -200,7 +200,16 @@ let currentIndex = 0;
 sliderPoints[currentIndex].classList.add('active');
 
 const updateImage = () => {
-  placeImages.innerHTML = `<img src="./Images/place${currentIndex + 1}.png" alt="" height="600px">`;
+  placeImages.style.opacity = '0.9'; // Set opacity to 0 before changing the image
+
+  setTimeout(() => {
+    placeImages.innerHTML = `<img src="./Images/place${currentIndex + 1}.png" alt="" height="600px">`;
+
+    // Use setTimeout to delay setting opacity to 1, allowing the image to load
+    setTimeout(() => {
+      placeImages.style.opacity = '1'; // Set opacity to 1 after changing the image
+    }, 200); // Adjust the duration (in milliseconds) as needed
+  }, 200); // Adjust the duration (in milliseconds) as needed
 };
 
 const handleSwipe = (direction) => {
