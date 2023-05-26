@@ -196,53 +196,43 @@ $(document).ready(function() {
 const sliderPoints = document.querySelectorAll('.slider-point');
 const placeImages = document.querySelector('.place_images');
 
-// Set initial index and add active class to the first slider point
 let currentIndex = 0;
 sliderPoints[currentIndex].classList.add('active');
 
-// Function to update the image based on the current index
 const updateImage = () => {
   placeImages.innerHTML = `<img src="./Images/place${currentIndex + 1}.png" alt="" height="600px">`;
 };
 
-// Function to handle swipe gestures
 const handleSwipe = (direction) => {
-  // Remove active class from the current slider point
   sliderPoints[currentIndex].classList.remove('active');
 
-  // Update the current index based on the swipe direction
   if (direction === 'left') {
     currentIndex = (currentIndex + 1) % sliderPoints.length;
   } else if (direction === 'right') {
     currentIndex = (currentIndex - 1 + sliderPoints.length) % sliderPoints.length;
   }
 
-  // Add active class to the new slider point
   sliderPoints[currentIndex].classList.add('active');
 
-  // Update the image
   updateImage();
 };
 
-// Function to handle touch start event
+let startX = 0;
+let sensitivityFactor = 0.0001; // Adjust the sensitivity here (lower value = less sensitive)
+
 const handleTouchStart = (event) => {
   startX = event.touches[0].clientX;
 };
 
-// Function to handle touch move event
 const handleTouchMove = (event) => {
   const currentX = event.touches[0].clientX;
-  const deltaX = currentX - startX;
+  const deltaX = (currentX - startX) * sensitivityFactor;
 
-  // Determine swipe direction based on the change in X coordinate
   const direction = deltaX < 0 ? 'left' : 'right';
 
-  // Call handleSwipe function with the detected direction
   handleSwipe(direction);
 };
 
-// Attach touch events to the place images container
 placeImages.addEventListener('touchstart', handleTouchStart);
 placeImages.addEventListener('touchmove', handleTouchMove);
-
 
