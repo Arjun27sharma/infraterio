@@ -218,21 +218,19 @@ const handleSwipe = (direction) => {
 };
 
 let startX = 0;
-let sensitivityFactor = 0.0001; // Adjust the sensitivity here (lower value = less sensitive)
+let sensitivityFactor = 0.5; // Adjust the sensitivity here (lower value = less sensitive)
 
-const handleTouchStart = (event) => {
+document.addEventListener('touchstart', (event) => {
   startX = event.touches[0].clientX;
-};
+});
 
-const handleTouchMove = (event) => {
+document.addEventListener('touchmove', (event) => {
   const currentX = event.touches[0].clientX;
   const deltaX = (currentX - startX) * sensitivityFactor;
 
-  const direction = deltaX < 0 ? 'left' : 'right';
-
-  handleSwipe(direction);
-};
-
-placeImages.addEventListener('touchstart', handleTouchStart);
-placeImages.addEventListener('touchmove', handleTouchMove);
-
+  if (deltaX > 50) {
+    handleSwipe('right');
+  } else if (deltaX < -50) {
+    handleSwipe('left');
+  }
+});
