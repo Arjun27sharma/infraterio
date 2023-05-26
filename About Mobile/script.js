@@ -166,3 +166,27 @@ $(document).ready(function() {
       reviewCards.eq(activeCardIndex).addClass('active');
     });
   });
+
+
+
+
+  // Get all the slider points
+const sliderPoints = document.querySelectorAll('.slider-point');
+
+// Get the place images container
+const placeImages = document.querySelector('.place_images');
+
+// Attach click event listener to each slider point
+sliderPoints.forEach((point, index) => {
+point.addEventListener('click', () => {
+  // Update the active class on the clicked slider point
+  sliderPoints.forEach((point) => {
+    point.classList.remove('active');
+  });
+  point.classList.add('active');
+
+  // Update the image based on the clicked point index
+  placeImages.innerHTML = `<img src="./Images/place${index + 1}.png" alt="">`;
+});
+});
+

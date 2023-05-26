@@ -229,7 +229,7 @@ input:focus{
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 .customer_reviews h1{
