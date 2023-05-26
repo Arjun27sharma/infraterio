@@ -200,16 +200,12 @@ let currentIndex = 0;
 sliderPoints[currentIndex].classList.add('active');
 
 const updateImage = () => {
-  placeImages.style.opacity = '0.9'; // Set opacity to 0 before changing the image
+  placeImages.style.transform = 'translateX(-100%)'; // Set initial position for the new image
 
   setTimeout(() => {
     placeImages.innerHTML = `<img src="./Images/place${currentIndex + 1}.png" alt="" height="600px">`;
-
-    // Use setTimeout to delay setting opacity to 1, allowing the image to load
-    setTimeout(() => {
-      placeImages.style.opacity = '1'; // Set opacity to 1 after changing the image
-    }, 200); // Adjust the duration (in milliseconds) as needed
-  }, 200); // Adjust the duration (in milliseconds) as needed
+    placeImages.style.transform = 'translateX(0)'; // Move the new image into view
+  }, 20); // Adjust the delay (in milliseconds) as needed
 };
 
 const handleSwipe = (direction) => {
@@ -217,8 +213,10 @@ const handleSwipe = (direction) => {
 
   if (direction === 'left') {
     currentIndex = (currentIndex + 1) % sliderPoints.length;
+    placeImages.style.transform = 'translateX(100%)'; // Move the current image to the left
   } else if (direction === 'right') {
     currentIndex = (currentIndex - 1 + sliderPoints.length) % sliderPoints.length;
+    placeImages.style.transform = 'translateX(-100%)'; // Move the current image to the right
   }
 
   sliderPoints[currentIndex].classList.add('active');
@@ -243,3 +241,6 @@ document.addEventListener('touchmove', (event) => {
     handleSwipe('left');
   }
 });
+
+// Apply CSS styles for the transition effect
+placeImages.style.transition = 'transform 1s ease';

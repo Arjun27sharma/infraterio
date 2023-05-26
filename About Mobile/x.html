@@ -1,120 +1,155 @@
-<div class="our_place">
-    <h1>Our Place</h1>
-  
-    <div class="our_place_slider">
-      <div class="place_images">
-        <img src="./Images/place3.png" alt="" height="600px">
-      </div>
-  
-      <div class="our_place_slider_points d-flex justify-content-between align-items-center" style="gap: 15px; font-weight: 200;">
-        <span class="slider-point">1</span>
-        <span class="slider-point">2</span>
-        <span class="slider-point">3</span>
-      </div>
+<div class="slider-container">
+    <div class="slider">
+      <img src="./Images/place1.png" alt="Image 1">
+      <img src="./Images/place2.png" alt="Image 1">
+      <img src="./Images/place3.png" alt="Image 1">
+      <img src="./Images/place4.png" alt="Image 1">
+      <img src="./Images/place5.png" alt="Image 1">
+      <img src="./Images/place1.png" alt="Image 1">
+      <img src="./Images/place1.png" alt="Image 1">
+      <img src="./Images/place1.png" alt="Image 1">
+      <img src="./Images/place1.png" alt="Image 1">
+      <img src="./Images/place1.png" alt="Image 1">
+
+      <!-- Add more images here -->
+    </div>
+    <div class="slider-nav">
+      <button class="prev">◄</button>
+      <div class="slider-dots"></div>
+      <button class="next">►</button>
     </div>
   </div>
   
 
 
+
   <style>
-    .our_place {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
+    .slider-container {
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider img {
+  display: none;
   width: 100%;
 }
 
-.our_place_slider {
+.slider-nav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.our_place h1 {
-  font-family: 'DM', sans-serif;
-  font-size: 28px;
-}
-
-.our_place .place_images {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  margin-top: 10px;
 }
 
-.our_place .place_images img {
-  width: 100%;
-  height: 600px;
-
-  transition: ease all 1s;
+.slider-nav button {
+  margin: 0 5px;
+  padding: 5px 10px;
 }
 
-/* Add styling for active slider point */
-.our_place_slider_points .slider-point.active {
-  color: #ff9603;
+.slider-nav button:focus {
+  outline: none;
 }
 
   </style>
 
 
-
-
 <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var slider = document.querySelector('.slider');
+  var images = slider.querySelectorAll('img');
+  var dotsContainer = document.querySelector('.slider-dots');
+  var prevBtn = document.querySelector('.prev');
+  var nextBtn = document.querySelector('.next');
+  var currentSlide = 0;
+  var slidesPerPage = 10;
 
-const sliderPoints = document.querySelectorAll('.slider-point');
-const placeImages = document.querySelector('.place_images');
+  function showSlide(slideIndex) {
+    // Hide all images
+    for (var i = 0; i < images.length; i++) {
+      images[i].style.display = 'none';
+    }
 
-// Set initial index and add active class to the first slider point
-let currentIndex = 0;
-sliderPoints[currentIndex].classList.add('active');
-
-// Function to update the image based on the current index
-const updateImage = () => {
-  placeImages.innerHTML = `<img src="./Images/place${currentIndex + 1}.png" alt="" height="600px">`;
-};
-
-// Function to handle swipe gestures
-const handleSwipe = (direction) => {
-  // Remove active class from the current slider point
-  sliderPoints[currentIndex].classList.remove('active');
-
-  // Update the current index based on the swipe direction
-  if (direction === 'left') {
-    currentIndex = (currentIndex + 1) % sliderPoints.length;
-  } else if (direction === 'right') {
-    currentIndex = (currentIndex - 1 + sliderPoints.length) % sliderPoints.length;
+    // Show the current slide
+    images[slideIndex].style.display = 'block';
   }
 
-  // Add active class to the new slider point
-  sliderPoints[currentIndex].classList.add('active');
+  function updateDots() {
+    var start = currentSlide + 1;
+    var end = Math.min(start + slidesPerPage - 1, images.length);
+    dotsContainer.innerHTML = '';
 
-  // Update the image
-  updateImage();
-};
+    for (var i = start; i <= end; i++) {
+      var dot = document.createElement('span');
+      dot.textContent = i;
+      dot.className = 'dot';
+      if (i === currentSlide + 1) {
+        dot.classList.add('active');
+      }
+      dotsContainer.appendChild(dot);
+    }
+  }
 
-// Function to handle touch start event
-const handleTouchStart = (event) => {
-  startX = event.touches[0].clientX;
-};
+  function updateSlider(direction) {
+    if (direction === 'prev') {
+      currentSlide -= slidesPerPage;
+    } else if (direction === 'next') {
+      currentSlide += slidesPerPage;
+    }
 
-// Function to handle touch move event
-const handleTouchMove = (event) => {
-  const currentX = event.touches[0].clientX;
-  const deltaX = currentX - startX;
+    currentSlide = Math.max(0, Math.min(currentSlide, images.length - 1));
+    showSlide(currentSlide);
+    updateDots();
+  }
 
-  // Determine swipe direction based on the change in X coordinate
-  const direction = deltaX < 0 ? 'left' : 'right';
+  function navigateToSlide(event) {
+    if (event.target.classList.contains('dot')) {
+      currentSlide = parseInt(event.target.textContent) - 1;
+      showSlide(currentSlide);
+      updateDots();
+    }
+  }
 
-  // Call handleSwipe function with the detected direction
-  handleSwipe(direction);
-};
+  function swipeSlider(event) {
+    var touch = event.changedTouches[0];
+    var startX = touch.pageX;
 
-// Attach touch events to the place images container
-placeImages.addEventListener('touchstart', handleTouchStart);
-placeImages.addEventListener('touchmove', handleTouchMove);
+    function handleSwipeEnd(event) {
+      var touch = event.changedTouches[0];
+      var endX = touch.pageX;
+      var diff = endX - startX;
+
+      if (diff > 0 && diff > 50) {
+        updateSlider('prev');
+      } else if (diff < 0 && Math.abs(diff) > 50) {
+        updateSlider('next');
+      }
+
+      document.removeEventListener('touchend', handleSwipeEnd);
+    }
+
+    document.addEventListener('touchend', handleSwipeEnd);
+  }
+
+  // Initialize the slider
+  showSlide(currentSlide);
+  updateDots();
+
+  // Event listeners
+  prevBtn.addEventListener('click', function() {
+    updateSlider('prev');
+  });
+
+  nextBtn.addEventListener('click', function() {
+    updateSlider('next');
+  });
+
+  dotsContainer.addEventListener('click', navigateToSlide);
+
+  slider.addEventListener('touchstart', swipeSlider);
+});
 
 </script>
