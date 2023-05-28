@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <form id="loginForm">
+        <h2>Login</h2>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <button type="button" onclick="sendOTP()">Get OTP</button>
+        <br><br>
+        <div id="otpSection" style="display: none;">
+            <label for="otp">Enter OTP:</label>
+            <input type="text" id="otp" name="otp" required>
+            <button type="button" onclick="verifyOTP()">Continue</button>
+        </div>
+        <div id="infoSection" style="display: none;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br><br>
+            <label for="language">Choose Language:</label>
+            <select id="language" name="language" required>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+            </select>
+            <br><br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <br><br>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        function sendOTP() {
+            // Implement OTP sending functionality here
+            // For this example, we will just display the OTP section
+            document.getElementById("otpSection").style.display = "none";
+        }
+
+        function verifyOTP() {
+            // Implement OTP verification functionality here
+            // For this example, we will just display the info section
+            document.getElementById("otpSection").style.display = "none";
+            document.getElementById("infoSection").style.display = "block";
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Implement form submission logic here
+            alert("Form submitted successfully!");
+            // Hide the login form after submission
+            document.getElementById("loginForm").style.display = "none";
+        });
+    </script>
+</body>
+</html>
