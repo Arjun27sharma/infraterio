@@ -41,9 +41,165 @@
     <nav class="d-flex flex-column bg-white" style="margin-top: 18px; margin-bottom: 10px; padding: 0 16px;">
         <div class="d-flex justify-content-between align-items-center ">
 
-            <div class="" style="margin-right: 12px;">
+            <div class="hamburger" style="margin-right: 12px;" onclick="toggleMenu()">
                 <img src="../Images/Menu.svg" width="20px" alt="">
             </div>
+
+
+
+            <div class="menu" onclick="closeMenu(event)">
+                <div style="color: white; background-color: #ff9500; height: 220px; padding-bottom: 0px; padding-top: 58px; padding-left: 35px; padding-right: 25px;" class="d-flex flex-column gap-4">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <img src="../Images/avatar.png" alt="" width="80px">
+                        </div>
+
+                        <div>
+                            <button style="border: 1px solid rgb(255, 255, 255); border-radius: 50px; padding: 0px 20px; color: white; background-color: transparent; font-size: 14px;">
+                                Edit
+                            </button>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex flex-column gap-0">
+                        <span style="font-weight: 300; font-size: 14px;">Hello</span>
+                        <span style="font-weight: 500; font-size: 20px;">Arjun Sharma</span>
+                    </div>
+
+                </div>  
+                <div class="mt-5 d-flex flex-column gap-3" style="padding-left: 35px; padding-right: 25px;">
+                    <div class="main_heading" onclick="toggleSubItems(1)">
+                        <span>Account</span>
+
+                        <div class="sub_items" id="sub_items_1">
+                            <span>Profile</span>
+                            <span>Address</span>
+                        </div>
+                    </div>
+
+                    <div class="main_heading" onclick="toggleSubItems(2)">
+                        <span>order & return</span>
+                    </div>
+                    <!-- <div class="sub_items" id="sub_items_2">
+                        <span>Profile 2</span>
+                        <span>Address 2</span>
+                    </div> -->
+                    <div class="main_heading" onclick="toggleSubItems(3)">
+                        <span>wishlist</span>
+                    </div>
+                    <div class="main_heading" onclick="toggleSubItems(4)">
+                        <span>cart</span>
+                    </div>
+                    <div class="main_heading" onclick="toggleSubItems(5)">
+                        <span>cupons</span>
+                    </div>
+                    <div class="main_heading" onclick="toggleSubItems(6)">
+                        <span>payments</span>
+
+                        <div class="sub_items" id="sub_items_6">
+                            <span>saved cards</span>
+                            <span>saved accounts</span>
+                            <span>my wallet</span>
+                        </div>
+                    </div>
+
+                    <div class="main_heading" onclick="toggleSubItems(7)">
+                        <span>Notification</span>
+                    </div>
+
+                    <span class="mt-1"  style="font-weight: 300; font-size: 14px;">Logout</span>
+
+                </div>
+
+            </div>
+
+
+            <style>
+
+                /* .hamburger {
+                    position: fixed;
+                    top: 20px;
+                    left: 20px;
+                    z-index: 999;
+                    cursor: pointer;
+                } */
+        
+                /* .hamb */
+        
+                .menu {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+
+                    width: 70%;
+                    height: 100vh;
+                    background-color: rgb(251, 251, 251);
+                    z-index: 999;
+                    transform: translateX(-100%);
+                    transition: transform 0.3s ease-in-out;
+                    /* border-right: 1px solid rgba(114, 114, 114, 0.437); */
+                    box-shadow: 1px 0px 5px 0px rgba(89,89,89,0.76);
+
+                    /* opacity: 0.5; */
+                }
+
+
+                .menu.open {
+            transform: translateX(0);
+        }
+
+        .main_heading {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+
+        .sub_items {
+            /* display: none; */
+            margin-top: 5px;
+            transition: all 1s ease;
+            font-weight: 200;
+            display: flex;
+            flex-direction: column;
+            text-transform: capitalize;
+
+        }
+
+        .sub_items.show {
+            /* transition: all 1s ease-in-out; */
+            display: block;
+        }
+            </style>
+
+
+<script>
+
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('open');
+    }
+
+    function closeMenu(event) {
+        const menu = document.querySelector('.menu');
+        const hamburger = document.querySelector('.hamburger');
+        const isClickInsideMenu = menu.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+        if (!isClickInsideMenu && !isClickOnHamburger) {
+            menu.classList.remove('open');
+        }
+    }
+
+    function toggleSubItems(index) {
+            const subItems = document.getElementById(`sub_items_${index}`);
+            subItems.classList.toggle('show');
+        }
+
+    document.addEventListener('click', closeMenu);
+</script>
 
 
             <div class="" style="flex: 1;">
