@@ -283,7 +283,7 @@ input:focus{
     position: relative;
     height: 180px;
     background-color: #FF9803;
-    padding: 10px 16px;
+    padding: 20px 16px;
 }
 .trending_product_text{
     position: absolute;
@@ -306,7 +306,13 @@ input:focus{
     position: absolute; 
     z-index: 2; 
     bottom: -40px; 
-    right: 114px;
+    /* left: 50%; */
+    margin: auto;
+
+
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, 0%);
 
 }
 .trending_image img{
@@ -354,9 +360,8 @@ input:focus{
   font-family: 'DM', sans-serif;
   padding: 10px;
   font-size: 26px;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
   color: white;
-  font-weight: bold;
 }
 .category-item img{
   width: 100%;
@@ -379,12 +384,18 @@ input:focus{
 }
 .view_all_button button{
   border-radius : 20px;
-  background-color : orange;
-  font-size: 18px;
+  /* background-color : orange; */
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 17px;
   padding: 5px 30px;
-  border: none;
-  color: white;
+  color: rgb(0, 0, 0);
+}
 
+.view_all_button button:hover{
+  background-color: orange;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
 }
 
 
