@@ -254,7 +254,7 @@
 
 
 
-    <div class="" style="flex: 8;">
+    <div class="d-flex flex-column gap-5" style="flex: 8;">
 
       <div
         style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 20px 30px;">
@@ -273,25 +273,27 @@
 
 
           <div class="mb-4">
-          <div class="input_section mobile_number mb-3">
-
-            
-            <label for="">Moile Number</label>
+            <div class="input_section mobile_number mb-3">
 
 
-            <div class="input_box">
-              <input type="text" value="+91 9700812822">
+              <label for="">Moile Number</label>
+
+
+              <div class="input_box">
+                <input type="text" value="+91 9700812822">
+              </div>
+
+
+
+
             </div>
 
-            
+            <span
+              style="cursor: pointer; font-weight: 300; font-size: 16px; color: rgb(30, 30, 255); text-align: end; justify-content: end; display: flex;">+
+              Add More</span>
 
-            
+
           </div>
-
-          <span style="cursor: pointer; font-weight: 300; font-size: 16px; color: rgb(30, 30, 255); text-align: end; justify-content: end; display: flex;">+ Add More</span>
-
-
-        </div>
 
 
 
@@ -313,7 +315,7 @@
               </div>
 
               <div class="radio_item">
-                <input type="radio" name="gender" id="gender2" >
+                <input type="radio" name="gender" id="gender2">
                 <label for="gender2">Female</label>
               </div>
             </div>
@@ -356,7 +358,7 @@
             font-weight: 200;
           }
 
-          .radio_item{
+          .radio_item {
             display: flex;
             justify-content: start;
             justify-content: center;
@@ -365,24 +367,110 @@
 
 
           [type="radio"]:checked+label:after {
-  background-color: red;
-  border: 2px solid red;
-  
-}
-          .radio_item input:hover{
-            cursor: pointer;
+            background-color: red;
+            border: 2px solid red;
+
           }
 
-
-
-
-          
+          .radio_item input:hover {
+            cursor: pointer;
+          }
         </style>
 
         <div style="display: flex; justify-content: end;">
           <button class="red_button">Save</button>
         </div>
       </div>
+
+
+      <div style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;">
+
+        <div>
+          <span style="font-size: 20px;">My Notification</span>
+          <hr>
+        </div>
+
+
+        <div class="notifications" style="margin-top: 30px;">
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <style>
+          .notification .notification_content{
+            display: flex; 
+            align-items: end; 
+            justify-content: space-between;
+            font-weight: 300;
+          }
+        </style>
+
+      </div>
+
     </div>
 
     <style>
