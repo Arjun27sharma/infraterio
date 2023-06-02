@@ -220,397 +220,10 @@ input:focus{
 
 
 
-  /* -----PRODUCT DESC----- */
-
-  .prod_desc, .pagination{
-
-    @media screen and (max-width: 3600px) {
-      padding : 0 87px;
-    }
-
-    @media screen and (max-width: 2500px) {
-      padding : 0 57px;
-    }
-
-    @media screen and (max-width: 1900px) {
-      padding : 0 50px;
-    }
-}
-
-
-  /* ---ABOUT PRODUCT (PRODUCT DESC LEFT SECTION) */
-
-  .about_product{
-    /* flex : 1; */
-    @media screen and (max-width: 3600px) {
-      width : 708px;
-      margin-right : 205px;
-    }
-    @media screen and (max-width: 2500px) {
-      width : 531px;
-      margin-right : 153px;
-    }
-    @media screen and (max-width: 1900px) {
-      width : 378px;
-      margin-right : 109px;
-    }
-  }
-
-  @media screen and (max-width: 3600px) {
-    .pagination{
-      font-size : 24px;
-      color : gray;
-    }
-    .about_product .product_image img{
-      width: 708px;
-      height: 708px;
-    }
-    .about_product .small_img img{
-        width: 126px;
-        height: 126px;
-    }
-    .about_product .delivery img{
-      width: 350px;
-    }
-    .about_product .more_details{
-      font-size : 30px;
-    }
-    .about_product .more_details img{
-      width : 40px;
-    }
-    .about_product .product_availability{
-      font-size : 25px;
-    }
-    .about_product .address{
-      font-size : 36px;
-    }
-    .about_product .address img{
-      width: 48px;
-    }
-    .about_product .about_product_text h4{
-      color: gray;
-      font-size: 32px;
-    }
-    .about_product .about_product_text p{
-      font-weight: 300;
-      font-size: 24px;
-    }
-  }
-
-  @media screen and (max-width: 2500px) {
-    .pagination{
-      font-size : 18px;
-      color : gray;
-    }
-    .about_product .product_image img{
-      width: 531px;
-      height: 531px;
-    }
-    .about_product .small_img img{
-        width: 94px;
-        height: 94px;
-    }
-    .about_product .more_details{
-      font-size : 23px;
-    }
-    .about_product .more_details img{
-      width : 35px;
-    }
-    .about_product .delivery img{
-      width: 300px;
-    }
-    .about_product .product_availability{
-      font-size : 18px;
-    }
-    .about_product .address{
-      font-size : 27px;
-    }
-    .about_product .address img{
-      width: 40px;
-    }
-    .about_product .about_product_text h4{
-      color: gray;
-      font-size: 25px;
-    }
-    .about_product .about_product_text p{
-      font-weight: 300;
-      font-size: 18px;
-    }
-  }
-
-  @media screen and (max-width: 1900px) {
-    .pagination{
-      font-size : 13px;
-      color : gray;
-    }
-    .about_product .product_image img{
-      width: 378px;
-      height: 378px;
-    }
-    .about_product .small_img img{
-        width: 67px;
-        height: 67px;
-    }
-    .about_product .more_details{
-      font-size : 16px;
-    }
-    .about_product .more_details img{
-      width : 22px;
-    }
-    .about_product .delivery img{
-      width: 300px;
-    }
-    .about_product .product_availability{
-      font-size : 14px;
-    }
-    .about_product .address{
-      font-size : 19px;
-    }
-    .about_product .address img{
-      width: 28px;
-    }
-    .about_product .about_product_text h4{
-      color: gray;
-      font-size: 17px;
-    }
-    .about_product .about_product_text p{
-      font-weight: 300;
-      font-size: 13px;
-    }
-  }
-
-
-    /* ---PRODUCT INFO(PRODUCT PRICE COLOR SIZE MOREINFO) */
-
-    .product_info{
-      flex: 1;
-    }
-
-    @media screen and (max-width: 3600px) {
-      .product_info{
-          margin-right: 126px;
-      }
-      .product_name{
-        font-size: 40px;
-      }
-      .product_present_price{
-        font-size: 48px;
-      }
-      .product_actual_price{
-        font-size: 35px;
-      }
-      .discount_percentage{
-        font-size: 30px;
-      }
-      .save_percentage{
-        font-size: 43px;
-      }
-      .taxes_text{
-        font-size : 31px;
-      }
-      .delivery_info{
-        font-size : 33px;
-      }
-      .product_property{
-        font-size : 30px;
-      }
-      .color_circle{
-        height:50px;
-        width:50px;
-      }
-      .colors_container{
-        gap: 24px;
-      }
-      .product_action{
-        font-size : 25px;
-        height: 74px;
-        width: 229px;
-      }
-      .product_action i{
-        font-size: 35px;
-      }
-      .product_action_buy{
-        font-size : 34px;
-      }
-      .offers img{
-        width: 200px;
-      }
-      .product_more_info{
-        font-size : 28px;
-      }
-      .product_more_info h5{
-        font-size : 38px;
-      }
-      .recommended_product_card{
-        font-size: 25px;
-      }
-      .recommended_products h3{
-        font-size: 48px;
-      }
-      .recommended_product_card img{
-        width: 180px;
-        height: 180px;
-      }
-      .recommended_product_card .offer, .recommended_product_card .rating{
-        font-size: 20px;
-      }
-
-
-    }
-    @media screen and (max-width: 2500px) {
-      .product_info{
-          margin-right: 94px;          
-      }
-      .product_name{
-        font-size: 30px;
-      }
-      .product_present_price{
-        font-size: 46px;
-      }
-      .product_actual_price{
-        font-size: 30px;
-      }
-      .discount_percentage{
-        font-size: 22px;
-      }
-      .save_percentage{
-        font-size: 32px;
-      }
-      .taxes_text{
-        font-size : 24px;
-      }
-      .delivery_info{
-        font-size : 25px;
-      }
-      .product_property{
-        font-size : 24px;
-      }
-      .color_circle{
-        height:40px;
-        width:40px;
-      }
-      .colors_container{
-        gap: 18px;
-      }
-      .product_action{
-        font-size : 20px;
-        height: 60px;
-        width: 190px;
-      }
-      .product_action i{
-        font-size: 28px;
-      }
-      .product_action_buy{
-        font-size : 27px;
-      }
-      .offers img{
-        width: 150px;
-      }
-      .product_more_info{
-        font-size : 21px;
-      }
-      .product_more_info h5{
-        font-size : 28px;
-      }
-      .recommended_product_card{
-        font-size: 18px;
-      }
-      .recommended_products h3{
-        font-size: 30px;
-      }
-      .recommended_product_card img{
-        width: 134px;
-        height: 134px;
-      }
-      .recommended_product_card .offer, .recommended_product_card .rating{
-        font-size: 12px;
-      }
-
-
-    }
-    @media screen and (max-width: 1900px) {
-      .product_info{
-          margin-right: 67px;
-      }
-      .product_name{
-        font-size: 23px;
-      }
-      .product_present_price{
-        font-size: 32px;
-      }
-      .product_actual_price{
-        font-size: 24px;
-      }
-      .discount_percentage{
-        font-size: 18px;
-      }
-      .save_percentage{
-        font-size: 22px;
-      }
-      .taxes_text{
-        font-size : 17px;
-      }
-      .delivery_info{
-        font-size : 18px;
-      }
-      .product_property{
-        font-size : 18px;
-      }
-      .color_circle{
-        height:25px;
-        width:25px;
-      }
-      .colors_container{
-        gap: 16px;
-      }
-      .product_action{
-        font-size : 12px;
-        height: 40px;
-        width: 120px;
-      }
-      .product_action i{
-        font-size: 14px;
-      }
-      .product_action_buy{
-        font-size: 17px;
-      }
-      .offers img{
-        width: 100px;
-      }
-      .product_more_info{
-        font-size : 16px;
-      }
-      .product_more_info h5{
-        font-size : 21px;
-      }
-      .recommended_product_card{
-        font-size: 15px;
-      }
-      .recommended_products h3{
-        font-size: 26px;
-      }
-      .recommended_product_card img{
-        width: 97px;
-        height: 97px;
-      }
-      .recommended_product_card .offer, .recommended_product_card .rating{
-        font-size: 10px;
-      }
 
 
 
 
-    }
-
-
-
-    .recommended_product_card:hover{
-      box-shadow: 3px 2px 15px -6px rgba(156,156,156,1);
-    }
-    
-    .recommended_product_card{
-      cursor: pointer;
-    }
 
 
 
@@ -621,19 +234,24 @@ input:focus{
 
   .section_heading h1{
     font-family: 'DM', sans-serif;
-
+    font-size: 100px;
+  }
 
     @media screen and (max-width: 3600px) {
+      .section_heading h1{
       font-size: 100px;
+      }
     }
     @media screen and (max-width: 2500px) {
+      .section_heading h1{
       font-size: 70px;
+      }
     }
     @media screen and (max-width: 1900px) {
+      .section_heading h1{
       font-size: 42px;
+      }
     }
-    
-  }
 
 
 
@@ -711,172 +329,6 @@ input:focus{
 
 
 
-  /* -----REVIEWS AND RATINGS----- */
-
-  .review_description{
-    font-weight: 300;
-  }
-  .review_user{
-    color: gray;
-  }
-  .review_heading{
-    font-family: 'DM', sans-serif;
-  }
-  .review_rating span{
-    background-color: #f18d00;
-    color: white;
-  }
-
-  @media screen and (max-width: 3600px) {
-    .review_images img{
-      width: 140px;
-      height: 140px;
-    }
-    .progress_x{
-      border-radius: 0px;
-      height: 24px;
-    } 
-    .review_rating{
-      font-size : 35px;
-    } 
-    .review_heading{
-      font-size : 52px;
-    } 
-    .review_user{
-      font-size : 24px;
-    }
-    .review_description p{
-      font-size : 25px;
-    }
-    .review_top{
-      font-size: 30px;
-    }
-    .review_top_middle .total_rating{
-      font-size: 131px;
-    }
-    .review_top .review_top_middle img{
-      width: 50px;
-    }
-    .review_top .review_top_right h2{
-      font-size: 57px;
-    }
-    .review_top .review_top_right textarea{
-      font-size: 20px;
-    }
-  }
-
-  @media screen and (max-width: 2500px) {
-      .review_images img{
-        width: 104px;
-        height: 104px;
-      }
-      .progress_x{
-        border-radius: 0px;
-        height: 18px;
-      } 
-      .review_rating{
-        font-size : 28px;
-      }
-      .review_heading{
-        font-size : 39px;
-      }
-      .review_user{
-        font-size : 20px;
-      }
-      .review_description p{
-        font-size : 22px;
-      }
-      .review_top{
-        font-size: 22px;
-      }
-      .review_top_middle .total_rating{
-        font-size: 90px;
-      }
-      .review_top .review_top_middle img{
-        width: 50px;
-      }
-      .review_top .review_top_right h2{
-        font-size: 43px;
-      }
-      .review_top .review_top_right textarea{
-        font-size: 20px;
-      }
-  }
-
-  @media screen and (max-width: 1900px) {
-    .review_top{
-      font-size: 16px;
-    }
-    .progress_x{
-      border-radius: 0px;
-      height: 12px;
-    } 
-    .review_top_middle .total_rating{
-      font-size: 70px;
-    }
-    .review_top .review_top_middle img{
-      width: 30px;
-    }
-    .review_top .review_top_right h2{
-      font-size: 30px;
-    }
-    .review_top .review_top_right textarea{
-      font-size: 18px;
-    }
-    .review_images img{
-      width: 74px;
-      height: 74px;
-    }
-    .review_rating{
-      font-size : 15px;
-    } 
-    .review_heading{
-      font-size : 28px;
-    } 
-    .review_user{
-      font-size : 14px;
-    } 
-    .review_description p{
-      font-size : 18px;
-    }
-  }
-
-
-
-  /* -----QUESTION AND ANSWERS----- */
-
-  @media screen and (max-width: 3600px) {
-    .q_a{
-      font-size: 30px;
-    }
-    .question_user{
-      font-size: 22px;
-      font-weight: 300;
-    }
-  }
-
-  @media screen and (max-width: 2500px) {
-    .q_a{
-      font-size: 24px;
-    }
-    .question_user{
-      font-size: 20px;
-      font-weight: 300;
-    }
-  }
-
-  @media screen and (max-width: 1900px) {
-    .q_a{
-      font-size: 18px;
-    }
-    .question_user{
-      font-size: 14px;
-      font-weight: 300;
-    }
-  }
-
-
-
   /* -----FOOTER CSS SECTION----- */
   
   footer {
@@ -884,115 +336,121 @@ input:focus{
     color: black;
   }
 
-  .footer_logo_image img{
+  .footer_logo_image img {
+    width: 400px;
+  }
+  .footer_social_icons img {
+    width: 40px;
+  }
+  footer a {
+    font-weight: 300;
+    color: black;
+  }
+  .footer_phone_number h3 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .footer_sub img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer_sub p {
+    font-weight: 300;
+  }
+  .footer_sub h3 {
+    font-size: 52px;
+  }
+  .footer_bottom {
+    font-size: 30px;
+  }
 
-    @media screen and (max-width: 3600px) {
-      width: 400px
+  
+  @media screen and (max-width: 3600px) {
+    .footer_logo_image img {
+      width: 400px;
     }
-    @media screen and (max-width: 2500px) {
+    .footer_social_icons img {
+      width: 40px;
+    }
+    footer a {
+      font-size: 35px;
+    }
+    .footer_phone_number h3 {
+      font-size: 60px;
+    }
+    .footer_sub img {
+      width: 50px;
+      height: 50px;
+    }
+    .footer_sub p {
+      font-size: 32px;
+    }
+    .footer_sub h3 {
+      font-size: 52px;
+    }
+    .footer_bottom {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 2500px) {
+    .footer_logo_image img {
       width: 350px;
     }
-    @media screen and (max-width: 1900px) {
+    .footer_social_icons img {
+      width: 35px;
+    }
+    footer a {
+      font-size: 26px;
+    }
+    .footer_phone_number h3 {
+      font-size: 50px;
+    }
+    .footer_sub img {
+      width: 40px;
+      height: 40px;
+    }
+    .footer_sub p {
+      font-size: 25px;
+    }
+    .footer_sub h3 {
+      font-size: 38px;
+    }
+    .footer_bottom {
+      font-size: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 1900px) {
+    .footer_social_icons img {
+      width: 28px;
+    }
+    footer a {
+      font-size: 18px;
+    }
+    .footer_phone_number h3 {
+      font-size: 30px;
+    }
+    .footer_sub img {
+      width: 30px;
+      height: 30px;
+    }
+    .footer_sub p {
+      font-size: 18px;
+    }
+    .footer_sub h3 {
+      font-size: 24px;
+    }
+    .footer_bottom {
+      font-size: 18px;
+    }
+    .footer_logo_image img {
       width: 250px;
     }
   }
 
-  .footer_social_icons img{
-    @media screen and (max-width: 3600px) {
-      width: 40px
-    }
-    @media screen and (max-width: 2500px) {
-      width: 35px;
-    }
-    @media screen and (max-width: 1900px) {
-      width: 28px;
-    }
-  }
 
-  footer a{
-    font-weight: 300;
-    color: black;
-  
-
-    @media screen and (max-width: 3600px) {
-      font-size: 35px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 26px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 18px;
-    }
-    
-  }
-  
-  .footer_phone_number h3{
-    font-weight: bold;
-    font-size: 30px;
-
-    @media screen and (max-width: 3600px) {
-      font-size: 60px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 50px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 30px;
-    }
-  }
-
-  .footer_sub img{
-    @media screen and (max-width: 3600px) {
-      width: 50px;
-      height: 50px;
-    }
-    @media screen and (max-width: 2500px) {
-      width: 40px;
-      height: 40px;
-    }
-    @media screen and (max-width: 1900px) {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  .footer_sub p{
-    font-weight: 300;
-    @media screen and (max-width: 3600px) {
-      font-size: 32px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 25px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 18px;
-    }
-  }
-
-  .footer_sub h3{
-    @media screen and (max-width: 3600px) {
-      font-size: 52px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 38px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 24px;
-    }
-    
-  }
-
-  .footer_bottom{
-    @media screen and (max-width: 3600px) {
-      font-size: 30px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 28px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 18px;
-    }
-  }
+/* Footer End */
   
 
 
