@@ -812,115 +812,121 @@ input:focus{
     color: black;
   }
 
-  .footer_logo_image img{
+  .footer_logo_image img {
+    width: 400px;
+  }
+  .footer_social_icons img {
+    width: 40px;
+  }
+  footer a {
+    font-weight: 300;
+    color: black;
+  }
+  .footer_phone_number h3 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .footer_sub img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer_sub p {
+    font-weight: 300;
+  }
+  .footer_sub h3 {
+    font-size: 52px;
+  }
+  .footer_bottom {
+    font-size: 30px;
+  }
 
-    @media screen and (max-width: 3600px) {
-      width: 400px
+  
+  @media screen and (max-width: 3600px) {
+    .footer_logo_image img {
+      width: 400px;
     }
-    @media screen and (max-width: 2500px) {
+    .footer_social_icons img {
+      width: 40px;
+    }
+    footer a {
+      font-size: 35px;
+    }
+    .footer_phone_number h3 {
+      font-size: 60px;
+    }
+    .footer_sub img {
+      width: 50px;
+      height: 50px;
+    }
+    .footer_sub p {
+      font-size: 32px;
+    }
+    .footer_sub h3 {
+      font-size: 52px;
+    }
+    .footer_bottom {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 2500px) {
+    .footer_logo_image img {
       width: 350px;
     }
-    @media screen and (max-width: 1900px) {
+    .footer_social_icons img {
+      width: 35px;
+    }
+    footer a {
+      font-size: 26px;
+    }
+    .footer_phone_number h3 {
+      font-size: 50px;
+    }
+    .footer_sub img {
+      width: 40px;
+      height: 40px;
+    }
+    .footer_sub p {
+      font-size: 25px;
+    }
+    .footer_sub h3 {
+      font-size: 38px;
+    }
+    .footer_bottom {
+      font-size: 28px;
+    }
+  }
+  
+  @media screen and (max-width: 1900px) {
+    .footer_social_icons img {
+      width: 28px;
+    }
+    footer a {
+      font-size: 18px;
+    }
+    .footer_phone_number h3 {
+      font-size: 30px;
+    }
+    .footer_sub img {
+      width: 30px;
+      height: 30px;
+    }
+    .footer_sub p {
+      font-size: 18px;
+    }
+    .footer_sub h3 {
+      font-size: 24px;
+    }
+    .footer_bottom {
+      font-size: 18px;
+    }
+    .footer_logo_image img {
       width: 250px;
     }
   }
 
-  .footer_social_icons img{
-    @media screen and (max-width: 3600px) {
-      width: 40px
-    }
-    @media screen and (max-width: 2500px) {
-      width: 35px;
-    }
-    @media screen and (max-width: 1900px) {
-      width: 28px;
-    }
-  }
 
-  footer a{
-    font-weight: 300;
-    color: black;
-  
-
-    @media screen and (max-width: 3600px) {
-      font-size: 35px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 26px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 18px;
-    }
-    
-  }
-  
-  .footer_phone_number h3{
-    font-weight: bold;
-    font-size: 30px;
-
-    @media screen and (max-width: 3600px) {
-      font-size: 60px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 50px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 30px;
-    }
-  }
-
-  .footer_sub img{
-    @media screen and (max-width: 3600px) {
-      width: 50px;
-      height: 50px;
-    }
-    @media screen and (max-width: 2500px) {
-      width: 40px;
-      height: 40px;
-    }
-    @media screen and (max-width: 1900px) {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  .footer_sub p{
-    font-weight: 300;
-    @media screen and (max-width: 3600px) {
-      font-size: 32px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 25px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 18px;
-    }
-  }
-
-  .footer_sub h3{
-    @media screen and (max-width: 3600px) {
-      font-size: 52px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 38px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 24px;
-    }
-    
-  }
-
-  .footer_bottom{
-    @media screen and (max-width: 3600px) {
-      font-size: 30px;
-    }
-    @media screen and (max-width: 2500px) {
-      font-size: 28px;
-    }
-    @media screen and (max-width: 1900px) {
-      font-size: 18px;
-    }
-  }
+/* Footer End */
   
 
 
