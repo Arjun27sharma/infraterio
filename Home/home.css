@@ -683,32 +683,14 @@ position: relative;
 
 .brand_partners{
     background-color: rgb(233, 233, 233);
-    @media screen and (max-width : 3600px) {
-        padding: 180px 210px;
-        
-    }
-    @media screen and (max-width : 2500px) {
-        padding: 150px 161px;
-    }
-    @media screen and (max-width : 1900px) {
-        padding: 100px 114px;
-    }
 }
-.claims{
-    @media screen and (max-width : 3600px) {
-        padding: 180px 210px;
-        
-    }
-    @media screen and (max-width : 2500px) {
-        padding: 150px 161px;
-    }
-    @media screen and (max-width : 1900px) {
-        padding: 100px 114px;
-    }
-}
+
 
 
 @media screen and (max-width : 3600px) {
+    .brand_partners, .claims{
+        padding: 180px 210px;
+    }
     
     .claim_card{
         background-color: #FCECD6;
@@ -726,6 +708,9 @@ position: relative;
     }
 }
 @media screen and (max-width : 2500px) {
+    .brand_partners, .claims{
+        padding: 150px 161px;
+    }
     .claim_card{
         background-color: #FCECD6;
         display: flex;
@@ -742,6 +727,9 @@ position: relative;
     }
 }
 @media screen and (max-width : 1900px) {
+    .brand_partners, .claims{
+        padding: 100px 114px;
+    }
     .claim_card{
         background-color: #FCECD6;
         display: flex;
