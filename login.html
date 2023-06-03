@@ -1,39 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <title>Document</title>
+	<title>Customize the scroll-bar</title>
+	
+	<style>
+		body {
+			text-align: center;
+		}
+		.Container{
+			height: 150px;
+			width: 250px;
+			overflow-y: auto;
+			background-color: green;
+			border-radius: 5px;
+			margin: 0 auto;
+		}
+		
+		.Content{
+			width: 300px;
+			color: white;
+			text-align: center;
+		}
+		
+		.Flipped, .Flipped .Content{
+			transform: rotateX(180deg);
+		}
+		
+		/* Designing for scroll-bar */
+		::-webkit-scrollbar {
+			width: 5px;
+		}
+	
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: gainsboro;
+			border-radius: 5px;
+		}
+	
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: black;
+			border-radius: 5px;
+		}
+	
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #555;
+		}
+	</style>
 </head>
+
 <body>
-    
-
-    <div class="coupons-section">
-        <div class="coupons-tabs">
-          <div class="tab active" data-category="trending">Trending Coupons</div>
-          <div class="tab" data-category="upcoming">Upcoming Coupons</div>
-          <div class="tab" data-category="expired">Expired Coupons</div>
-        </div>
-        <div class="coupons-container">
-          <div class="coupon-item trending">Trending Coupon 1</div>
-          <div class="coupon-item upcoming">Upcoming Coupon 1</div>
-          <div class="coupon-item expired">Expired Coupon 1</div>
-          <div class="coupon-item trending">Trending Coupon 2</div>
-          <div class="coupon-item upcoming">Upcoming Coupon 2</div>
-          <div class="coupon-item expired">Expired Coupon 2</div>
-          <!-- Add more coupon items here -->
-        </div>
-      </div>
-    
-      
-
-    
-    
-    
-
+	<h1 style="color: green;">
+		GeeksforGeeks
+	</h1>
+	
+	<div class="Container Flipped">
+		<div class="Content">
+			GeeksforGeeks is a Computer Science
+			portal for geeks. It contains well
+			written, well thought and well
+			explained computer science and
+			programming articles, quizzes etc.
+		</div>
+	</div>
 </body>
+
 </html>
