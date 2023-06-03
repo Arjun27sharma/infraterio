@@ -206,7 +206,7 @@ position: relative;
 
 /* Change color of scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background-color: #363636;
+  background-color: #f18d00;
 }
 
 
