@@ -697,55 +697,258 @@
 
 
 
+
+
 <div class="our_place">
   <h1>Our Place</h1>
 
-  <div class="single-item slider">
-    <div class="">
-      <img src="./Images/place1.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place2.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place1.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place2.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place1.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place2.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place1.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place2.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place1.png" alt="" height="600px">
-    </div>
-    <div class="">
-      <img src="./Images/place2.png" alt="" height="600px">
-    </div>
-
-
-    <!-- <div class="our_place_slider_points d-flex justify-content-between align-items-center" style="gap: 15px; font-weight: 200;">
-      <span class="slider-point">1</span>
-      <span class="slider-point">2</span>
-      <span class="slider-point">3</span>
-      <span class="slider-point">4</span>
-      <span class="slider-point">5</span>
-      <span class="slider-point">6</span>
-      <span class="slider-point">7</span>
-      <span class="slider-point">8</span>
-      <span class="slider-point">9</span>
-      <span class="slider-point">10</span>
-    </div> -->
+  <div class="wrapper">
+    <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+    <ul class="carousel">
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+        <li class="card">
+            <div class="img"><img src="./Images/place1.png" alt="" draggable = "false"></div>
+        </li>
+  
+    </ul>
+    <div class="numbers"></div>
+    <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
   </div>
+  
+  
+  <style>
+    .wrapper {
+    /* max-width: 1100px; */
+    width: 100%;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  ul{
+    padding-left: 0px;
+  }
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 0px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: center;
+    /* height: 342px; */
+    width: 100%;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    /* padding-bottom: 15px; */
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    /* background: #8B53FF; */
+    /* height: 148px; */
+    /* width: 148px; */
+    /* border-radius: 50%; */
+  }
+  .card .img img {
+    width: 100%;
+    height: 600px;
+    /* border-radius: 50%; */
+    /* object-fit: cover; */
+    /* border: 4px solid #fff; */
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+  
+  
+  
+  /* ... */
+  .numbers {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  
+  .numbers span {
+    cursor: pointer;
+    margin: 0 5px;
+    color: #000000;
+    font-size: 14px;
+    transition: all 0.1s ease;
+  }
+  
+  .numbers span.active {
+    /* opacity: 0.8; */
+    /* background-color: black; */
+    color: orange;
+  }
+  
+  </style>
+  
+  
+  <script>
+    const carousel = document.querySelector(".carousel")
+  const arrowBtns = document.querySelectorAll(".wrapper i")
+  const firstCardWidth = carousel.querySelector(".card").offsetWidth
+  
+  let isDragging = false, startX, startScrollLeft;
+  
+  arrowBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+          carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth
+      })
+  })
+  
+  const dragStart = (e) => {
+      isDragging = true;
+      carousel.classList.add("dragging")
+      startX = e.pageX
+      startScrollLeft = carousel.scrollLeft
+  }
+  const dragging = (e) => {
+      // console.log(e.pageX)
+      if(!isDragging) return
+      carousel.scrollLeft = startScrollLeft - (e.pageX - startX)
+  }
+  
+  const dragStop = () => {
+      isDragging = false;
+      carousel.classList.remove("dragging")
+  }
+  carousel.addEventListener("mousedown", dragStart)
+  carousel.addEventListener("mousemove", dragging)
+  document.addEventListener("mousedown", dragStop)
+  
+  
+  
+  // ...
+  // After the existing code
+  
+  const carouselCards = carousel.querySelectorAll(".card");
+  const numbersContainer = document.querySelector(".numbers");
+  
+  // Create and append numbers for each card
+  carouselCards.forEach((card, index) => {
+    const number = document.createElement("span");
+    number.textContent = index + 1;
+    number.addEventListener("click", () => {
+      carousel.scrollLeft = card.offsetLeft; // Scroll to the card position
+    });
+    numbersContainer.appendChild(number);
+  });
+  
+  // Highlight active number when scrolling
+  carousel.addEventListener("scroll", () => {
+    const scrollLeft = carousel.scrollLeft;
+    carouselCards.forEach((card, index) => {
+      const number = numbersContainer.children[index];
+      const cardOffset = card.offsetLeft;
+      const cardWidth = card.offsetWidth;
+      if (scrollLeft >= cardOffset && scrollLeft < cardOffset + cardWidth) {
+        number.classList.add("active");
+      } else {
+        number.classList.remove("active");
+      }
+    });
+  });
+  
+  </script>
+
+
+
+
+
 </div>
 
 
