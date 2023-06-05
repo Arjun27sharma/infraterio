@@ -760,7 +760,7 @@ input:focus{
   @media screen and (max-width: 3600px) {
     .card_x{
       width: 430px;
-      font-size: 30px;
+      font-size: 22px;
     }
 
     .card_x .offer{
@@ -773,14 +773,14 @@ input:focus{
     }
 
     .card_x .product_name{
-      font-size: 30px;
+      font-size: 24px;
     } 
   }
 
   @media screen and (max-width: 2500px) {
     .card_x{
       width: 322px;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .card_x .offer{
@@ -788,19 +788,19 @@ input:focus{
     }
 
     .card_x .product_image{
-      width: 322px;
-      height: 322px;
+      width: 300px;
+      height: 300px;
     }
 
     .card_x .product_name{
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 
   @media screen and (max-width: 1900px) {
       .card_x{
         width: 230px;
-        font-size: 18px;
+        font-size: 16px;
       }
 
       .card_x .offer{
@@ -813,7 +813,7 @@ input:focus{
       }
 
       .card_x .product_name{
-        font-size: 22px;
+        font-size: 18px;
       }
   }
 
