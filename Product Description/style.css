@@ -403,16 +403,16 @@ input:focus{
       width : 35px;
     }
     .about_product .delivery img{
-      width: 300px;
+      width: 210px;
     }
     .about_product .product_availability{
       font-size : 16px;
     }
     .about_product .address{
-      font-size : 22px;
+      font-size : 18px;
     }
     .about_product .address img{
-      width: 32px;
+      width: 28px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -444,7 +444,7 @@ input:focus{
       width : 22px;
     }
     .about_product .delivery img{
-      width: 300px;
+      width: 150px;
     }
     .about_product .product_availability{
       font-size : 13px;
@@ -526,7 +526,7 @@ input:focus{
         width: 200px;
       }
       .product_more_info{
-        font-size : 28px;
+        font-size : 18px;
       }
       .product_more_info h5{
         font-size : 38px;
@@ -600,13 +600,13 @@ input:focus{
         width: 150px;
       }
       .product_more_info{
-        font-size : 18px;
+        font-size : 16px;
       }
       .product_more_info h5{
         font-size : 24px;
       }
       .recommended_product_card{
-        font-size: 18px;
+        font-size: 16px;
       }
       .recommended_products{
         height: 800px;
