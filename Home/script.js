@@ -1,5 +1,15 @@
+function showLogin(){
+  const sigin_form = document.querySelector(".signin_container_main")
+
+  sigin_form.classList.add("signin_active")
+}
 
 
+function hideLogin(){
+  const sigin_form = document.querySelector(".signin_container_main")
+
+  sigin_form.classList.remove("signin_active")
+}
 
 
 $(document).ready(function() {
@@ -96,5 +106,10 @@ $(document).ready(function() {
       }
     });
   });
+
+
+
+
+
 
 

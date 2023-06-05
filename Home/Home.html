@@ -17,35 +17,90 @@
 
 <body style="position: relative;">
 
-        <!-- signin form -->
+    <!-- signin form -->
 
-        <div class="signin_container_main">
+    <div class="signin_container_main">
 
-            <div class="sigin_form_wrapper d-flex justify-content-between gap-2 align-content-start">
+        <div class="sigin_form_wrapper d-flex justify-content-between gap-2 align-content-start">
 
-            <div style="height: 50vh; background-color: red; width: 100%; border-radius: 26px;">
-                x
+            <div style="background-color: #ffffff; height: 350px; width: 100%; border-radius: 26px;"
+                class="d-flex justify-content-center align-items-justify">
+
+                <div style="flex: 7;">
+                    <img src="https://images.pexels.com/photos/7031908/pexels-photo-7031908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" height="350px" width="100%" style="border-top-left-radius: 26px; border-bottom-left-radius: 26px;">
+                </div>
+
+                <div style="flex: 5;"  class="otp_section signin_section">
+
+
+                    <div style="padding: 20px 0; margin-left: 20px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+
+
+                    <div>
+                        <span style="font-weight: 500; font-size: 18px;">Sign in</span>
+                    </div>
+
+
+                    <div class="d-flex flex-column gap-4">
+                        <input type="text" placeholder="Email or Mobile number"
+                            style="border: none; border-bottom: 1px solid rgb(148, 148, 148); color: black; background-color: transparent;"/>
+
+                            <button class="signin_form_button">Get OTP</button>
+                    </div>
+
+                    <div>
+                        <p style="margin-bottom: 0px; font-weight: 300; font-size: 14px;">New to Infraterio ?<span> Create an account</span> </p>
+                    </div>
+
+
+                    <style>
+                        .signin_container_main input::placeholder {
+                            color: rgb(137, 137, 137);
+                            opacity: 1;
+                        }
+
+                        .signin_section{
+                            padding: 0 50px;
+                        }
+
+                        .signin_form_button{
+                            color: white;
+                            background-color: #ff9500;
+                            border-radius: 50px;
+                            border: none;
+                            padding: 4px 0;
+                        }
+                    </style>
+                </div>
+                </div>
             </div>
 
             <div style="font-size: 30px; color: white;">
 
-                &#10005;
+                <span style="cursor: pointer;" onclick="hideLogin()">
+                    &#10005;
+                </span>
             </div>
         </div>
-        </div>
+    </div>
 
 
-        <style>
-            .signin_container_main{
-                display: none;
-                position: absolute; 
-                width: 66%;  
-                z-index: 44; 
-                top: 50vh; 
-                left: 50%; 
-                transform: translate(-50%, -50%);
-            }
-        </style>
+    <style>
+        .signin_container_main {
+            display: none;
+            position: absolute;
+            width: 66%;
+            z-index: 44;
+            top: 450px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .signin_active {
+            display: block;
+        }
+    </style>
 
 
     <!-- HEADER note: done-->
@@ -658,7 +713,8 @@
         </div>
 
         <div class="offer_banner_text">
-            <h1><span class="yellow_bold">Huge offers</span> & <span class="yellow_bold">Big Deals</span>  <br> <span class="small_text">in all</span> Sanitary Products</h1>
+            <h1><span class="yellow_bold">Huge offers</span> & <span class="yellow_bold">Big Deals</span> <br> <span
+                    class="small_text">in all</span> Sanitary Products</h1>
 
             <hr style="height:1px; color: yellow; width: 40%; opacity: 1;">
 
@@ -917,14 +973,19 @@
 
         <div style="flex: 1; padding-left: 40px;">
 
-        <h1 style="font-family: 'DM', sans-serif;">To Know More Information About Your Product</h1>
+            <h1 style="font-family: 'DM', sans-serif;">To Know More Information About Your Product</h1>
 
-        <button style="border: 1px solid white; border-radius: 40px; color: white; background-color: transparent; padding: 10px 70px;">Click Here</button>
+            <button
+                style="border: 1px solid white; border-radius: 40px; color: white; background-color: transparent; padding: 10px 70px;">Click
+                Here</button>
 
         </div>
 
         <!-- <div style="flex: 1; padding: 0;"> -->
-            <iframe width="500" height="320" src="https://www.youtube.com/embed/iqRx5B94d44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="500" height="320" src="https://www.youtube.com/embed/iqRx5B94d44" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         <!-- </div> -->
     </div>
 
