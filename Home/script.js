@@ -1,28 +1,4 @@
 
-const circles = document.querySelectorAll('.color_circle');
-
-circles.forEach(circle => {
-  circle.addEventListener('click', () => {
-    // remove "selected" class from all circles
-    circles.forEach(c => {
-      c.classList.remove('selected');
-    });
-    // add "selected" class to clicked circle
-    circle.classList.add('selected');
-  });
-});
-
-
-
-
-const tags = document.querySelectorAll('.product_details_tag');
-
-tags.forEach(tag => {
-  tag.addEventListener('click', () => {
-    tag.classList.toggle('selected');
-  });
-});
-
 
 
 

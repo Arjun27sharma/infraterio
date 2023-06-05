@@ -15,7 +15,37 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="position: relative;">
+
+        <!-- signin form -->
+
+        <div class="signin_container_main">
+
+            <div class="sigin_form_wrapper d-flex justify-content-between gap-2 align-content-start">
+
+            <div style="height: 50vh; background-color: red; width: 100%; border-radius: 26px;">
+                x
+            </div>
+
+            <div style="font-size: 30px; color: white;">
+
+                &#10005;
+            </div>
+        </div>
+        </div>
+
+
+        <style>
+            .signin_container_main{
+                display: none;
+                position: absolute; 
+                width: 66%;  
+                z-index: 44; 
+                top: 50vh; 
+                left: 50%; 
+                transform: translate(-50%, -50%);
+            }
+        </style>
 
 
     <!-- HEADER note: done-->
@@ -60,7 +90,7 @@
 
 
                 <div class="col-4 d-flex align-items-center justify-content-end gap-5" style="flex:1; ">
-                    <div class="">
+                    <div class="" onclick="showLogin()">
                         <a class="" href="#" style="font-weight: bold; color: white;">
                             sign in
                         </a>
@@ -94,6 +124,10 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
 
             </div>
         </nav>
