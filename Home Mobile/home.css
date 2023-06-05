@@ -128,17 +128,19 @@ position: relative;
 
 
 .banner_heading{
-  margin-top: 150px;
+  margin-top: 180px;
   padding: 0 16px;
 }
 .banner_heading h1{
   font-size: 50px;
+  margin-bottom: 0px;
   color: white;
   font-family: "DM", sans-serif;
 }
 .banner_heading h3{
   
-  font-size: 24px;
+  margin-bottom: 0px;
+  font-size: 22px;
   color: #ffae3e;
 }
 
