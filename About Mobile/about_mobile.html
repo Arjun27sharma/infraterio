@@ -738,8 +738,18 @@
 
   
     </ul>
-    <div class="numbers"></div>
-    <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+
+    <div class="d-flex justify-content-center align-items-baseline gap-2">
+    <div class="numbers">
+      
+    </div>
+    <div>
+      <span>
+      <img src="../Images/right_arrow.svg" alt="" height="16px" style="margin-bottom: 4px;">
+    </span>
+    </div>
+    </div>
+    
   </div>
   
   
@@ -815,7 +825,7 @@
   
   .numbers span {
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 8px;
     color: #000000;
     font-size: 16px;
     font-weight: 100;
@@ -879,6 +889,7 @@
     });
     numbersContainer.appendChild(number);
   });
+
   
   // Highlight active number when scrolling
   carousel.addEventListener("scroll", () => {
