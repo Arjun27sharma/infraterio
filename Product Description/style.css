@@ -359,23 +359,23 @@ input:focus{
       width: 350px;
     }
     .about_product .more_details{
-      font-size : 30px;
+      font-size : 24px;
     }
     .about_product .more_details img{
       width : 40px;
     }
     .about_product .product_availability{
-      font-size : 25px;
+      font-size : 22px;
     }
     .about_product .address{
-      font-size : 36px;
+      font-size : 30px;
     }
     .about_product .address img{
       width: 42px;
     }
     .about_product .about_product_text h4{
       color: gray;
-      font-size: 32px;
+      font-size: 30px;
     }
     .about_product .about_product_text p{
       font-weight: 300;
@@ -385,7 +385,7 @@ input:focus{
 
   @media screen and (max-width: 2500px) {
     .pagination{
-      font-size : 18px;
+      font-size : 16px;
       color : gray;
     }
     .about_product .product_image img{
@@ -397,7 +397,7 @@ input:focus{
         height: 94px;
     }
     .about_product .more_details{
-      font-size : 23px;
+      font-size : 16px;
     }
     .about_product .more_details img{
       width : 35px;
@@ -406,21 +406,21 @@ input:focus{
       width: 300px;
     }
     .about_product .product_availability{
-      font-size : 18px;
+      font-size : 16px;
     }
     .about_product .address{
-      font-size : 27px;
+      font-size : 22px;
     }
     .about_product .address img{
       width: 32px;
     }
     .about_product .about_product_text h4{
       color: gray;
-      font-size: 25px;
+      font-size: 18px;
     }
     .about_product .about_product_text p{
       font-weight: 300;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 
@@ -438,7 +438,7 @@ input:focus{
         height: 67px;
     }
     .about_product .more_details{
-      font-size : 16px;
+      font-size : 14px;
     }
     .about_product .more_details img{
       width : 22px;
@@ -447,21 +447,21 @@ input:focus{
       width: 300px;
     }
     .about_product .product_availability{
-      font-size : 14px;
+      font-size : 13px;
     }
     .about_product .address{
-      font-size : 19px;
+      font-size : 18px;
     }
     .about_product .address img{
       width: 22px;
     }
     .about_product .about_product_text h4{
       color: gray;
-      font-size: 17px;
+      font-size: 16px;
     }
     .about_product .about_product_text p{
       font-weight: 300;
-      font-size: 13px;
+      font-size: 14px;
     }
   }
 
@@ -555,55 +555,55 @@ input:focus{
           margin-right: 94px;          
       }
       .product_name{
-        font-size: 30px;
+        font-size: 20px;
       }
       .product_present_price{
-        font-size: 46px;
+        font-size: 24px;
       }
       .product_actual_price{
-        font-size: 30px;
+        font-size: 20px;
       }
       .discount_percentage{
-        font-size: 22px;
+        font-size: 18px;
       }
       .save_percentage{
-        font-size: 32px;
+        font-size: 18px;
       }
       .taxes_text{
-        font-size : 24px;
+        font-size : 16px;
       }
       .delivery_info{
-        font-size : 25px;
+        font-size : 16px;
       }
       .product_property{
-        font-size : 24px;
+        font-size : 18px;
       }
       .color_circle{
-        height:40px;
-        width:40px;
+        height:30px;
+        width:30px;
       }
       .colors_container{
         gap: 18px;
       }
       .product_action{
-        font-size : 20px;
-        height: 60px;
-        width: 190px;
+        font-size : 18px;
+        height: 50px;
+        width: 170px;
       }
       .product_action i{
-        font-size: 28px;
+        font-size: 18px;
       }
       .product_action_buy{
-        font-size : 27px;
+        font-size : 22px;
       }
       .offers img{
         width: 150px;
       }
       .product_more_info{
-        font-size : 21px;
+        font-size : 18px;
       }
       .product_more_info h5{
-        font-size : 28px;
+        font-size : 24px;
       }
       .recommended_product_card{
         font-size: 18px;
@@ -629,28 +629,28 @@ input:focus{
           margin-right: 67px;
       }
       .product_name{
-        font-size: 23px;
-      }
-      .product_present_price{
-        font-size: 32px;
-      }
-      .product_actual_price{
-        font-size: 24px;
-      }
-      .discount_percentage{
         font-size: 18px;
       }
+      .product_present_price{
+        font-size: 20px;
+      }
+      .product_actual_price{
+        font-size: 18px;
+      }
+      .discount_percentage{
+        font-size: 16px;
+      }
       .save_percentage{
-        font-size: 22px;
+        font-size: 18px;
       }
       .taxes_text{
-        font-size : 17px;
+        font-size : 16px;
       }
       .delivery_info{
-        font-size : 18px;
+        font-size : 16px;
       }
       .product_property{
-        font-size : 18px;
+        font-size : 16px;
       }
       .color_circle{
         height:25px;
@@ -668,7 +668,7 @@ input:focus{
         font-size: 14px;
       }
       .product_action_buy{
-        font-size: 17px;
+        font-size: 16px;
       }
       .offers img{
         width: 100px;
@@ -677,7 +677,7 @@ input:focus{
         font-size : 16px;
       }
       .product_more_info h5{
-        font-size : 21px;
+        font-size : 18px;
       }
       .recommended_product_card{
         font-size: 15px;
