@@ -725,17 +725,17 @@ input:focus{
 
     @media screen and (max-width: 3600px) {
       .section_heading h1{
-      font-size: 100px;
+      font-size: 70px;
       }
     }
     @media screen and (max-width: 2500px) {
       .section_heading h1{
-      font-size: 70px;
+      font-size: 50px;
       }
     }
     @media screen and (max-width: 1900px) {
       .section_heading h1{
-      font-size: 42px;
+      font-size: 32px;
       }
     }
     
@@ -883,31 +883,31 @@ input:focus{
         height: 18px;
       } 
       .review_rating{
-        font-size : 28px;
+        font-size : 24px;
       }
       .review_heading{
-        font-size : 39px;
+        font-size : 24px;
       }
       .review_user{
-        font-size : 20px;
+        font-size : 16px;
       }
       .review_description p{
-        font-size : 22px;
+        font-size : 18px;
       }
       .review_top{
         font-size: 22px;
       }
       .review_top_middle .total_rating{
-        font-size: 90px;
+        font-size: 70px;
       }
       .review_top .review_top_middle img{
-        width: 50px;
+        width: 40px;
       }
       .review_top .review_top_right h2{
-        font-size: 43px;
+        font-size: 30px;
       }
       .review_top .review_top_right textarea{
-        font-size: 20px;
+        font-size: 18px;
       }
   }
 
@@ -920,32 +920,32 @@ input:focus{
       height: 12px;
     } 
     .review_top_middle .total_rating{
-      font-size: 70px;
+      font-size: 60px;
     }
     .review_top .review_top_middle img{
       width: 30px;
     }
     .review_top .review_top_right h2{
-      font-size: 30px;
+      font-size: 24px;
     }
     .review_top .review_top_right textarea{
-      font-size: 18px;
+      font-size: 16px;
     }
     .review_images img{
       width: 74px;
       height: 74px;
     }
     .review_rating{
-      font-size : 15px;
+      font-size : 16px;
     } 
     .review_heading{
-      font-size : 28px;
+      font-size : 22px;
     } 
     .review_user{
-      font-size : 14px;
+      font-size : 12px;
     } 
     .review_description p{
-      font-size : 18px;
+      font-size : 16px;
     }
   }
 
@@ -955,16 +955,6 @@ input:focus{
 
   @media screen and (max-width: 3600px) {
     .q_a{
-      font-size: 30px;
-    }
-    .question_user{
-      font-size: 22px;
-      font-weight: 300;
-    }
-  }
-
-  @media screen and (max-width: 2500px) {
-    .q_a{
       font-size: 24px;
     }
     .question_user{
@@ -973,12 +963,22 @@ input:focus{
     }
   }
 
-  @media screen and (max-width: 1900px) {
+  @media screen and (max-width: 2500px) {
     .q_a{
       font-size: 18px;
     }
     .question_user{
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: 1900px) {
+    .q_a{
+      font-size: 16px;
+    }
+    .question_user{
+      font-size: 12px;
       font-weight: 300;
     }
   }
