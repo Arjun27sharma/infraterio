@@ -895,6 +895,268 @@
         </script>
 
 
+
+<div id="section_payments" class="section">
+  <div style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;" id="">
+    <div>
+
+      <div  class="d-flex justify-content-start align-items-center gap-5">
+
+      
+      <span class="cupon_tab active" data-category="trending">Saved Cards</span>
+      <span class="cupon_tab" data-category="upcoming">Saved Accounts</span>
+      <span class="cupon_tab" data-category="expired">My Wallet</span>
+
+    </div>
+
+      <style>
+        .cupon_tab{
+          font-size: 18px;
+          font-weight: 300;
+        }
+      </style>
+      <hr>
+    </div>
+
+
+    <div class="coupon-item trending">
+
+      <div class="saved_card_wrapper">
+
+
+        <div class="cards">
+
+      <div class="card_container">
+      <div class="card_details">
+        <div class="card_name">
+          <span>Kotak Mahindra Bank</span>
+
+        </div>
+        <div class="card_number">
+          <span>**** **** **** 5443</span>
+        </div>
+      </div>
+
+        <div class="bin_img">
+          <img src="./Images/bin.png" alt="">
+        </div>
+
+      
+    </div>
+
+
+      <div class="card_container">
+      <div class="card_details">
+        <div class="card_name">
+          <span>State Bank of India</span>
+
+        </div>
+        <div class="card_number">
+          <span>**** **** **** 2347</span>
+        </div>
+      </div>
+
+        <div class="bin_img">
+          <img src="./Images/bin.png" alt="">
+        </div>
+
+      
+    </div>
+
+  </div>
+
+
+  <div class="cards_qna">
+
+    <div class="qna_container">
+      <li>Why is my card being tokenised?</li>
+      <p>As per the new RBI guidelines to make card data more secure, merchants like Flipkart cannot store the card details of users. As an alternative, RBI has authorised card networks and card issuers to offer card tokenisation services, which means the replacement of actual credit and debit card details with an alternate code called "token". The user can either choose to tokenis their card by giving consent for future transactions or choose to continue without tokenisation.</p>
+    </div>
+
+    <div class="qna_container">
+      <li>What is a token?</li>
+      <p>A token is generated when a user gives consent to Flipkart to tokenise their card. A token is a unique value for a combination of card, token requestor (Flipkart is a token requestor & accepts request from the customer for tokenisation of a card and passes it onto the card network to issue a corresponding token) and device. The token does not contain any personal information linked to your card and is generated only when a customer uses a new card for a successful transaction on Flipkart.</p>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+    <style>
+      .card_container{
+        border-bottom: 0.5px solid black;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 20px;
+      }
+
+      .card_container .bin_img img{
+        width: 20px;
+        cursor: pointer;
+      }
+    </style>
+
+    </div>
+
+
+    <div class="coupon-item upcoming">
+
+      <div class="saved_card_wrapper">
+
+
+        <div class="cards">
+
+          <div class="card_container">
+            <div class="card_details">
+              <div class="card_name">
+                <span>State Bank of India</span>
+      
+              </div>
+              <div class="card_number">
+                <span>**** **** **** 2347</span>
+              </div>
+            </div>
+      
+              <div class="bin_img">
+                <img src="./Images/bin.png" alt="">
+              </div>
+      
+            
+          </div>
+
+      <div class="card_container">
+      <div class="card_details">
+        <div class="card_name">
+          <span>Kotak Mahindra Bank</span>
+
+        </div>
+        <div class="card_number">
+          <span>**** **** **** 5443</span>
+        </div>
+      </div>
+
+        <div class="bin_img">
+          <img src="./Images/bin.png" alt="">
+        </div>
+
+      
+    </div>
+
+
+
+
+  </div>
+
+
+  <div class="cards_qna">
+
+    <div class="qna_container">
+      <li>What is a token?</li>
+      <p>A token is generated when a user gives consent to Flipkart to tokenise their card. A token is a unique value for a combination of card, token requestor (Flipkart is a token requestor & accepts request from the customer for tokenisation of a card and passes it onto the card network to issue a corresponding token) and device. The token does not contain any personal information linked to your card and is generated only when a customer uses a new card for a successful transaction on Flipkart.</p>
+    </div>
+
+    <div class="qna_container">
+      <li>Why is my card being tokenised?</li>
+      <p>As per the new RBI guidelines to make card data more secure, merchants like Flipkart cannot store the card details of users. As an alternative, RBI has authorised card networks and card issuers to offer card tokenisation services, which means the replacement of actual credit and debit card details with an alternate code called "token". The user can either choose to tokenis their card by giving consent for future transactions or choose to continue without tokenisation.</p>
+    </div>
+
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+    <style>
+      .card_container{
+        border-bottom: 0.5px solid black;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 20px;
+      }
+
+      .card_container .bin_img img{
+        width: 20px;
+        cursor: pointer;
+      }
+    </style>
+
+    </div>
+
+    <div class="coupon-item expired">
+
+    </div>
+
+
+    <style>
+      .coupon_item_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 25px;
+      }
+
+      
+      .cupon_item_left{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .cupon_title{
+        font-weight: 500;
+        font-size: 20px;
+      }
+
+      .cupon_desc{
+        font-weight: 300;
+        font-size: 16px;
+      }
+
+      .cupon_item_right{
+        font-size: 16px;
+        font-weight: 300;
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        gap: 10px;
+      }
+
+      .cupon_item_left p{
+        margin-bottom: 0;
+      }
+
+      .t_c{
+        color: rgb(0, 0, 219);
+      }
+    </style>
+
+    
+  </div>
+
+
+
+  
+</div>
+
+
 <style>
   .section{
     display: none;
