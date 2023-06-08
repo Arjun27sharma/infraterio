@@ -368,7 +368,7 @@ input:focus{
       font-size : 22px;
     }
     .about_product .address{
-      font-size : 30px;
+      font-size : 18px;
     }
     .about_product .address img{
       width: 42px;
@@ -412,7 +412,7 @@ input:focus{
       font-size : 18px;
     }
     .about_product .address img{
-      width: 28px;
+      width: 22px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -453,10 +453,10 @@ input:focus{
       font-size : 13px;
     }
     .about_product .address{
-      font-size : 18px;
+      font-size : 16px;
     }
     .about_product .address img{
-      width: 22px;
+      width: 19px;
     }
     .about_product .about_product_text h4{
       color: gray;
@@ -677,7 +677,7 @@ input:focus{
         width: 100px;
       }
       .product_more_info{
-        font-size : 16px;
+        font-size : 14px;
       }
       .product_more_info h5{
         font-size : 18px;
@@ -854,10 +854,10 @@ input:focus{
       font-size : 52px;
     } 
     .review_user{
-      font-size : 24px;
+      font-size : 16px;
     }
     .review_description p{
-      font-size : 25px;
+      font-size : 18px;
     }
     .review_top{
       font-size: 30px;
@@ -893,10 +893,10 @@ input:focus{
         font-size : 24px;
       }
       .review_user{
-        font-size : 16px;
+        font-size : 14px;
       }
       .review_description p{
-        font-size : 18px;
+        font-size : 16px;
       }
       .review_top{
         font-size: 22px;
@@ -952,7 +952,7 @@ input:focus{
       font-size : 12px;
     } 
     .review_description p{
-      font-size : 16px;
+      font-size : 14px;
     }
   }
 
