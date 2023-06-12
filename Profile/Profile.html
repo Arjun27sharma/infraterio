@@ -543,6 +543,220 @@
     </div>
 
 
+
+    <div id="section_orders" class="">
+      <div style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;" id="section_cupons">
+
+        <div class="d-flex flex-column gap-2">
+        <div>
+
+          <div class="d-flex justify-content-between align-items-center">
+          <div  class="d-flex justify-content-start align-items-center" style="gap: 30px;">
+
+          
+          <span class="cupon_tab active" data-category="trending">Orders</span>
+          <span class="cupon_tab" data-category="upcoming">On the way</span>
+          <span class="cupon_tab" data-category="expired">Delivered</span>
+          <span class="cupon_tab" data-category="expired">Cancelled</span>
+          <span class="cupon_tab" data-category="expired">Returned</span>
+          <span class="cupon_tab" data-category="expired">Replacement</span>
+
+        </div>
+
+        <span class="cupon_tab" data-category="expired">Archived</span>
+
+      </div>
+
+          <style>
+            .cupon_tab{
+              font-size: 16px;
+              font-weight: 300;
+            }
+          </style>
+          <hr style="margin-top: 5px;">
+        </div>
+
+
+        <div>
+
+          <div  class="d-flex justify-content-start align-items-center" style="gap: 40px;">
+
+          
+          <span class="cupon_tab active" data-category="trending">Last 30 days</span>
+          <span class="cupon_tab" data-category="upcoming">6 Months</span>
+          <span class="cupon_tab" data-category="expired">2022</span>
+          <span class="cupon_tab" data-category="expired">2021</span>
+          <span class="cupon_tab" data-category="expired">2019</span>
+          <span class="cupon_tab" data-category="expired">2018</span>
+
+        </div>
+
+
+          <style>
+            .cupon_tab{
+              font-size: 16px;
+              font-weight: 300;
+            }
+          </style>
+          <hr style="margin-top: 5px;">
+        </div>
+      </div>
+
+
+        <div class="coupons-container">
+
+          <!-- trending coupons -->
+          <div class="coupon-item trending">
+
+            <div class="order_card_wrapper">
+            <div class="order_card">
+              <div class="order_card_left">
+                <div class="order_image">
+                  <img src="../Images/sm.png" alt="">
+                </div>
+                <div class="order_details">
+                  <span class="order_name">crubeck edge pvc band</span>
+
+                  <div class="order_price">
+                    <span class="order_price_text">
+                      ₹9740
+                    </span>
+                    <span class="gray_small_text_order">
+                      Inclusive of all taxes
+                    </span>
+                  </div>
+
+
+                  <div class="order_delivery_date">
+                    <div class="d-flex justify-content-start align-items-center gap-2">
+                      <div class="delivery_status_color">
+
+                      </div>
+                      <span>Delivering on JAN 17</span>
+                      
+                    </div>
+                    <span class="gray_small_text_order">
+                      Your Order has been placed
+                    </span>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="order_card_right">
+
+
+                <div class="order_option_buttons">
+                <div class="cancel_order_button">
+                <button class="red_button">Order Cancel</button>
+                <span class="gray_small_text_order" style="font-size: 12px;">You can cancel your order before delivered</span>
+              </div>
+                <div class="cancel_order_button">
+                <button class="red_button"><span><img src="./Images/download.png" width="18px" style="filter: invert(100%); margin-right: 4px;" alt=""></span> INVOICE</button>
+              </div>
+            </div>
+
+            <span class="archive_order">Archive Order</span>
+              </div>
+            </div>
+
+            <hr>
+          </div>
+
+            </div>
+
+
+            <style>
+              .order_card{
+                display: flex;
+                justify-content: space-between;
+                /* align-items: center; */
+              }
+              .order_card_left{
+                display: flex;
+                justify-content: start;
+                gap: 30px;
+              }
+              .order_card_left img{
+                width: 160px;
+              }
+              .order_details{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+              }
+              .gray_small_text_order{
+                font-size: 14px;
+                color: gray;
+                font-weight: normal;
+              }
+              .order_price{
+                display: flex;
+                flex-direction: column;
+
+              }
+              .order_name{
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: uppercase;
+              }
+              .order_price_text{
+                font-weight: 500;
+                font-size: 20px;
+              }
+              .order_delivery_date{
+                font-weight: 500;
+                font-size: 14px;
+                display: flex;
+                flex-direction: column;
+                /* align-items: center; */
+
+
+              }
+              .delivery_status_color{
+                height: 14px;
+                width: 14px;
+                border-radius: 50%;
+                background-color: orange;
+              }
+              .cancel_order_button{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+              }
+              .order_card_right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: end;
+              }
+              .order_option_buttons{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 15px;
+              }
+              .archive_order{
+                font-size: 14px;
+                color: blue;
+              }
+            </style>
+
+
+
+
+        </div>
+
+
+
+
+        
+      </div>
+    </div>
+
+
     <div id="section_notifications" class="section">
       <div style="display: flex; flex-direction: column; gap: 0px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;">
 
@@ -1506,9 +1720,9 @@ cursor: pointer;
     <style>
       .red_button {
         padding: 2px 22px;
-        width: 100px;
+        min-width: 100px;
         border-radius: 30px;
-        font-size: 14px;
+        font-size: 13px;
         border: none;
         background-color: rgb(228, 0, 0);
         color: white;
