@@ -545,7 +545,7 @@
 
 
     <div id="section_orders" class="section">
-      <div style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;" id="section_cupons">
+      <div style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;" id="">
 
         <div class="d-flex flex-column gap-2">
         <div>
@@ -554,21 +554,21 @@
           <div  class="d-flex justify-content-start align-items-center" style="gap: 30px;">
 
           
-          <span class="cupon_tab active" data-category="trending">Orders</span>
-          <span class="cupon_tab" data-category="upcoming">On the way</span>
-          <span class="cupon_tab" data-category="expired">Delivered</span>
-          <span class="cupon_tab" data-category="expired">Cancelled</span>
-          <span class="cupon_tab" data-category="expired">Returned</span>
-          <span class="cupon_tab" data-category="expired">Replacement</span>
+          <span class="order_tab active" data-category="orders">Orders</span>
+          <span class="order_tab" data-category="on_the_way">On the way</span>
+          <span class="order_tab" data-category="delivered">Delivered</span>
+          <span class="order_tab" data-category="cancelled">Cancelled</span>
+          <span class="order_tab" data-category="returned">Returned</span>
+          <span class="order_tab" data-category="replacement">Replacement</span>
 
         </div>
 
-        <span class="cupon_tab" data-category="expired">Archived</span>
+        <span class="order_tab" data-category="archived">Archived</span>
 
       </div>
 
           <style>
-            .cupon_tab{
+            .cupon_tab, .order_tab{
               font-size: 16px;
               font-weight: 300;
             }
@@ -603,10 +603,9 @@
       </div>
 
 
-        <div class="coupons-container">
 
           <!-- trending coupons -->
-          <div class="coupon-item trending">
+          <div class="order-item orders">
 
             <div class="order_card_wrapper">
             <div class="order_card">
@@ -747,7 +746,40 @@
 
 
 
-        </div>
+
+        <!-- orders section logic -->
+
+              <!-- cupons section logic -->
+      <script>
+
+
+    
+        $(document).ready(function() {
+          // Event listener for tab clicks
+          $('.order_tab').click(function() {
+            // Remove active class from all tabs
+            $('.order_tab').removeClass('active');
+            // Add active class to the clicked tab
+            $(this).addClass('active');
+            // Get the selected category from the data attribute
+            var category = $(this).data('category');
+            // Show coupons based on the selected category
+            showOrders(category);
+          });
+        
+          // Show coupons based on the selected category
+          function showOrders(category) {
+            // Hide all coupons
+            $('.order-item').hide();
+            // Show coupons for the selected category
+            $('.' + category).show();
+          }
+        
+          // Show trending coupons by default
+          showOrders('orders');
+        });
+        
+        </script>
 
 
 
@@ -1700,11 +1732,11 @@ justify-content: space-between;
 margin-bottom: 10px;
 }
 
-.cupon_tab {
+.cupon_tab, .order_tab {
 cursor: pointer;
 }
 
-.cupon_tab.active {
+.cupon_tab.active, .order_tab.active {
   font-weight: normal;
 }
 
