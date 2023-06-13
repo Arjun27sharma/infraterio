@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- HEADER note: done-->
+    <div class="header_x d-flex justify-content-between">
+      <div class="d-flex align-items-center">
+          <img src="../Images/call.svg" alt="" class="call_logo">
+          <a href="tel:1234567890" class="text-dark" style=" font-weight: 300;">Call Us
+              <span class="fw-bold">+1 234 56 78910</span></a>
+      </div>
+      <div class="d-flex align-items-center gap-4">
+          <a href="mailto:info@example.com" class="text-dark" style=" font-weight: 300;">infraterio@gmail.com</a>
+          <div class="header_social_icons d-flex justify-content-end gap-4 align-items-center">
+              <a href="#"><img src="../Images/facebook.png" alt=""></a>
+              <a href="#"><img src="../Images/twitter.png" alt=""></a>
+              <a href="#"><img src="../Images/instagram.png" alt=""></a>
+              <a href="#"><img src="../Images/linkedin.png" alt=""></a>
+          </div>
+      </div>
+  </div>
+
+  <!-- NAVBAR MAIN -->
+  <nav class="nav_x bg-white navbar-main" >
+      <div class="d-flex justify-content-between align-items-center ">
+          <div class="" style="flex: 1;">
+              <a class="navbar_brand" href="#">
+                  <img src="../Images/logo.svg" class="d-inline-block align-top" alt="Logo">
+              </a>
+          </div>
+
+          <div style="flex:1; height: 45px;">
+              <div class="mx-auto px-4 col-12 rounded-pill bg-gray-700 search-box d-flex align-items-center justify-content-between"
+                  style="height: 100%;">
+                  <input class="outline-none border-0 col-11 search-box" type="text"
+                      style="color: white; height: 30px;" placeholder="Search" onfocus="this.placeholder=''">
+                  <img src="../Images/search.svg" alt="" width="24px" style="margin-right: 10px;">
+              </div>
+          </div>
+
+
+          <div class="col-4 d-flex align-items-center justify-content-end gap-5" style="flex:1">
+              <div class="">
+                  <a class="text-dark" href="#" style="font-weight: bold;">
+                      sign in
+                  </a>
+              </div>
+
+              <div class="nav_item_right_images d-flex justify-content-end align-items-center gap-4">
+                  <div class="nav-item">
+                      <a class="" href="#">
+                          <img src="../Images/pin.png" alt="">
+                      </a>
+                  </div>
+                  <div class="nav-item">
+                      <a class="" href="#">
+                          <img src="../Images/bell.png" alt="">
+                      </a>
+                  </div>
+                  <div class="nav-item">
+                      <a class="" href="#">
+                          <img src="../Images/heart.png" alt="">
+                      </a>
+                  </div>
+                  <div class="nav-item">
+                      <a class="" href="#">
+                          <img src="../Images/cart.png" alt="">
+                      </a>
+                  </div>
+                  <div class="nav-item">
+                      <a class="" href="#">
+                          <img src="../Images/profile.png" alt="">
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </nav>
+
+  <!-- NAVBAR SUB note: done-->
+  <div class="subnav_x">
+      <div class="row d-flex align-items-center justify-content-between sub rounded-pill ">
+
+
+          <div class="subnav_container d-flex align-items-center justify-content-center">
+              <div class="links_container d-flex justify-content-center align-items-center">
+                  <a href="#">Home</a>
+                  <a href="#">Sanitarywear</a>
+                  <a href="#">Tiles</a>
+                  <a href="#">Paints</a>
+                  <a href="#">Kitchen</a>
+                  <a href="#">Plywood/WPC</a>
+                  <a href="#">Hardware</a>
+                  <a href="#">Track Order</a>
+                  <a href="#">About</a>
+              </div>
+              <div class="help-us-container">
+                  <a href="#">Help Us</a>
+              </div>
+          </div>
+
+          <style>
+              .links_container {
+                  flex-grow: 1;
+                  margin-left: 80px;
+              }
+
+              .help-us-container {
+                  margin-right: 30px;
+              }
+
+              .help-us-container a {
+                  font-weight: bold;
+                  color: #ca7600;
+              }
+
+              .subnav_container a:hover {
+                  color: black;
+                  font-weight: bold;
+              }
+          </style>
+
+
+
+
+
+      </div>
+
+  </div>
+
+
+
+  <div class="d-flex justify-content-between align-items-start" style="gap: 50px; padding: 0 60px;">
+
+
+
+
+
+
+
+
+    <div class="d-flex flex-column gap-5" style="flex: 7;">
+
+      <div id="section_profile" class="section">
+
+      <div
+        style="display: flex; flex-direction: column; gap: 10px; border: 0.5px solid gray; border-radius: 20px; padding: 20px 30px;">
+        <div style="display: flex; justify-content: end;">
+          <button class="red_button">Edit</button>
+        </div>
+
+        <div class="input_details_section">
+          <div class="input_section">
+            <label for="">Full Name</label>
+
+            <div class="input_box">
+              <input type="text" value="Eriyaan Singh bisht">
+            </div>
+          </div>
+
+
+          <div class="mb-4">
+            <div class="input_section mobile_number mb-3">
+
+
+              <label for="">Moile Number</label>
+
+
+              <div class="input_box">
+                <input type="text" value="+91 9700812822">
+              </div>
+
+
+
+
+            </div>
+
+            <span
+              style="cursor: pointer; font-weight: 300; font-size: 12px; color: rgb(30, 30, 255); text-align: end; justify-content: end; display: flex;">+
+              Add More</span>
+
+
+          </div>
+
+
+
+          <div class="input_section">
+            <label for="">Mail ID</label>
+
+            <div class="input_box">
+              <input type="text" value="arjun@mail.com">
+            </div>
+          </div>
+          <div class="input_section mb-0">
+            <label for="">Gender</label>
+
+
+            <div class="input_box d-flex justify-content-start align-content-center gap-5" style="flex: 9;">
+              <div class="radio_item">
+                <input type="radio" name="gender" id="1">
+                <label for="gender1">Male</label>
+              </div>
+
+              <div class="radio_item">
+                <input type="radio" name="gender" id="gender2">
+                <label for="gender2">Female</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          .input_details_section {
+            padding: 0 160px;
+            padding-left: 40px;
+            margin: 35px 0px;
+          }
+
+          .input_section {
+            display: flex;
+            justify-content: start;
+            /* gap: 70px; */
+            text-align: start;
+            margin-bottom: 40px;
+
+            align-items: center;
+            font-size: 16px;
+            font-weight: 300;
+          }
+
+          .input_section label {
+            flex: 3.4;
+          }
+
+          .input_section .input_box {
+            flex: 9;
+          }
+
+          .input_section input {
+            /* flex: 9; */
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 0.5px solid gray;
+            font-size: 14px;
+            font-weight: 300;
+          }
+
+          .radio_item {
+            display: flex;
+            justify-content: start;
+            justify-content: center;
+            gap: 10px;
+          }
+
+
+          [type="radio"]:checked+label:after {
+            background-color: red;
+            border: 2px solid red;
+
+          }
+
+          .radio_item input:hover {
+            cursor: pointer;
+          }
+        </style>
+
+        <div style="display: flex; justify-content: end;">
+          <button class="red_button">Save</button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- address section starts hers -->
+
+    <div id="section_address" class="section">
+      <div style="display: flex; flex-direction: column; gap: 15px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px; padding-bottom: 25px;">
+        <div>
+
+          <div  class="d-flex justify-content-start align-items-center gap-5">
+
+          
+          <span class="cupon_tab active" data-category="trending">Address</span>
+          <span class="cupon_tab" data-category="upcoming">Add Address</span>
+
+        </div>
+
+          <style>
+            .cupon_tab{
+              font-size: 14px;
+              font-weight: 300;
+            }
+          </style>
+          <hr>
+        </div>
+
+
+
+
+        <div class="coupon-item trending">
+
+          <div class="address_cards_wrapper">
+
+          <div class="address_card">
+            <div class="address_left">
+              <span class="address_place">Home</span>
+              <div class="address_user_details">
+                <span class="address_name">Eriyaan Singh</span>
+                <span class="address_number">+91 8656454554</span>
+              </div>
+              <p>1/546 EWF Sector - H Aliganj, Lucknow, Uttar Paradesh 226021</p>
+            </div>
+            <div class="address_right">
+              <!-- <div class="check_box"> -->
+                <input class="check_box" type="checkbox" style="accent-color: rgb(255, 153, 0);">
+              <!-- </div> -->
+              <div class="edit_del_icons">
+                
+                <img src="./Images/edit.png" alt="">
+                <img src="./Images/bin.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="address_card">
+            <div class="address_left">
+              <span class="address_place">Home</span>
+              <div class="address_user_details">
+                <span class="address_name">Eriyaan Singh</span>
+                <span class="address_number">+91 8656454554</span>
+              </div>
+              <p>1/546 EWF Sector - H Aliganj, Lucknow, Uttar Paradesh 226021</p>
+            </div>
+            <div class="address_right">
+              <!-- <div class="check_box"> -->
+                <input class="check_box" type="checkbox" style="accent-color: rgb(255, 153, 0);">
+              <!-- </div> -->
+              <div class="edit_del_icons">
+                
+                <img src="./Images/edit.png" alt="">
+                <img src="./Images/bin.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+        <div class="coupon-item upcoming">
+
+          
+        </div>
+
+
+
+
+        <style>
+          #section_address{
+            font-size: 14px;
+          }
+          .address_cards_wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+          .address_card{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .address_left{
+            display: flex;
+            flex-direction: column;
+            /* gap: 8px; */
+            flex: 12;
+
+          }
+          .address_left .address_user_details{
+            margin-top: 10px;
+            font-size: 14px;
+            display: flex;
+            justify-content: start;
+            gap: 50px;
+            align-items: center;
+          }
+          .address_left .address_place{
+            font-size: 14px;
+            font-weight: 300;
+          }
+          .address_right{
+            flex: 4;
+            display: flex;
+            justify-content: end;
+            gap: 80px;
+            align-items: center;
+
+          }
+          input.check_box{
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+          }
+
+          .edit_del_icons{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+          .edit_del_icons img{
+            width: 16px;
+            cursor: pointer;
+          }
+
+
+
+        </style>
+
+        
+      </div>
+    </div>
+
+
+
+    <div id="section_orders" class="section">
+      <div style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;" id="">
+
+        <div class="d-flex flex-column gap-2">
+        <div>
+
+          <div class="d-flex justify-content-between align-items-center">
+          <div  class="d-flex justify-content-start align-items-center" style="gap: 30px;">
+
+          
+          <span class="order_tab active" data-category="orders">Orders</span>
+          <span class="order_tab" data-category="on_the_way">On the way</span>
+          <span class="order_tab" data-category="delivered">Delivered</span>
+          <span class="order_tab" data-category="cancelled">Cancelled</span>
+          <span class="order_tab" data-category="returned">Returned</span>
+          <span class="order_tab" data-category="replacement">Replacement</span>
+
+        </div>
+
+        <span class="order_tab" data-category="archived">Archived</span>
+
+      </div>
+
+          <style>
+            .cupon_tab, .order_tab{
+              font-size: 16px;
+              font-weight: 300;
+            }
+          </style>
+          <hr style="margin-top: 5px;">
+        </div>
+
+
+        <div>
+
+          <div  class="d-flex justify-content-start align-items-center" style="gap: 40px;">
+
+          
+          <span class="cupon_tab active" data-category="trending">Last 30 days</span>
+          <span class="cupon_tab" data-category="upcoming">6 Months</span>
+          <span class="cupon_tab" data-category="expired">2022</span>
+          <span class="cupon_tab" data-category="expired">2021</span>
+          <span class="cupon_tab" data-category="expired">2019</span>
+          <span class="cupon_tab" data-category="expired">2018</span>
+
+        </div>
+
+
+          <style>
+            .cupon_tab{
+              font-size: 16px;
+              font-weight: 300;
+            }
+          </style>
+          <hr style="margin-top: 5px;">
+        </div>
+      </div>
+
+
+
+          <!-- trending coupons -->
+          <div class="order-item orders">
+
+            <div class="order_card_wrapper">
+            <div class="order_card">
+              <div class="order_card_left">
+                <div class="order_image">
+                  <img src="../Images/sm.png" alt="">
+                </div>
+                <div class="order_details">
+                  <span class="order_name">crubeck edge pvc band</span>
+
+                  <div class="order_price">
+                    <span class="order_price_text">
+                      ₹9740
+                    </span>
+                    <span class="gray_small_text_order">
+                      Inclusive of all taxes
+                    </span>
+                  </div>
+
+
+                  <div class="order_delivery_date">
+                    <div class="d-flex justify-content-start align-items-center gap-2">
+                      <div class="delivery_status_color">
+
+                      </div>
+                      <span>Delivering on JAN 17</span>
+                      
+                    </div>
+                    <span class="gray_small_text_order">
+                      Your Order has been placed
+                    </span>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="order_card_right">
+
+
+                <div class="order_option_buttons">
+                <div class="cancel_order_button">
+                <button class="red_button">Order Cancel</button>
+                <span class="gray_small_text_order" style="font-size: 12px;">You can cancel your order before delivered</span>
+              </div>
+                <div class="cancel_order_button">
+                <button class="red_button"><span><img src="./Images/download.png" width="18px" style="filter: invert(100%); margin-right: 4px;" alt=""></span> INVOICE</button>
+              </div>
+            </div>
+
+            <span class="archive_order">Archive Order</span>
+              </div>
+            </div>
+
+            <hr>
+          </div>
+
+            </div>
+
+
+            <div class="order-item on_the_way">
+
+
+              <div class="order_card_wrapper">
+                <div class="order_card">
+                  <div class="order_card_left">
+                    <div class="order_image">
+                      <img src="../Images/sm.png" alt="">
+                    </div>
+                    <div class="order_details">
+                      <span class="order_name">crubeck edge pvc band</span>
+    
+                      <div class="order_price">
+                        <span class="order_price_text">
+                          ₹9740
+                        </span>
+                        <span class="gray_small_text_order">
+                          Inclusive of all taxes
+                        </span>
+                      </div>
+    
+    
+                      <div class="order_delivery_date">
+                        <div class="d-flex justify-content-start align-items-center gap-2">
+                          <div class="delivery_status_color" style="background-color: rgb(15, 55, 255);">
+    
+                          </div>
+                          <span>Delivering on JAN 17</span>
+                          
+                        </div>
+                        <span class="gray_small_text_order">
+                          Your item on the way
+                        </span>
+                      </div>
+    
+    
+                    </div>
+                  </div>
+                  <div class="order_card_right">
+    
+    
+                    <div class="order_option_buttons">
+                    <div class="cancel_order_button">
+                    <button class="red_button">Order Cancel</button>
+                    <span class="gray_small_text_order" style="font-size: 12px;">You can cancel your order before delivered</span>
+                  </div>
+                    <div class="cancel_order_button">
+                    <button class="red_button"><span><img src="./Images/download.png" width="18px" style="filter: invert(100%); margin-right: 4px;" alt=""></span> INVOICE</button>
+                  </div>
+                </div>
+    
+                <span class="archive_order">Archive Order</span>
+                  </div>
+                </div>
+    
+                <hr>
+              </div>
+
+
+            </div>
+
+
+
+
+            <div class="order-item delivered">
+
+
+              <div class="order_card_wrapper">
+                <div class="order_card">
+                  <div class="order_card_left">
+                    <div class="order_image">
+                      <img src="../Images/sm.png" alt="">
+                    </div>
+                    <div class="order_details">
+                      <span class="order_name">crubeck edge pvc band</span>
+    
+                      <div class="order_price">
+                        <span class="order_price_text">
+                          ₹9740
+                        </span>
+                        <span class="gray_small_text_order">
+                          Inclusive of all taxes
+                        </span>
+                      </div>
+    
+    
+                      <div class="order_delivery_date">
+                        <div class="d-flex justify-content-start align-items-center gap-2">
+                          <div class="delivery_status_color" style="background-color: rgb(0, 233, 16);">
+    
+                          </div>
+                          <span>Delivering on JAN 17</span>
+                          
+                        </div>
+                        <span class="gray_small_text_order">
+                          Your item has been delivered
+                        </span>
+                      </div>
+    
+    
+                    </div>
+                  </div>
+                  <div class="order_card_right">
+    
+    
+                    <div class="order_option_buttons">
+                    <div class="cancel_order_button">
+                    <button class="red_button">Return</button>
+                    <span class="gray_small_text_order" style="font-size: 12px;">Return window closed on 29-Jan-2023</span>
+                  </div>
+                    <div class="cancel_order_button">
+                    <button class="red_button"><span><img src="./Images/download.png" width="18px" style="filter: invert(100%); margin-right: 4px;" alt=""></span> INVOICE</button>
+                  </div>
+                </div>
+    
+                <span class="archive_order">Archive Order</span>
+                  </div>
+                </div>
+    
+                <hr>
+              </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="order-item cancelled">
+
+
+              <div class="order_card_wrapper">
+                <div class="order_card">
+                  <div class="order_card_left">
+                    <div class="order_image">
+                      <img src="../Images/sm.png" alt="">
+                    </div>
+                    <div class="order_details">
+                      <span class="order_name cancelled_part">crubeck edge pvc band</span>
+    
+                      <div class="order_price cancelled_part">
+                        <span class="order_price_text">
+                          ₹9740
+                        </span>
+                        <span class="gray_small_text_order">
+                          Inclusive of all taxes
+                        </span>
+                      </div>
+    
+    
+                      <div class="order_delivery_date">
+                        <div class="d-flex justify-content-start align-items-center gap-2">
+
+                          <span>Your online payment will <br> credit soon in your given account</span>
+                          
+                        </div>
+                        <!-- <span class="gray_small_text_order">
+                          Your item has been delivered
+                        </span> -->
+                      </div>
+    
+    
+                    </div>
+                  </div>
+                  <div class="order_card_right">
+    
+    
+                    <div class="order_option_buttons cancelled_part">
+                    <div class="cancel_order_button">
+                    <button class="red_button">Order Cancel</button>
+                  </div>
+                    <div class="cancel_order_button">
+                    <button class="red_button"><span><img src="./Images/download.png" width="18px" style="filter: invert(100%); margin-right: 4px;" alt=""></span> INVOICE</button>
+                  </div>
+                </div>
+    
+                <span class="archive_order">Archive Order</span>
+                  </div>
+                </div>
+    
+                <hr>
+              </div>
+
+
+            </div>
+
+
+
+
+            <div class="order-item returned">
+
+
+              <div class="order_card_wrapper">
+                <div class="order_card">
+                  <div class="order_card_left">
+                    <div class="order_image">
+                      <img src="../Images/sm.png" alt="">
+                    </div>
+                    <div class="order_details">
+                      <span class="order_name">crubeck edge pvc band</span>
+    
+                      <div class="order_price">
+                        <span class="order_price_text">
+                          ₹9740
+                        </span>
+                        <span class="gray_small_text_order">
+                          Inclusive of all taxes
+                        </span>
+                      </div>
+    
+    
+                      <div class="order_delivery_date">
+                        <div class="d-flex justify-content-start align-items-center gap-2">
+                          <div class="delivery_status_color" style="background-color: rgb(0, 233, 16);">
+    
+                          </div>
+                          <span>Delivering on JAN 17</span>
+                          
+                        </div>
+                        <span class="gray_small_text_order">
+                          Your item has been delivered
+                        </span>
+                      </div>
+    
+    
+                    </div>
+                  </div>
+                  <div class="order_card_right">
+    
+    
+                    <div class="order_option_buttons">
+                    <div class="cancel_order_button">
+                    <button class="red_button">Return</button>
+                    <span class="gray_small_text_order" style="font-size: 12px;">Return window closed on 29-Jan-2023</span>
+                  </div>
+                    <div class="cancel_order_button">
+                    <button class="red_button"><span><img src="./Images/download.png" width="18px" style="filter: invert(100%); margin-right: 4px;" alt=""></span> INVOICE</button>
+                  </div>
+                </div>
+
+    
+                <div>
+                  <span class="archive_order" style="border-right: 1px solid blue; padding-right: 3px;">Rating and review</span>
+                  <!-- <span><hr></span> -->
+                  <span class="archive_order">Archive Order</span>
+                </div>
+                
+                  </div>
+                </div>
+    
+                <hr>
+              </div>
+
+
+            </div>
+
+
+            <style>
+              .cancelled_part{
+                filter: grayscale(1);
+                opacity: 0.3;
+              }
+              .order_card{
+                display: flex;
+                justify-content: space-between;
+                /* align-items: center; */
+              }
+              .order_card_left{
+                display: flex;
+                justify-content: start;
+                gap: 30px;
+              }
+              .order_card_left img{
+                width: 160px;
+              }
+              .order_details{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+              }
+              .gray_small_text_order{
+                font-size: 13px;
+                color: gray;
+                font-weight: normal;
+              }
+              .order_price{
+                display: flex;
+                flex-direction: column;
+
+              }
+              .order_name{
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: uppercase;
+              }
+              .order_price_text{
+                font-weight: 500;
+                font-size: 20px;
+              }
+              .order_delivery_date{
+                font-weight: 500;
+                font-size: 14px;
+                display: flex;
+                flex-direction: column;
+                /* align-items: center; */
+
+
+              }
+              .delivery_status_color{
+                height: 14px;
+                width: 14px;
+                border-radius: 50%;
+                background-color: orange;
+              }
+              .cancel_order_button{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+              }
+              .order_card_right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: end;
+              }
+              .order_option_buttons{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 15px;
+              }
+              .archive_order{
+                font-size: 14px;
+                color: blue;
+              }
+            </style>
+
+
+
+
+
+        <!-- orders section logic -->
+
+              <!-- cupons section logic -->
+      <script>
+
+
+    
+        $(document).ready(function() {
+          // Event listener for tab clicks
+          $('.order_tab').click(function() {
+            // Remove active class from all tabs
+            $('.order_tab').removeClass('active');
+            // Add active class to the clicked tab
+            $(this).addClass('active');
+            // Get the selected category from the data attribute
+            var category = $(this).data('category');
+            // Show coupons based on the selected category
+            showOrders(category);
+          });
+        
+          // Show coupons based on the selected category
+          function showOrders(category) {
+            // Hide all coupons
+            $('.order-item').hide();
+            // Show coupons for the selected category
+            $('.' + category).show();
+          }
+        
+          // Show trending coupons by default
+          showOrders('orders');
+        });
+        
+        </script>
+
+
+
+
+        
+      </div>
+    </div>
+
+
+    <div id="section_notifications" class="section">
+      <div style="display: flex; flex-direction: column; gap: 0px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;">
+
+        <div>
+          <span style="font-size: 16px;">My Notification</span>
+          <hr>
+        </div>
+
+
+        <div class="notifications" style="margin-top: 30px;">
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex:3.5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 3.5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 3.5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 3.5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 3.5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+              <hr>
+          </div>
+          <div class="notification">
+            <div class="notification_content">
+            <span style="flex: 3.5;">Enjoy Credit Up to $1 Lakh* with Flipkart Pay Later. Sign-up &
+              Get 7500* Gift Card! Apply Now</span>
+
+              <div class="notification_date" style="flex: 4; text-align: end;">
+                <span>30 Apr, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <style>
+          .notification .notification_content{
+            display: flex; 
+            align-items: end; 
+            justify-content: space-between;
+            font-weight: 300;
+          }
+          .notification{
+            font-size: 14px;
+          }
+        </style>
+
+      </div>
+    </div>
+
+
+    <div id="section_cupons" class="section">
+      <div style="display: flex; flex-direction: column; gap: 30px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;" id="section_cupons">
+        <div>
+
+          <div  class="d-flex justify-content-start align-items-center gap-5">
+
+          
+          <span class="cupon_tab active" data-category="trending">Trending Coupons</span>
+          <span class="cupon_tab" data-category="upcoming">Upcoming Coupons</span>
+          <span class="cupon_tab" data-category="expired">Expired Coupons</span>
+
+        </div>
+
+          <style>
+            .cupon_tab{
+              font-size: 16px;
+              font-weight: 300;
+            }
+          </style>
+          <hr>
+        </div>
+
+
+        <div class="coupons-container">
+
+          <!-- trending coupons -->
+          <div class="coupon-item trending">
+          <div class="coupon_item_wrapper">
+
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(TRENDING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item trending">
+          <div class="coupon_item_wrapper">
+
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(TRENDING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item trending">
+          <div class="coupon_item_wrapper">
+
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(TRENDING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item trending">
+          <div class="coupon_item_wrapper">
+
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(TRENDING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item trending">
+          <div class="coupon_item_wrapper">
+
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(TRENDING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            </div>
+
+
+          <!-- upcoming coupons -->
+          <div class="coupon-item upcoming upcoming_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(UPCOMING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item upcoming upcoming_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(UPCOMING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item upcoming upcoming_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(UPCOMING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item upcoming upcoming_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(UPCOMING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item upcoming upcoming_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(UPCOMING) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            </div>
+
+
+
+          <!-- expired coupons -->
+          <div class="coupon-item expired expired_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(EXPIRED) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item expired expired_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(EXPIRED) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item expired expired_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(EXPIRED) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item expired expired_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(EXPIRED) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            <hr>
+            </div>
+          <div class="coupon-item expired expired_cupons">
+          <div class="coupon_item_wrapper">
+            <div class="cupon_item_left">
+              <div class="cupon_title">
+                <span>Flat ₹300 Off On Paints</span>
+              </div>
+              <div class="cupon_desc">
+                <p>(EXPIRED) Get extra ₹300 off on 1 item(S) (price inclusive of cashback/cupon)</p>
+              </div>
+            </div>
+            <div class="cupon_item_right">
+              <span>Valit till 30 Apr, 2023</span>
+              <span class="t_c">
+                View T&C
+              </span>
+            </div>
+          </div>
+            </div>
+
+        </div>
+
+
+        <style>
+          .coupon_item_wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 25px;
+          }
+
+          
+          .cupon_item_left{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .cupon_title{
+            font-weight: 500;
+            font-size: 16px;
+          }
+
+          .cupon_desc{
+            font-weight: 300;
+            font-size: 14px;
+          }
+
+          .cupon_item_right{
+            font-size: 14px;
+            font-weight: 300;
+            color: gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            gap: 10px;
+          }
+
+          .cupon_item_left p{
+            margin-bottom: 0;
+          }
+
+
+          .upcoming_cupons, .expired_cupons{
+            opacity: 0.4;
+          }
+
+          .t_c{
+            color: rgb(0, 0, 219);
+          }
+        </style>
+
+        
+      </div>
+    </div>
+
+
+      <!-- cupons section logic -->
+      <script>
+
+
+    
+        $(document).ready(function() {
+          // Event listener for tab clicks
+          $('.cupon_tab').click(function() {
+            // Remove active class from all tabs
+            $('.cupon_tab').removeClass('active');
+            // Add active class to the clicked tab
+            $(this).addClass('active');
+            // Get the selected category from the data attribute
+            var category = $(this).data('category');
+            // Show coupons based on the selected category
+            showCoupons(category);
+          });
+        
+          // Show coupons based on the selected category
+          function showCoupons(category) {
+            // Hide all coupons
+            $('.coupon-item').hide();
+            // Show coupons for the selected category
+            $('.' + category).show();
+          }
+        
+          // Show trending coupons by default
+          showCoupons('trending');
+        });
+        
+        </script>
+
+
+
+<div id="section_payments" class="section">
+  <div style="display: flex; flex-direction: column; gap: 15px; border: 0.5px solid gray; border-radius: 30px; padding: 50px 40px;" id="">
+    <div>
+
+      <div  class="d-flex justify-content-start align-items-center gap-5">
+
+      
+      <span class="cupon_tab active" data-category="trending">Saved Cards</span>
+      <span class="cupon_tab" data-category="upcoming">Saved Accounts</span>
+      <span class="cupon_tab" data-category="expired">My Wallet</span>
+
+    </div>
+
+      <style>
+        .cupon_tab{
+          font-size: 16px;
+          font-weight: 300;
+        }
+      </style>
+      <hr>
+    </div>
+
+
+    <div class="coupon-item trending">
+
+      <div class="saved_card_wrapper">
+
+
+        <div class="cards">
+
+      <div class="card_container">
+      <div class="card_details">
+        <div class="card_name">
+          <span>Kotak Mahindra Bank</span>
+
+        </div>
+        <div class="card_number">
+          <span>**** **** **** 5443</span>
+        </div>
+      </div>
+
+        <div class="bin_img">
+          <img src="./Images/bin.png" alt="">
+        </div>
+
+      
+    </div>
+
+
+      <div class="card_container">
+      <div class="card_details">
+        <div class="card_name">
+          <span>State Bank of India</span>
+
+        </div>
+        <div class="card_number">
+          <span>**** **** **** 2347</span>
+        </div>
+      </div>
+
+        <div class="bin_img">
+          <img src="./Images/bin.png" alt="">
+        </div>
+
+      
+    </div>
+
+  </div>
+
+
+  <div class="cards_qna">
+
+    <div class="qna_container">
+      <li>Why is my card being tokenised?</li>
+      <p>As per the new RBI guidelines to make card data more secure, merchants like Flipkart cannot store the card details of users. As an alternative, RBI has authorised card networks and card issuers to offer card tokenisation services, which means the replacement of actual credit and debit card details with an alternate code called "token". The user can either choose to tokenis their card by giving consent for future transactions or choose to continue without tokenisation.</p>
+    </div>
+
+    <div class="qna_container">
+      <li>What is a token?</li>
+      <p>A token is generated when a user gives consent to Flipkart to tokenise their card. A token is a unique value for a combination of card, token requestor (Flipkart is a token requestor & accepts request from the customer for tokenisation of a card and passes it onto the card network to issue a corresponding token) and device. The token does not contain any personal information linked to your card and is generated only when a customer uses a new card for a successful transaction on Flipkart.</p>
+    </div>
+  </div>
+
+  <style>
+    .cards_qna{
+      font-size: 14px;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .cards_qna li{
+      font-weight: 400;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+  </style>
+
+
+  </div>
+
+
+
+
+
+
+
+    <style>
+      .card_container{
+        border-bottom: 0.5px solid black;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+      .card_name{
+        font-size: 15px;
+      }
+
+      .card_number{
+        margin-top: 6px;
+        letter-spacing: 4px;
+        font-weight: 300;
+      }
+
+      .card_container .bin_img img{
+        width: 18px;
+        cursor: pointer;
+      }
+    </style>
+
+    </div>
+
+
+    <div class="coupon-item upcoming">
+
+      <div class="saved_card_wrapper">
+
+
+        <div class="cards">
+
+          <div class="card_container">
+            <div class="card_details">
+              <div class="card_name">
+                <span>State Bank of India</span>
+      
+              </div>
+              <div class="card_number">
+                <span>**** **** **** 2347</span>
+              </div>
+            </div>
+      
+              <div class="bin_img">
+                <img src="./Images/bin.png" alt="">
+              </div>
+      
+            
+          </div>
+
+      <div class="card_container">
+      <div class="card_details">
+        <div class="card_name">
+          <span>Kotak Mahindra Bank</span>
+
+        </div>
+        <div class="card_number">
+          <span>**** **** **** 5443</span>
+        </div>
+      </div>
+
+        <div class="bin_img">
+          <img src="./Images/bin.png" alt="">
+        </div>
+
+      
+    </div>
+
+
+
+
+  </div>
+
+
+  <div class="cards_qna">
+
+    <div class="qna_container">
+      <li>What is a token?</li>
+      <p>A token is generated when a user gives consent to Flipkart to tokenise their card. A token is a unique value for a combination of card, token requestor (Flipkart is a token requestor & accepts request from the customer for tokenisation of a card and passes it onto the card network to issue a corresponding token) and device. The token does not contain any personal information linked to your card and is generated only when a customer uses a new card for a successful transaction on Flipkart.</p>
+    </div>
+
+    <div class="qna_container">
+      <li>Why is my card being tokenised?</li>
+      <p>As per the new RBI guidelines to make card data more secure, merchants like Flipkart cannot store the card details of users. As an alternative, RBI has authorised card networks and card issuers to offer card tokenisation services, which means the replacement of actual credit and debit card details with an alternate code called "token". The user can either choose to tokenis their card by giving consent for future transactions or choose to continue without tokenisation.</p>
+    </div>
+
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+    <style>
+      .card_container{
+        border-bottom: 0.5px solid black;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 20px;
+      }
+
+      .card_container .bin_img img{
+        width: 20px;
+        cursor: pointer;
+      }
+    </style>
+
+    </div>
+
+    <div class="coupon-item expired">
+
+      <div class="wallet_amount">
+
+        <div class="wallet_amount_section">
+          <span>Amount in Wallet</span>
+          <span class="wallet_amount_price">₹5443.00</span>
+        </div>
+
+        <hr>
+
+      </div>
+
+
+      <style>
+        .wallet_amount_section{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .wallet_amount_price{
+          color: #ff9d14;
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: 4px;
+        }
+      </style>
+
+      <div class="wallet_refund">
+
+        <div>
+          <span class="last_refund_heading">Last 20 amounts by refund</span>
+        </div>
+
+        <div class="wallet_refund_amounts_card">
+
+            <div class="wallet_refund_card_left">
+              <div class="prod_img">
+                <img src="../Images/sm.png" alt="">
+              </div>
+              <div class="prod_name">
+                <span>crubeck pvd edge brand</span>
+              </div>
+            </div>
+
+            <div class="wallet_refund_card_right">
+                <span class="prod_refund_price">₹433.00</span>
+                <span class="prod_refund_date">30 Apr, 2023</span>
+            </div>
+        </div>
+        <div class="wallet_refund_amounts_card">
+
+            <div class="wallet_refund_card_left">
+              <div class="prod_img">
+                <img src="../Images/sm.png" alt="">
+              </div>
+              <div class="prod_name">
+                <span>crubeck pvd edge brand</span>
+              </div>
+            </div>
+
+            <div class="wallet_refund_card_right">
+                <span class="prod_refund_price">₹433.00</span>
+                <span class="prod_refund_date">30 Apr, 2023</span>
+            </div>
+        </div>
+        <div class="wallet_refund_amounts_card">
+
+            <div class="wallet_refund_card_left">
+              <div class="prod_img">
+                <img src="../Images/sm.png" alt="">
+              </div>
+              <div class="prod_name">
+                <span>crubeck pvd edge brand</span>
+              </div>
+            </div>
+
+            <div class="wallet_refund_card_right">
+                <span class="prod_refund_price">₹433.00</span>
+                <span class="prod_refund_date">30 Apr, 2023</span>
+            </div>
+        </div>
+        <div class="wallet_refund_amounts_card">
+
+            <div class="wallet_refund_card_left">
+              <div class="prod_img">
+                <img src="../Images/sm.png" alt="">
+              </div>
+              <div class="prod_name">
+                <span>crubeck pvd edge brand</span>
+              </div>
+            </div>
+
+            <div class="wallet_refund_card_right">
+                <span class="prod_refund_price">₹433.00</span>
+                <span class="prod_refund_date">30 Apr, 2023</span>
+            </div>
+        </div>
+
+
+
+
+
+
+        <style>
+          .last_refund_heading{
+            font-weight: 300;
+            color: rgb(137, 137, 137);
+            font-size: 14px;
+          }
+
+          .wallet_refund{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            flex-direction: column;
+            gap: 25px;
+          }
+          .wallet_refund_amounts_card{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .wallet_refund_amounts_card img{
+            width: 60px;
+          }
+          .wallet_refund_card_left{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+          }
+          .wallet_refund_card_left .prod_name{
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+          .wallet_refund_card_right{
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+          }
+          .wallet_refund_card_right .prod_refund_date{
+            color: rgb(154, 154, 154);
+            font-size: 12px;
+          }
+
+        </style>
+        
+      </div>
+
+      
+
+
+    </div>
+
+
+
+
+    
+  </div>
+
+
+
+  
+</div>
+
+
+<style>
+  .section{
+    display: none;
+  }
+</style>
+
+
+<script>
+  function showSection(sectionId) {
+// Hide all sections
+var sections = document.getElementsByClassName('section');
+for (var i = 0; i < sections.length; i++) {
+sections[i].style.display = 'none';
+}
+
+// Show the selected section
+var section = document.getElementById(sectionId);
+section.style.display = 'block';
+}
+</script>
+
+<style>
+
+.coupons-tabs {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+.cupon_tab, .order_tab {
+cursor: pointer;
+}
+
+.cupon_tab.active, .order_tab.active {
+  font-weight: normal;
+}
+
+
+</style>
+
+    </div>
+
+
+
+
+
+    <style>
+      .red_button {
+        padding: 2px 22px;
+        min-width: 100px;
+        border-radius: 30px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(228, 0, 0);
+        color: white;
+      }
+    </style>
+
+
+
+
+
+
+
+
+<div class="" style="flex: 2;">
+
+  <div class="menu">
+    <div
+      style="font-weight: 500; font-size: 16px; color: rgb(0, 0, 0); background-color: #dfdfdf; padding-bottom: 10px; padding-top: 10px; border-top-left-radius: 30px; border-top-right-radius: 30px; padding-left: 35px; padding-right: 35px;"
+      class="d-flex flex-column justify-content-center align-items-center gap-2">
+
+      <span>Price Details</span>
+      
+      <span class="total_products">3 Products</span>
+
+
+
+    </div>
+    <div class="mt-3 d-flex flex-column pb-5" style="gap: 18px;">
+
+      <div class="total_products_pricing">
+
+      <div class="total_price">
+        
+      </div>
+      <div class="discount_amount">
+
+      </div>
+      <div class="delivery_charge">
+
+      </div>
+      <div class="offer_amount">
+
+      </div>
+
+      <hr>
+
+      <div class="final_price">
+
+      </div>
+
+
+      </div>
+
+
+      <div class="proceed_to_buy_button" style=" padding: 0px 20px;">
+        <button class="" style="background-color: rgb(215, 0, 0); color: white; border: none; border-radius: 20px; width: 100%; padding: 4px 20px;" ><span><img src="./Images/shopping-bag.png" alt="" width="20px" style="filter: invert(100%); margin-right: 10px; margin-bottom: 4px;"></span>PROCEED TO BUY</button>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <style>
+    .total_products{
+      font-weight: 300;
+    }
+    .menu {
+      background-color: rgba(235, 235, 235, 0.838);
+      transition: transform 0.3s ease-in-out;
+      border-radius: 30px;
+    }
+
+
+    .main_heading {
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .sub_items {
+      /* display: none; */
+      /* margin-top: 5px; */
+      transition: all 1s ease;
+      font-weight: 200;
+      display: flex;
+      flex-direction: column;
+      text-transform: capitalize;
+
+    }
+  </style>
+</div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER SECTION  note: done-->
+  <footer class="bg-FF9803 text-dark mt-5" style="padding-top: 100px; padding-bottom: 22px;">
+
+
+    <div>
+      <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 40px;">
+        <div class="d-flex align-items-center footer_logo_image">
+          <img src="../Images/logo_dark.svg" alt="Logo">
+        </div>
+        <div class="col-md-6 d-flex justify-content-end gap-4 align-items-center footer_social_icons">
+          <a href="#"><img src="../Images/facebook.png" alt="" width="25px"></a>
+          <a href="#"><img src="../Images/twitter.png" alt="" width="25px"></a>
+          <a href="#"><img src="../Images/instagram.png" alt="" width="25px"></a>
+          <a href="#"><img src="../Images/linkedin.png" alt="" width="25px"></a>
+        </div>
+      </div>
+
+
+
+
+      <div class="d-flex justify-content-evenly align-items-center gap-5">
+
+        <!-- note: giving this footer sub class because this is the only div with image icons -->
+        <div class=" d-flex flex-column footer_sub" style="flex: 6;">
+          <div class="d-flex gap-4 align-items-start">
+            <img src="../Images/location.svg" alt="">
+            <p>Shakti Nagar Dhal, Near Lekhraj Metro Station,
+              Indra Nagar -
+              Lucknow</p>
+          </div>
+
+          <div class="d-flex gap-4 align-items-start">
+            <img src="../Images/mobile.svg" alt="">
+            <div class="footer_phone_number">
+              <h3>+91-9700812822</h3>
+              <p>Call Us Now 24/7 Customer Support</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-4 align-items-start">
+            <img src="../Images/mail.svg" alt="">
+            <p>infraterio@gmail.com</p>
+          </div>
+        </div>
+        <div class="mb-3 mb-md-0 footer_sub" style="flex : 4">
+          <h3 class="fw-bold mb-3">Customer Service</h3>
+          <div><a href="#">My Account</a></div>
+          <div><a href="#">Order History</a></div>
+          <div><a href="#">FAQ</a></div>
+          <div><a href="#">Specials</a></div>
+          <div><a href="#">Help Center</a></div>
+        </div>
+        <div class="mb-3 mb-md-0 footer_sub" style="flex : 3.7">
+          <h3 class="fw-bold mb-3">Policy</h3>
+          <div><a href="#">Return Policy</a></div>
+          <div><a href="#">Terms of Use</a></div>
+          <div><a href="#">Company</a></div>
+          <div><a href="#">Privacy</a></div>
+          <div><a href="#">Security</a></div>
+        </div>
+        <div class=" footer_sub" style="flex : 4 ">
+          <h3 class="fw-bold mb-3">Why Choose Us</h3>
+          <div><a href="#">Shopping Guide</a></div>
+          <div><a href="#">Blog</a></div>
+          <div><a href="#">Company</a></div>
+          <div><a href="#">Investor Relations</a></div>
+          <div><a href="#">Contact Us</a></div>
+        </div>
+      </div>
+
+      <!-- hr -->
+      <hr class="border-0" style="margin-top: 30px; margin-bottom: 22px; opacity: 1; border-color: black; height: 1px;">
+
+      <div class="text-center fw-light footer_bottom">@2023InfraTerio. All rights reserved AIRPROG PVT.LTD</div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
