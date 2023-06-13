@@ -1930,12 +1930,12 @@ cursor: pointer;
 
 
 
-<div class="" style="flex: 2;">
+<div class="" style="flex: 2; height: 80vh;">
 
-  <div class="menu">
+  <div class="menu" style="height: 100%;">
     <div
-      style="font-weight: 500; font-size: 16px; color: rgb(0, 0, 0); background-color: #dfdfdf; padding-bottom: 10px; padding-top: 10px; border-top-left-radius: 30px; border-top-right-radius: 30px; padding-left: 35px; padding-right: 35px;"
-      class="d-flex flex-column justify-content-center align-items-center gap-2">
+      style="font-weight: 500; font-size: 18px; color: rgb(0, 0, 0); background-color: #dfdfdf; padding-bottom: 10px; padding-top: 10px; border-top-left-radius: 30px; border-top-right-radius: 30px; padding-left: 35px; padding-right: 35px;"
+      class="d-flex flex-column justify-content-center align-items-center gap-1">
 
       <span>Price Details</span>
       
@@ -1944,27 +1944,32 @@ cursor: pointer;
 
 
     </div>
-    <div class="mt-3 d-flex flex-column pb-5" style="gap: 18px;">
+    <div class="mt-3 d-flex flex-column pb-5" style="gap: 50px;">
 
       <div class="total_products_pricing">
 
       <div class="total_price">
-        
+        <span>Price 3 items</span>
+        <span>₹15340</span>
       </div>
       <div class="discount_amount">
-
+        <span>Discount</span>
+        <span class="green_text_price">- ₹1300</span>
       </div>
       <div class="delivery_charge">
-
+        <span>Delivery Charges</span>
+        <span class="green_text_price">Free</span>
       </div>
       <div class="offer_amount">
-
+        <span>Offer</span>
+        <span class="green_text_price">- ₹340</span>
       </div>
 
-      <hr>
+      <hr style="margin: 2px;">
 
       <div class="final_price">
-
+        <span>Price 3 items</span>
+        <span>₹15340</span>
       </div>
 
 
@@ -1981,6 +1986,23 @@ cursor: pointer;
   </div>
 
   <style>
+    .green_text_price{
+      color: green;
+    }
+    .total_products_pricing{
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 30px;
+      padding: 0px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .total_products_pricing div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .total_products{
       font-weight: 300;
     }
