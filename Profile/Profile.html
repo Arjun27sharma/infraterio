@@ -193,23 +193,23 @@
                     <span>Profile 2</span>
                     <span>Address 2</span>
                 </div> -->
-          <div class="main_heading" onclick="toggleSubItems(3)">
+          <!-- <div class="main_heading" onclick="toggleSubItems(3)">
             <span onclick="showSection('section_wishlist')">wishlist</span>
           </div>
           <div class="main_heading" onclick="toggleSubItems(4)">
             <span onclick="showSection('section_cart')">cart</span>
-          </div>
+          </div> -->
           <div class="main_heading" onclick="toggleSubItems(5)">
             <span onclick="showSection('section_cupons')">cupons</span>
           </div>
           <div class="main_heading" onclick="toggleSubItems(6)">
             <span onclick="showSection('section_payments')">payments</span>
 
-            <div class="sub_items" id="sub_items_6">
+            <!-- <div class="sub_items" id="sub_items_6">
               <span>saved cards</span>
               <span>saved accounts</span>
               <span>my wallet</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="main_heading" onclick="toggleSubItems(7)">
@@ -235,13 +235,16 @@
           text-transform: uppercase;
           font-size: 16px;
           font-weight: 400;
+          color: blue;
         }
 
         .sub_items {
           /* display: none; */
           /* margin-top: 5px; */
           transition: all 1s ease;
-          font-weight: 200;
+          font-weight: 300;
+          font-size: 14px;
+          margin-left: 10px;
           display: flex;
           flex-direction: column;
           text-transform: capitalize;
